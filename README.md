@@ -2,7 +2,7 @@
 
 A functional CSS library and utility belt to start building UI quickly or create customized and systemized website CSS.
 
-[Getting started](#getting-started) | [Examples](#examples) | [Themes](#themes) | [CLI](#cli) | [Configuration](#configuration) | [Reference](#reference) [Roadmap](#roadmap)
+[Getting started](#getting-started) | [Examples](#examples) | [Themes](#themes) | [CLI](#cli) | [Configuration](#configuration) | [Reference](#reference) | [Roadmap](#roadmap)
 
 ![](https://images.unsplash.com/photo-1537819191377-d3305ffddce4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3408&q=80)
 
@@ -28,6 +28,10 @@ Coming soon
 
 Coming soon
 
+## Preonize Function
+
+Coming soon
+
 ## 📚 Reference
 
 Coming soon
@@ -38,13 +42,28 @@ Coming soon
 
 ## 🗺️ Roadmap
 
-Coming soon
+My mission with Preons is to componentize the Web's UI and make building them fast, systemized, and available to all sorts of people regardless of coding ability.
+
+- [ ] Create basic preons them
+- [ ] Preons documentation
+- [ ] Configuaration syntax
+- [ ] CLI
+- [ ] Reference page
 
 ## 🏆 Contributing
 
 ### Toolbox
 
-- Yarn
+- Npm/Yarn
+
+## ⛓ Versioning
+
+We use [SemVer](http://semver.org/) for versioning and [Intuit's Auto](https://intuit.github.io/auto/) to generate releases on the fly. For the versions available, see the [tags on this repository](https://github.com/preons/preons/tags).
+
+## 🙌 Thank yous
+
+- [Intuit's Auto]() for making releases easier
+- [Unsplash]() for the title image
 
 ## 🔖 Licence
 
@@ -53,3 +72,15 @@ You are free to modify and do as you choose to this library however, it uses [GP
 Here's a really helpful video explanation of GPL licences in general.
 
 [![](docs/notes/images/2020-05-09-14-18-35.png)](https://www.youtube.com/watch?v=JlIrSMzF8T4)
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!

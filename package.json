@@ -1,0 +1,33 @@
+{
+  "name": "preons",
+  "version": "0.0.1",
+  "description": "Functional css library and utility belt",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tag": "auto shipit",
+    "release": "auto release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/preons/preons.git"
+  },
+  "author": "Gemma Black",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/preons/preons/issues"
+  },
+  "homepage": "https://github.com/preons/preons#readme",
+  "devDependencies": {
+    "@auto-it/all-contributors": "^9.31.1",
+    "@auto-it/conventional-commits": "^9.31.1",
+    "@auto-it/exec": "^9.31.1",
+    "@auto-it/first-time-contributor": "^9.31.1",
+    "@auto-it/released": "^9.31.1",
+    "all-contributors-cli": "^6.14.2",
+    "auto": "^9.31.1"
+  }
+}
