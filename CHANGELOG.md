@@ -1,3 +1,23 @@
+# v0.3.0 (Sat May 09 2020)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Gemma Black ([@gemmadlou](https://github.com/gemmadlou)), for all your work!
+
+#### 🚀 Enhancement
+
+- feat: add flex align rules to master rules file ([@gemmadlou](https://github.com/gemmadlou))
+
+#### 🐛 Bug Fix
+
+- fix: only use `auto shipit` as config creates release without PR ([@gemmadlou](https://github.com/gemmadlou))
+
+#### Authors: 1
+
+- Gemma Black ([@gemmadlou](https://github.com/gemmadlou))
+
+---
+
 # v0.2.0 (Sat May 09 2020)
 
 :tada: This release contains work from a new contributor! :tada:
