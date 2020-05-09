@@ -1,0 +1,605 @@
+preons:
+  baseline: 1.2rem
+
+  rules:
+    background-attachment:
+      s: scroll
+      f: fixed
+      l: local
+      i: initial
+      x: inherit
+
+    color:
+      black: "#282828"
+      white: "#ffffff"
+      grey: "#f1f5f1"
+      grey-dark: "#89969d"
+      transparent: "transparent"
+      hotpink: "#ea2889"
+      mustard: "#fbcf00"
+
+    border-style:
+      solid: solid
+      dotted: dotted
+      dashed: dashed
+
+    list-style:
+      circle: circle
+      disc: disc
+      square: square
+      decimal: decimal
+      none: none
+      decimal-leading-zero: decimal-leading-zero
+
+    gradient:
+      trans-to-pink: linear-gradient(41deg, rgba(255,255,255,1) 12%, rgba(234,40,137,1) 100%)
+
+    font-family:
+      heebo: "#{heebo sans-serif}"
+
+    overflow:
+      scroll: scroll
+      hidden: hidden
+      auto: auto
+
+    position:
+      relative: relative
+      absolute: absolute
+      fixed: fixed
+
+    scaled:
+      0: 0
+      1: 1rem
+      2: 2rem
+      3: 3rem
+      4: 4rem
+      5: 5rem
+      6: 6rem
+      7: 7rem
+      8: 8rem
+      9: 9rem
+      10: 10rem
+
+    negative-scaled:
+      n1: -1rem
+      n2: -2rem
+      n3: -3rem
+      n4: -4rem
+      n5: -5rem
+      n6: -6rem
+      n7: -7rem
+      n8: -8rem
+      n9: -9rem
+      n10: -10rem
+
+    # For fonts especially
+    baselined:
+      -xsmall: 1.6rem
+      -small: 2rem
+      1: $baseline * 2
+      2: $baseline * 2.5
+      3: $baseline * 3
+      -large: 4rem
+      4: $baseline * 4
+      5: $baseline * 5
+      6: $baseline * 6
+      7: $baseline * 6.5
+      8: $baseline * 7.5
+
+    decimal:
+      0: 0
+      -10: .1
+      -20: .2
+      -30: .3
+      -40: .4
+      -50: .5
+      -60: .6
+      -70: .7
+      -80: .8
+      -90: .9
+      -100: 1
+
+    percentaged:
+      -5: 5%
+      -10: 10%
+      -15: 15%
+      -20: 20%
+      -25: 25%
+      -30: 30%
+      -35: 35%
+      -40: 40%
+      -45: 45%
+      -50: 50%
+      -55: 55%
+      -60: 60%
+      -65: 65%
+      -70: 70%
+      -75: 75%
+      -80: 80%
+      -85: 85%
+      -90: 90%
+      -95: 95%
+      -100: 100%
+
+    discrete-percentage:
+      -third: "(100% / 3)"
+      -two-thirds: "(100% / 3 * 2)"
+      -1-12: "(100% / 12)"
+      -2-12: "(100% / 12)"
+      -3-12: "(100% / 12)"
+
+    special-sizes:
+      x: none
+      -au: auto
+
+    tiny:
+      0: 0
+      1: 1px
+      2: 2px
+      3: 3px
+      4: 4px
+      5: 5px
+
+    discrete:
+      -wire: 1px
+      -thin: 3px
+      -xxxsmall: 5px
+      -xxsmall: 7px
+      -xsmall: 1rem
+      -small: 1.6rem
+      -icon: 3.2rem
+      -medium: 7rem
+      -big: 10rem
+      -xbig: 16rem
+      -xxbig: 22rem
+      -xxxbig: 32rem
+      -super: 42rem
+      -xsuper: 52rem
+      -xxsuper: 62rem
+      -xxxsuper: 72rem
+
+    negative-discrete:
+      -nxbig: -16rem
+      -nxxbig: -22rem
+      -nxxxbig: -32rem
+      -nsuper: -42rem
+      -nxsuper: -52rem
+      -nxxsuper: -62rem
+      -nxxxsuper: -72rem
+
+    numbers:
+      1: 1
+      2: 2
+      3: 3
+      4: 4
+      5: 5
+
+    text:
+      u: uppercase
+      c: capitalize
+
+    alignment:
+      center: center
+      right: right
+      left: left
+
+    justify:
+      justify: justify
+
+    decoration:
+      x: none
+      u: underline
+
+    letter-spacing:
+      1: 1px
+      2: 2px
+      3: 3px
+      4: 4px
+
+    font-size:
+      -2: .90rem
+      -1: 1.2rem
+      0: 1.60rem
+      1: 2.133rem
+      2: 2.843rem
+      3: 3.790rem
+      4: 5.522rem
+      5: 6.734rem
+      6: 8.976rem
+      7: 11.966re
+
+    image-fill:
+      fill: fill
+      cover: cover
+      contain: contain
+      none: none
+
+    transforms:
+      translate-x50n: translateX(-50%)
+      translate-y50n: translateY(-50%)
+      translate-50n: translate(-50%, -50%)
+      performance: translate3d(0,0,0)
+
+  properties:
+    background:
+      class: bg-
+      rule: color
+
+    background-attachment:
+      class: bga-
+      rule: background-attachment
+
+    background-color:
+      class: bg-
+      rule: color
+
+    background-image:
+      class: bgi-
+      rule: gradient
+    
+    background-position:
+      class: bgp
+      rule: alignment
+
+    background-position-x:
+      class: bgpx-
+      rule: alignment
+
+    background-position-y:
+      class: bgpy-
+      rule: alignment
+
+    background-repeat:
+      class: bgr-
+      values:
+        rx: repeat-x
+        r: repeat
+        s: space
+        r: round
+        nr: no-repeat
+
+    border-bottom-width:
+      class: bwb
+      rule: tiny
+
+    border-top-width:
+      class: bwt
+      rule: tiny
+
+    border-right-width:
+      class: bwr
+      rule: tiny
+
+    border-left-width:
+      class: bwl
+      rule: tiny
+
+    border-width:
+      class: bwa
+      rule: tiny
+
+    border-bottom-color:
+      class: bcb-
+      rule: color
+
+    border-top-color:
+      class: bct-
+      rule: color
+
+    border-left-color:
+      class: bcl-
+      rule: color
+
+    border-right-color:
+      class: bcr-
+      rule: color
+    
+    border-color:
+      class: bca-
+      rule: color
+
+    border-style:
+      class: bsa-
+      rule: border-style
+
+    border-bottom-style:
+      class: bsb-
+      rule: border-style
+
+    border-top-style:
+      class: bst-
+      rule: border-style
+
+    border-right-style:
+      class: bsr-
+      rule: border-style
+
+    border-left-style:
+      class: bsl-
+      rule: border-style
+    
+    clear:
+      class: c
+      values:
+        b: both
+  
+    color:
+      class: 
+      rule: color
+
+    cursor:
+      class: 
+      values:
+        pointer: pointer
+        help: help
+        wait: wait
+        crosshair: crosshair
+        not-allowed: not-allowed
+        zoom-in: zoom-in
+        grab: grab
+  
+    display:
+      class: d
+      values: 
+        b: block
+        i: inline
+        ib: inline-block
+        t: table
+        f: flex
+        if: inline-flex
+        n: none
+
+    float:
+      class: fl
+      values:
+        r: right
+        l: left
+        n: none
+  
+    font-family:
+      class: ff
+      rule: font-family
+
+    font-size:
+      class: fs
+      rule: font-size
+
+    font-weight:
+      class: fw
+      values:
+        l: 300
+        n: 400
+        b: 700
+        xb: 900
+
+    height:
+      class: h
+      rule:
+        - scaled
+        - percentaged
+        - discrete
+        - special-sizes
+
+    max-height:
+      class: mh
+      rule:
+        - percentaged
+        - discrete
+        - special-sizes
+    
+    width:
+      class: h
+      rule:
+        - scaled
+        - percentaged
+        - discrete
+        - special-sizes
+
+    max-width:
+      class: mw
+      rule:
+        - percentaged
+        - discrete
+        - special-sizes
+
+    bottom:
+      class: b
+      rule:
+        - scaled
+        - negative-scaled
+        - percentaged
+        - discrete
+
+    left:
+      class: l
+      rule:
+        - scaled
+        - negative-scaled
+        - percentaged
+        - discrete
+
+    top:
+      class: t
+      rule:
+        - scaled
+        - negative-scaled
+        - percentaged
+        - discrete
+
+    right:
+      class: r
+      rule:
+        - scaled
+        - negative-scaled
+        - percentaged
+        - discrete
+
+    letter-spacing:
+      class: ls
+      rule: letter-spacing
+
+    line-height:
+      class: lh
+      rule: line-height
+      
+    list-style-type:
+      class: lst-
+      rule: list-style
+  
+    margin:
+      class: ma
+      rule:
+        - scaled
+        - special-sizes
+        - percentaged
+        - discrete
+  
+    margin-bottom:
+      class: mb
+      rule:
+        - scaled
+        - special-sizes
+        - percentaged
+        - discrete
+
+    margin-left:
+      class: ml
+      rule:
+        - scaled
+        - special-sizes
+        - percentaged
+        - discrete
+  
+    margin-right:
+      class: mr
+      rule:
+        - scaled
+        - special-sizes
+        - percentaged
+        - discrete
+  
+    margin-top:
+      class: mt
+      rule:
+        - scaled
+        - special-sizes
+        - percentaged
+        - discrete
+
+    overflow:
+      class:
+      rule: overflow
+
+    padding:
+      class: pa
+      rule:
+        - scaled
+        - discrete
+
+    padding-bottom:
+      class: pb
+      rule:
+        - scaled
+        - discrete
+
+    padding-left:
+      class: pl
+      rule:
+        - scaled
+        - discrete
+
+    padding-right:
+      class: pr
+      rule:
+        - scaled
+        - discrete
+  
+    padding-top:
+      class: pt
+      rule:
+        - scaled
+        - discrete
+
+    position:
+      class:
+      values:
+        relative: relative
+        absolute: absolute
+        fixed: fixed
+
+    stroke-dasharray: null
+
+    stroke-dashoffset: null
+
+    stroke-width: null
+
+    text-align:
+      class:
+      rule: alignment
+
+    text-decoration:
+      class:
+      rule: decoration
+
+    text-indent: null
+
+    text-transform:
+      class:
+      rule: text
+
+    vertical-align:
+      class: va-
+      values:
+        b: bottom
+        m: middle
+        t: top
+
+    visibility:
+      class:
+      values:
+        hidden: hidden
+        visible: visible
+
+    z-index:
+      class: z-
+      rule: numbers
+
+    flex-basis:
+      class: basis-
+      rule:
+        - percentaged
+        - discrete-percentage
+
+    flex-direction:
+      class:
+      values:
+        row: row
+        row-reverse: row-reverse
+        column: column
+        column-reverse: column-reverse
+
+    flex-grow:
+      class: grow-
+      values:
+        0: 0
+        1: 1
+
+    flex-shrink:
+      class: shrink-
+      values:
+        0: 0
+        1: 1
+
+    flex-wrap:
+      class:
+      values:
+        nowrap: nowrap
+        wrap: wrap
+        wrap-reverse: wrap-reverse
+
+    box-sizing:
+      class:
+      values:
+        b: border-box
+        c: content-box
+

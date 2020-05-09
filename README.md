@@ -2,7 +2,7 @@
 
 A functional CSS library and utility belt to start building UI quickly or create customized and systemized website CSS.
 
-[Getting started](#getting-started) | [Examples](#examples) | [Themes](#themes) | [CLI](#cli) | [Configuration](#configuration) | [Reference](#reference) | [Roadmap](#roadmap)
+[Getting started](#-getting-started) | [Examples](#-examples) | [Themes](#-themes) | [CLI](#-cli) | [Configuration](#-configuration) | [Reference](#-reference) | [Roadmap](#-roadmap)
 
 ![](https://images.unsplash.com/photo-1537819191377-d3305ffddce4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3408&q=80)
 
@@ -26,6 +26,10 @@ Coming soon
 
 ## 🗒 Configuration
 
+Example [preons.yaml](/config/preons.yaml).
+
+### Baseline
+
 Coming soon
 
 ## Preonize Function
@@ -34,7 +38,9 @@ Coming soon
 
 ## 📚 Reference
 
+<!-- Reference -->
 Coming soon
+<!-- /Reference -->
 
 ## 🛠 Functional CSS
 
@@ -44,11 +50,26 @@ Coming soon
 
 My mission with Preons is to componentize the Web's UI and make building them fast, systemized, and available to all sorts of people regardless of coding ability.
 
-- [ ] Create basic preons them
+- [ ] Preons style tool
+  - [ ] Sass
+  - [ ] Less
+  - [ ] Css
+  - [ ] PostCss
+- [ ] Preons theme
+  - [ ] Sass mockup
+  - [ ] CSS
 - [ ] Preons documentation
 - [ ] Configuaration syntax
 - [ ] CLI
+  - [ ] Sass generator
+  - [ ] Css generator
+  - [ ] References generator
+  - [ ] Documentation generator
+  - [ ] Components generator
 - [ ] Reference page
+- [ ] Tests
+  - [ ] CLI
+  - [ ] UI
 
 ## 🏆 Contributing
 
@@ -58,7 +79,7 @@ My mission with Preons is to componentize the Web's UI and make building them fa
 
 ## ⛓ Versioning
 
-We use [SemVer](http://semver.org/) for versioning and [Intuit's Auto](https://intuit.github.io/auto/) to generate releases on the fly. For the versions available, see the [tags on this repository](https://github.com/preons/preons/tags).
+This project uses [SemVer](http://semver.org/) for versioning and [Intuit's Auto](https://intuit.github.io/auto/) to generate releases on the fly. For the versions available, see the [tags on this repository](https://github.com/preons/preons/tags).
 
 ## 🙌 Thank yous
 
