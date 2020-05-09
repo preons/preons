@@ -1,3 +1,9 @@
+# v0.0.2 (Sat May 09 2020)
+
+
+
+---
+
 # v0.1.0 (Sat May 09 2020)
 
 :tada: This release contains work from a new contributor! :tada:
