@@ -616,6 +616,44 @@ preons:
         b: border-box
         c: content-box
 
+    align-items:
+      class: items-
+      values:
+        start: flex-start
+        end: flex-end
+        center: center
+        baseline: baseline
+        stretch: stretch
+
+    align-self:
+      class: self-
+      values:
+        start: flex-start
+        end: flex-end
+        center: center
+        baseline: baseline
+        stretch: stretch
+
+    justify-content:
+      class: justify-
+      values:
+        start: flex-start
+        end: flex-end
+        center: center
+        between: space-between
+        around: space-around
+        stretch: stretch
+
+    align-content:
+      class: content-
+      values:
+        start: flex-start
+        end: flex-end
+        center: center
+        between: space-between
+        around: space-around
+        stretch: stretch
+
   # Preon breakpoints
   breakpoints:
     m: "only screen and (min-width: 768px)"

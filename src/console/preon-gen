@@ -83,9 +83,11 @@ const preons = (set) => {
   try {
     let defaultFile = path.join(__dirname, "..", "..", "config", "preons.yaml");
 
+    // @todo use any rules files
     // let file = options.src
     //   ? path.join(process.cwd(), ...options.src.split("/"))
     //   : defaultFile;
+
     let contents = fs.readFileSync(defaultFile, "utf8");
     let set = yaml.parse(contents);
 
@@ -101,6 +103,7 @@ const preons = (set) => {
       {
         semi: false,
         parser: "scss",
+        printWidth: 120,
       }
     );
 
