@@ -236,7 +236,7 @@ preons:
     background-image:
       class: bgi-
       rule: gradient
-    
+
     background-position:
       class: bgp
       rule: alignment
@@ -255,7 +255,7 @@ preons:
         rx: repeat-x
         r: repeat
         s: space
-        r: round
+        ro: round
         nr: no-repeat
 
     border-bottom-width:
@@ -293,7 +293,7 @@ preons:
     border-right-color:
       class: bcr-
       rule: color
-    
+
     border-color:
       class: bca-
       rule: color
@@ -317,18 +317,18 @@ preons:
     border-left-style:
       class: bsl-
       rule: border-style
-    
+
     clear:
       class: c
       values:
         b: both
-  
+
     color:
-      class: 
+      class:
       rule: color
 
     cursor:
-      class: 
+      class:
       values:
         pointer: pointer
         help: help
@@ -337,10 +337,10 @@ preons:
         not-allowed: not-allowed
         zoom-in: zoom-in
         grab: grab
-  
+
     display:
       class: d
-      values: 
+      values:
         b: block
         i: inline
         ib: inline-block
@@ -355,7 +355,7 @@ preons:
         r: right
         l: left
         n: none
-  
+
     font-family:
       class: ff
       rule: font-family
@@ -386,7 +386,7 @@ preons:
         - percentaged
         - discrete
         - special-sizes
-    
+
     width:
       class: h
       rule:
@@ -441,11 +441,11 @@ preons:
     line-height:
       class: lh
       rule: line-height
-      
+
     list-style-type:
       class: lst-
       rule: list-style
-  
+
     margin:
       class: ma
       rule:
@@ -453,7 +453,7 @@ preons:
         - special-sizes
         - percentaged
         - discrete
-  
+
     margin-bottom:
       class: mb
       rule:
@@ -469,7 +469,7 @@ preons:
         - special-sizes
         - percentaged
         - discrete
-  
+
     margin-right:
       class: mr
       rule:
@@ -477,7 +477,7 @@ preons:
         - special-sizes
         - percentaged
         - discrete
-  
+
     margin-top:
       class: mt
       rule:
@@ -485,6 +485,19 @@ preons:
         - special-sizes
         - percentaged
         - discrete
+
+    object-fit:
+      class: of
+      values:
+        fill: fill
+        contain: contain
+        cover: cover
+        scale-down: scale-down
+        none: none
+
+    opacity:
+      class: o
+      rule: decimal
 
     overflow:
       class:
@@ -513,7 +526,7 @@ preons:
       rule:
         - scaled
         - discrete
-  
+
     padding-top:
       class: pt
       rule:
@@ -603,3 +616,7 @@ preons:
         b: border-box
         c: content-box
 
+  # Preon breakpoints
+  breakpoints:
+    m: "only screen and (min-width: 768px)"
+    l: "only screen and (min-width: 1024px)"

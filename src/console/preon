@@ -3,3 +3,17 @@
 if (require.main !== module) {
   throw new Error("Executable-only module should not be required");
 }
+
+const log = console.info;
+const prettier = require("prettier");
+const fs = require("fs");
+const json = require("../../package.json")
+
+const { program } = require('commander');
+program.version(json.version);
+
+program
+  .command('gen [name]', 'Generate')
+;
+
+program.parse(process.argv);
