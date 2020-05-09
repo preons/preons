@@ -92,6 +92,15 @@
     tslib "1.11.1"
     url-join "^4.0.0"
 
+"@auto-it/git-tag@^9.31.1":
+  version "9.31.1"
+  resolved "https://registry.yarnpkg.com/@auto-it/git-tag/-/git-tag-9.31.1.tgz#425b1609bce06e82bd163a97300950b8db77bd10"
+  integrity sha512-SksTiBOMTPAqQjEiTNESHJXBdNIIXmSLDNdELxYueW/6onEdbq/fbKL2dDCp+LkUOaJE13bPc3je8rkNzc5a1A==
+  dependencies:
+    "@auto-it/core" "^9.31.1"
+    semver "^7.0.0"
+    tslib "1.11.1"
+
 "@auto-it/npm@^9.31.1":
   version "9.31.1"
   resolved "https://registry.yarnpkg.com/@auto-it/npm/-/npm-9.31.1.tgz#72b9cb071ac3f30f7a06f0e0633f3d05b79420ba"

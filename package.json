@@ -26,6 +26,7 @@
     "@auto-it/conventional-commits": "^9.31.1",
     "@auto-it/exec": "^9.31.1",
     "@auto-it/first-time-contributor": "^9.31.1",
+    "@auto-it/git-tag": "^9.31.1",
     "@auto-it/released": "^9.31.1",
     "all-contributors-cli": "^6.14.2",
     "auto": "^9.31.1"
