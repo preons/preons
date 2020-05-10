@@ -12,6 +12,10 @@ A functional CSS library and utility belt to start:
 
 > Inspired by [Tachyons](https://github.com/tachyons-css/tachyons)
 
+## 🔬Currently Under Development
+
+This repo is subject to lots of changes as it's in prime experimental mode. Breaking changes. See going from [0.0.0 to 1.0.0](/docs/notes/2020-05#experimental-mode)
+
 ## 🚀 Getting started
 
 Coming soon
