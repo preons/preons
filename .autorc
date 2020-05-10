@@ -4,7 +4,13 @@
     "conventional-commits",
     "first-time-contributor",
     "released",
-    ["npm", { "forcePublish": true }]
+    "git-tag",
+    [
+      "exec",
+      {
+        "afterRelease": "npm version from-git"
+      }
+    ]
   ],
   "owner": "preons",
   "repo": "preons",
