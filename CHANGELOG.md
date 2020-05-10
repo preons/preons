@@ -1,3 +1,20 @@
+# v0.3.1 (Sun May 10 2020)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Gemma Black ([@gemmadlou](https://github.com/gemmadlou)), for all your work!
+
+#### 🐛 Bug Fix
+
+- fix: add experimental mode notice to readme ([@gemmadlou](https://github.com/gemmadlou))
+- fix: change preons command from `preon gen` to `preons stylesheet` ([@gemmadlou](https://github.com/gemmadlou))
+
+#### Authors: 1
+
+- Gemma Black ([@gemmadlou](https://github.com/gemmadlou))
+
+---
+
 # v0.3.0 (Sat May 09 2020)
 
 :tada: This release contains work from a new contributor! :tada:
