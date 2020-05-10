@@ -4,7 +4,7 @@
     "conventional-commits",
     "first-time-contributor",
     "released",
-    "npm"
+    ["npm", { "forcePublish": true }]
   ],
   "owner": "preons",
   "repo": "preons",
