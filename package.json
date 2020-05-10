@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "release": "auto shipit"
+    "release": "auto shipit",
+    "prepare": "src/console/preons stylesheet > dist/preons.css && src/console/preons stylesheet --scss > dist/preons.scss"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
     "@auto-it/exec": "^9.31.1",
     "@auto-it/first-time-contributor": "^9.31.1",
     "@auto-it/git-tag": "^9.31.1",
+    "@auto-it/npm": "^9.31.1",
     "@auto-it/released": "^9.31.1",
     "all-contributors-cli": "^6.14.2",
     "auto": "^9.31.1"
@@ -36,5 +38,8 @@
     "prettier": "^2.0.5",
     "sass": "^1.26.5",
     "yaml": "^1.9.2"
-  }
+  },
+  "files": [
+    "dist"
+  ]
 }

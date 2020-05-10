@@ -4,7 +4,8 @@
     "all-contributors",
     "conventional-commits",
     "first-time-contributor",
-    "released"
+    "released",
+    "npm"
   ],
   "owner": "preons",
   "repo": "preons",
