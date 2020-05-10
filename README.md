@@ -22,7 +22,9 @@ Coming soon
 
 ## 💎 Examples
 
-Coming soon
+- [Avatars](/docs/examples/components/avatars.html)
+- [Buttons](/docs/examples/components/buttons.html)
+- [Cards](/docs/examples/components/cards.html)
 
 ## 💠 Themes
 

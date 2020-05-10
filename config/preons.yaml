@@ -1,5 +1,5 @@
 preons:
-  baseline: 1.2rem
+  baseline: 1.6rem
 
   rules:
     background-attachment:
@@ -35,7 +35,8 @@ preons:
       trans-to-pink: linear-gradient(41deg, rgba(255,255,255,1) 12%, rgba(234,40,137,1) 100%)
 
     font-family:
-      heebo: "#{heebo sans-serif}"
+      balsamiq: "#{'Balsamiq Sans', cursive}"
+      raleway: "#{Raleway, sans-serif}"
 
     overflow:
       scroll: scroll
@@ -49,16 +50,18 @@ preons:
 
     scaled:
       0: 0
-      1: 1rem
-      2: 2rem
-      3: 3rem
-      4: 4rem
-      5: 5rem
-      6: 6rem
-      7: 7rem
-      8: 8rem
-      9: 9rem
-      10: 10rem
+      1: $baseline * 1
+      2: $baseline * 2
+      3: $baseline * 3
+      4: $baseline * 4
+      5: $baseline * 5
+      6: $baseline * 6
+      7: $baseline * 7
+      8: $baseline * 8
+      9: $baseline * 9
+      10: $baseline * 10
+      11: $baseline * 11
+      12: $baseline * 12
 
     negative-scaled:
       n1: -1rem
@@ -76,6 +79,7 @@ preons:
     baselined:
       -xsmall: 1.6rem
       -small: 2rem
+      0: $baseline * 1.5
       1: $baseline * 2
       2: $baseline * 2.5
       3: $baseline * 3
@@ -153,19 +157,19 @@ preons:
       -xbig: 16rem
       -xxbig: 22rem
       -xxxbig: 32rem
-      -super: 42rem
-      -xsuper: 52rem
-      -xxsuper: 62rem
-      -xxxsuper: 72rem
+      -super: 44rem
+      -xsuper: 56rem
+      -xxsuper: 68rem
+      -xxxsuper: 80rem
 
     negative-discrete:
       -nxbig: -16rem
       -nxxbig: -22rem
       -nxxxbig: -32rem
-      -nsuper: -42rem
-      -nxsuper: -52rem
-      -nxxsuper: -62rem
-      -nxxxsuper: -72rem
+      -nsuper: -44rem
+      -nxsuper: -56rem
+      -nxxsuper: -68rem
+      -nxxxsuper: -80rem
 
     numbers:
       1: 1
@@ -318,6 +322,17 @@ preons:
       class: bsl-
       rule: border-style
 
+    border-radius:
+      class: br
+      values:
+        1: .5rem
+        2: 1rem
+        3: 2rem
+        4: 3rem
+        5: 4rem
+        6: 5rem
+        -50: 50%
+
     clear:
       class: c
       values:
@@ -357,7 +372,7 @@ preons:
         n: none
 
     font-family:
-      class: ff
+      class: ff-
       rule: font-family
 
     font-size:
@@ -388,7 +403,7 @@ preons:
         - special-sizes
 
     width:
-      class: h
+      class: w
       rule:
         - scaled
         - percentaged
@@ -487,7 +502,7 @@ preons:
         - discrete
 
     object-fit:
-      class: of
+      class: of-
       values:
         fill: fill
         contain: contain
@@ -551,7 +566,7 @@ preons:
       rule: alignment
 
     text-decoration:
-      class:
+      class: td
       rule: decoration
 
     text-indent: null
