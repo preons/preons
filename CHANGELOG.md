@@ -1,3 +1,19 @@
+# v0.3.3 (Sun May 10 2020)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Gemma Black ([@gemmadlou](https://github.com/gemmadlou)), for all your work!
+
+#### 🐛 Bug Fix
+
+- fix: example buttons, avatars and cards ([@gemmadlou](https://github.com/gemmadlou))
+
+#### Authors: 1
+
+- Gemma Black ([@gemmadlou](https://github.com/gemmadlou))
+
+---
+
 # v0.3.2 (Sun May 10 2020)
 
 :tada: This release contains work from a new contributor! :tada:
