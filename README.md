@@ -22,9 +22,9 @@ Coming soon
 
 ## 💎 Examples
 
-- [Avatars](/docs/examples/components/avatars.html)
-- [Buttons](/docs/examples/components/buttons.html)
-- [Cards](/docs/examples/components/cards.html)
+- [Avatars](/examples/components/avatars.html)
+- [Buttons](/examples/components/buttons.html)
+- [Cards](/examples/components/cards.html)
 
 ## 💠 Themes
 
@@ -88,7 +88,7 @@ My mission with Preons is to componentize the Web's UI and make building them fa
 - [x] Configuaration syntax
 - [ ] CLI
   - [x] Sass generator
-  - [ ] Css generator
+  - [x] Css generator
   - [ ] References generator
   - [ ] Documentation generator
   - [ ] Components generato
@@ -106,8 +106,8 @@ This project uses [SemVer](http://semver.org/) for versioning and [Intuit's Auto
 
 ## 🙌 Thank yous
 
-- [Intuit's Auto]() for making releases easier
-- [Unsplash]() for the title image
+- [Intuit's Auto](https://intuit.github.io/auto/) for making releases easier
+- [Unsplash](https://unsplash.com/) for the title image
 
 ## 🔖 Licence
 

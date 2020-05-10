@@ -121,3 +121,6 @@ dist/**
 *.css.map
 *.sass.map
 *.scss.map
+
+# Mac
+.DS_Store
