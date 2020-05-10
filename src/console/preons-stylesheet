@@ -5,6 +5,7 @@ const path = require("path");
 const fs = require("fs");
 const yaml = require("yaml");
 const prettier = require("prettier");
+const sass = require("sass");
 
 const log = console.info;
 const error = console.error;
@@ -56,8 +57,8 @@ const preons = (set) => {
     }
 
     let mappedRules = Array.isArray(rules["rule"])
-      ? rules["rule"].join(",")
-      : rules["rule"];
+      ? rules["rule"].map((x) => "$" + x).join(",")
+      : "$" + rules["rule"];
     let mappedSass = rules["values"]
       ? `$${property}: ( ${Object.entries(rules["values"])
           .map(([key, value]) => `${key}:${value}`)
@@ -71,13 +72,13 @@ const preons = (set) => {
         ${mappedSass}
         @include preonize("${
           rules["class"] || ""
-        }", ${property}, map-collection($${property}), $breakpoints);
+        }", ${property}, map-collect($${property}), $breakpoints);
       `;
     }
 
     return `@include preonize("${
       rules["class"] || ""
-    }", ${property}, map-collection(${mappedRules}), $breakpoints);`;
+    }", ${property}, map-collect(${mappedRules}), $breakpoints);`;
   });
 
   return mapping.join("\n");
@@ -110,7 +111,11 @@ const preons = (set) => {
       }
     );
 
-    log(formatted);
+    if (program.scss) return log(formatted);
+
+    let compiled = sass.renderSync({ data: formatted });
+
+    log(compiled.css.toString());
   } catch (e) {
     error(e.message);
   }

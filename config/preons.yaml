@@ -9,7 +9,7 @@ preons:
       i: initial
       x: inherit
 
-    color:
+    theme-colors:
       black: "#282828"
       white: "#ffffff"
       grey: "#f1f5f1"
@@ -223,7 +223,7 @@ preons:
   properties:
     background:
       class: bg-
-      rule: color
+      rule: theme-colors
 
     background-attachment:
       class: bga-
@@ -231,7 +231,7 @@ preons:
 
     background-color:
       class: bg-
-      rule: color
+      rule: theme-colors
 
     background-image:
       class: bgi-
@@ -280,23 +280,23 @@ preons:
 
     border-bottom-color:
       class: bcb-
-      rule: color
+      rule: theme-colors
 
     border-top-color:
       class: bct-
-      rule: color
+      rule: theme-colors
 
     border-left-color:
       class: bcl-
-      rule: color
+      rule: theme-colors
 
     border-right-color:
       class: bcr-
-      rule: color
+      rule: theme-colors
 
     border-color:
       class: bca-
-      rule: color
+      rule: theme-colors
 
     border-style:
       class: bsa-
@@ -325,7 +325,7 @@ preons:
 
     color:
       class:
-      rule: color
+      rule: theme-colors
 
     cursor:
       class:
@@ -346,7 +346,7 @@ preons:
         ib: inline-block
         t: table
         f: flex
-        if: inline-flex
+        fl: inline-flex
         n: none
 
     float:
@@ -440,7 +440,7 @@ preons:
 
     line-height:
       class: lh
-      rule: line-height
+      rule: baselined
 
     list-style-type:
       class: lst-
@@ -656,5 +656,5 @@ preons:
 
   # Preon breakpoints
   breakpoints:
-    m: "only screen and (min-width: 768px)"
-    l: "only screen and (min-width: 1024px)"
+    m: 768px
+    l: 1024px
