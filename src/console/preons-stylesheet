@@ -9,7 +9,11 @@ const prettier = require("prettier");
 const log = console.info;
 const error = console.error;
 
-program.option("-f, --force", "force installation").parse(process.argv);
+program
+  .option("-s, --scss", "Scss stylesheet")
+  .option("-c, --css", "CSS stylesheet")
+  .option("-i, --input", "File of custom rules yaml")
+  .parse(process.argv);
 
 const pkgs = program.args;
 
@@ -83,12 +87,11 @@ const preons = (set) => {
   try {
     let defaultFile = path.join(__dirname, "..", "..", "config", "preons.yaml");
 
-    // @todo use any rules files
-    // let file = options.src
-    //   ? path.join(process.cwd(), ...options.src.split("/"))
-    //   : defaultFile;
+    let file = program.input
+      ? path.join(process.cwd(), ...program.input.toString().split("/"))
+      : defaultFile;
 
-    let contents = fs.readFileSync(defaultFile, "utf8");
+    let contents = fs.readFileSync(file, "utf8");
     let set = yaml.parse(contents);
 
     let formatted = prettier.format(
@@ -109,6 +112,6 @@ const preons = (set) => {
 
     log(formatted);
   } catch (e) {
-    error(e);
+    error(e.message);
   }
 })();

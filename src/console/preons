@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+
+if (require.main !== module) {
+  throw new Error("Executable-only module should not be required");
+}
+
+const json = require("../../package.json");
+
+const { program } = require("commander");
+program.version(json.version);
+
+program.command("stylesheet [name]", "Generates a stylesheet");
+
+program.parse(process.argv);
