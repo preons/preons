@@ -18,7 +18,45 @@ This repo is subject to lots of changes as it's in prime experimental mode. Brea
 
 ## 🚀 Getting started
 
-Coming soon
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Preons docs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:wght@200;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/preons/dist/reset.css" rel="stylesheet" />
+    <link href="https://unpkg.com/preons/dist/preons.css" rel="stylesheet" />
+  </head>
+
+  <body class="bg-grey">
+    <div class="pa3 ff-raleway fwn lh1 fs1 wrap black">
+      <h1 class="ff-dosis fs4 lh3 mb2">Preons</h1>
+      <ul class="">
+        <li>
+          <a href="./examples/components/avatars.html" class="tdx hotpink"
+            >Avatars</a
+          >
+        </li>
+        <li>
+          <a href="./examples/components/buttons.html" class="tdx hotpink"
+            >Buttons</a
+          >
+        </li>
+        <li>
+          <a href="./examples/components/cards.html" class="tdx hotpink"
+            >Cards</a
+          >
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
+```
 
 ## 💎 Examples
 
