@@ -30,7 +30,8 @@
     "@auto-it/npm": "^9.31.1",
     "@auto-it/released": "^9.31.1",
     "all-contributors-cli": "^6.14.2",
-    "auto": "^9.31.1"
+    "auto": "^9.31.1",
+    "husky": "^4.2.5"
   },
   "dependencies": {
     "command-line-args": "^5.1.1",

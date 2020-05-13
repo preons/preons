@@ -14,9 +14,11 @@ A functional CSS library and utility belt to start:
 
 ## 🔬Currently Under Development
 
-This repo is subject to lots of changes as it's in prime experimental mode. Breaking changes. See going from [0.0.0 to 1.0.0](/docs/notes/2020-05.md#experimental-mode)
+This repo is subject to lots of changes as it's in prime experimental mode. See _going from [0.0.0 to 1.0.0](/docs/notes/2020-05.md#experimental-mode)_.
 
 ## 🚀 Getting started
+
+### Quick build
 
 ```html
 <!DOCTYPE html>
@@ -56,6 +58,18 @@ This repo is subject to lots of changes as it's in prime experimental mode. Brea
     </div>
   </body>
 </html>
+```
+
+### Install via npm
+
+```bash
+npm install preons
+```
+
+Import scss:
+
+```scss
+@import "~preons/dist/preons";
 ```
 
 ## 💎 Examples
@@ -123,13 +137,14 @@ Coming soon
 My mission with Preons is to componentize the Web's UI and make building them fast, systemized, and available to all sorts of people regardless of coding ability.
 
 - [ ] Preons documentation
+- [ ] Cheatsheet lookup (reference)
 - [x] Configuaration syntax
 - [ ] CLI
   - [x] Sass generator
   - [x] Css generator
   - [ ] References generator
   - [ ] Documentation generator
-  - [ ] Components generato
+  - [ ] Components generator
 - [ ] Tests
   - [ ] CLI
   - [ ] UI
