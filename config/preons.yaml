@@ -332,7 +332,7 @@ preons:
       rule: border-style
 
     border-radius:
-      class: br
+      class: bra
       values:
         1: .5rem
         2: 1rem
