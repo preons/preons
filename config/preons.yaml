@@ -162,23 +162,24 @@ preons:
       -small: 1.6rem
       -icon: 3.2rem
       -medium: 7rem
-      -big: 10rem
-      -xbig: 16rem
-      -xxbig: 22rem
-      -xxxbig: 32rem
-      -super: 44rem
-      -xsuper: 56rem
-      -xxsuper: 68rem
-      -xxxsuper: 80rem
+      -big: 16rem
+      -xbig: 22rem
+      -xxbig: 32rem
+      -xxxbig: 44rem
+      -super: 56rem
+      -xsuper: 68rem
+      -xxsuper: 80rem
+      -xxxsuper: 100rem
 
     negative-discrete:
-      -nxbig: -16rem
-      -nxxbig: -22rem
-      -nxxxbig: -32rem
-      -nsuper: -44rem
-      -nxsuper: -56rem
-      -nxxsuper: -68rem
-      -nxxxsuper: -80rem
+      -nbig: -16rem
+      -nxbig: 22rem
+      -nxxbig: -32rem
+      -nxxxbig: -44rem
+      -nsuper: -56rem
+      -nxsuper: -68rem
+      -nxxsuper: -80rem
+      -nxxxsuper: -100rem
 
     numbers:
       1: 1
