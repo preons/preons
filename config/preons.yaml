@@ -592,7 +592,7 @@ preons:
         t: top
 
     visibility:
-      class:
+      class: v-
       values:
         hidden: hidden
         visible: visible
