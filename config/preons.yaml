@@ -12,9 +12,9 @@ preons:
     theme-colors:
       black: "#242027"
       white: "#f4f2f9"
-      grey-l: "#beb9cc"
+      greyl: "#beb9cc"
       grey: "#7d778e"
-      grey-d: "#312948"
+      greyd: "#312948"
       transparent: "transparent"
       hotpink: "#ea2889"
 
