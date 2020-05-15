@@ -10,5 +10,6 @@ const { program } = require("commander");
 program.version(json.version);
 
 program.command("stylesheet [name]", "Generates a stylesheet");
+program.command("config [name]", "Converts config");
 
 program.parse(process.argv);

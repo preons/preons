@@ -1,0 +1,31 @@
+#!/usr/bin/env node
+
+const program = require("commander");
+const yaml = require("yaml");
+const path = require("path");
+const fs = require("fs");
+
+const log = console.info;
+const error = console.error;
+
+program
+    .option("-m, --minify", "Minifies json config generation")
+    .parse(process.argv);
+
+(async () => {
+    try {
+        let file = path.join(__dirname, "..", "..", "config", "preons.yaml");
+
+        let contents = fs.readFileSync(file, "utf8");
+        let set = yaml.parse(contents);
+
+        if (program['minify']) {
+            return log(JSON.stringify(set));
+        }
+
+        log(JSON.stringify(set, null, 4));
+
+    } catch (e) {
+        error(e.message);
+    }
+})();

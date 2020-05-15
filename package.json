@@ -9,7 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "release": "auto shipit",
-    "prepare": "src/console/preons stylesheet > dist/preons.css && src/console/preons stylesheet --scss > dist/preons.scss"
+    "prepare": "src/console/preons stylesheet > dist/preons.css && src/console/preons stylesheet --scss > dist/preons.scss && src/console/preons config -m > dist/preons-config.min.json && src/console/preons config > dist/preons-config.json"
   },
   "repository": {
     "type": "git",
