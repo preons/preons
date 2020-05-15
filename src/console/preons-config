@@ -14,7 +14,11 @@ program
 
 (async () => {
     try {
-        let file = path.join(__dirname, "..", "..", "config", "preons.yaml");
+        let defaultFile = path.join(__dirname, "..", "..", "config", "preons.yaml");
+
+        let file = program.input ?
+            path.join(process.cwd(), ...program.input.toString().split("/")) :
+            defaultFile;
 
         let contents = fs.readFileSync(file, "utf8");
         let set = yaml.parse(contents);

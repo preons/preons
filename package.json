@@ -3,6 +3,7 @@
   "version": "0.3.19",
   "description": "Functional css library and utility belt",
   "main": "index.js",
+  "bin": "src/console/preons",
   "directories": {
     "doc": "docs"
   },
@@ -41,6 +42,7 @@
     "yaml": "^1.9.2"
   },
   "files": [
-    "dist"
+    "dist",
+    "src/console"
   ]
 }

@@ -84,7 +84,22 @@ Coming soon
 
 ## 💻 CLI
 
-Coming soon
+<!-- Config -->
+
+```bash
+Usage: preons [options] [command]
+
+Options:
+  -V, --version      output the version number
+  -h, --help         display help for command
+
+Commands:
+  stylesheet [name]  Generates a stylesheet
+  config [name]      Converts config
+  help [command]     display help for command
+```
+
+<!-- Config -->
 
 ## 🗒 Configuration
 
@@ -124,9 +139,11 @@ Thus, we can reuse different sass-maps for several rules. Here's an example use:
 
 <!-- Reference -->
 
-Coming soon
+Look up the reference here.
 
-<!-- /Reference -->
+https://preons.netlify.app/search
+
+<!-- sReference -->
 
 ## 🛠 Functional CSS
 
@@ -137,7 +154,7 @@ Coming soon
 My mission with Preons is to componentize the Web's UI and make building them fast, systemized, and available to all sorts of people regardless of coding ability.
 
 - [ ] Preons documentation
-- [ ] Cheatsheet lookup (reference)
+- [x] Cheatsheet lookup (reference)
 - [x] Configuaration syntax
 - [ ] CLI
   - [x] Sass generator

@@ -56,14 +56,15 @@ const preons = (set) => {
       return "";
     }
 
-    let mappedRules = Array.isArray(rules["rule"])
-      ? rules["rule"].map((x) => "$" + x).join(",")
-      : "$" + rules["rule"];
-    let mappedSass = rules["values"]
-      ? `$${property}: ( ${Object.entries(rules["values"])
+    let mappedRules = Array.isArray(rules["rule"]) ?
+      rules["rule"].map((x) => "$" + x).join(",") :
+      "$" + rules["rule"];
+
+    let mappedSass = rules["values"] ?
+      `$${property}: ( ${Object.entries(rules["values"])
           .map(([key, value]) => `${key}:${value}`)
-          .join(",")} );`
-      : null;
+          .join(",")} );` :
+      null;
 
     // console.log(mappedSass, "x");
 
@@ -88,9 +89,9 @@ const preons = (set) => {
   try {
     let defaultFile = path.join(__dirname, "..", "..", "config", "preons.yaml");
 
-    let file = program.input
-      ? path.join(process.cwd(), ...program.input.toString().split("/"))
-      : defaultFile;
+    let file = program.input ?
+      path.join(process.cwd(), ...program.input.toString().split("/")) :
+      defaultFile;
 
     let contents = fs.readFileSync(file, "utf8");
     let set = yaml.parse(contents);
@@ -103,8 +104,7 @@ const preons = (set) => {
         ${breakpoints(set)}
         ${preonize(set)}
         ${preons(set)}
-      `,
-      {
+      `, {
         semi: false,
         parser: "scss",
         printWidth: 120,
@@ -113,7 +113,9 @@ const preons = (set) => {
 
     if (program.scss) return log(formatted);
 
-    let compiled = sass.renderSync({ data: formatted });
+    let compiled = sass.renderSync({
+      data: formatted
+    });
 
     log(compiled.css.toString());
   } catch (e) {
