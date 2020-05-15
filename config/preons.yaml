@@ -235,7 +235,7 @@ preons:
     background-image:
       class: bgi-
       values:
-        darkblue: linear-gradient(0, rgb(30, 21, 58) 10%, rgb(41, 32, 70) 40%, rgba(9,9,121,0) 100%)
+        trans-to-blue: linear-gradient(0, rgb(30, 21, 58) 10%, rgb(41, 32, 70) 40%, rgba(9,9,121,0) 100%)
         trans-to-pink: linear-gradient(41deg, rgba(255,255,255,1) 12%, rgba(234,40,137,1) 100%)
 
     background-attachment:
