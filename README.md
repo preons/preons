@@ -105,9 +105,45 @@ Commands:
 
 Example [preons.yaml](/config/preons.yaml).
 
+### Preons yaml structure
+
+```yaml
+preons:
+  baseline: # Baseline rule
+
+  rules:
+    # Object reusable rules
+
+  properties:
+    # Css properties
+
+  breakpoints:
+    # Stylesheet breakpoints
+```
+
 ### Baseline
 
-Coming soon
+This is the veritical rhythm of your stylesheet.
+
+### Rules
+
+These are reusable rules across multiple css properties.
+
+```yaml
+preons:
+  theme-colors:
+    black: "#242027"
+    white: "#f4f2f9"
+    greyl: "#beb9cc"
+    grey: "#7d778e"
+    greyd: "#312948"
+    transparent: "transparent"
+    hotpink: "#ea2889"
+```
+
+### Properties
+
+These are css properties and the functional css prefix.
 
 ## Preonize Function
 
