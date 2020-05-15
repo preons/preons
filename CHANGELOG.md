@@ -1,3 +1,23 @@
+# v0.3.20 (Sat May 16 2020)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Gemma Black ([@gemmadlou](https://github.com/gemmadlou)), for all your work!
+
+#### 🐛 Bug Fix
+
+- fix: readme reference, cli and configuration info ([@gemmadlou](https://github.com/gemmadlou))
+
+#### ⚠️  Pushed to `master`
+
+- 0.3.19 ([@gemmadlou](https://github.com/gemmadlou))
+
+#### Authors: 1
+
+- Gemma Black ([@gemmadlou](https://github.com/gemmadlou))
+
+---
+
 # v0.3.19 (Fri May 15 2020)
 
 :tada: This release contains work from a new contributor! :tada:
