@@ -19,6 +19,23 @@ program
         let contents = fs.readFileSync(file, "utf8");
         let set = yaml.parse(contents);
 
+        Object.entries(set.preons.properties).forEach(([property, options]) => {
+
+            if (options && options['rule'] && Array.isArray(options['rule'])) {
+                let rules = options['rule'].map(rule => {
+                    return set.preons.rules[rule]
+                })
+                set.preons.properties[property]['values'] = rules.reduce((arr, cur) => {
+                    return {
+                        ...arr,
+                        ...cur
+                    }
+                }, {})
+            } else if (options && options['rule']) {
+                set.preons.properties[property]['values'] = set.preons.rules[options['rule']]
+            }
+        })
+
         if (program['minify']) {
             return log(JSON.stringify(set));
         }
