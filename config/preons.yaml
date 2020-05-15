@@ -10,13 +10,13 @@ preons:
       x: inherit
 
     theme-colors:
-      black: "#282828"
-      white: "#ffffff"
-      grey: "#f1f5f1"
-      grey-dark: "#89969d"
+      black: "#242027"
+      white: "#f4f2f9"
+      grey-l: "#beb9cc"
+      grey: "#7d778e"
+      grey-d: "#312948"
       transparent: "transparent"
       hotpink: "#ea2889"
-      mustard: "#fbcf00"
 
     border-style:
       solid: solid
@@ -30,9 +30,6 @@ preons:
       decimal: decimal
       none: none
       decimal-leading-zero: decimal-leading-zero
-
-    gradient:
-      trans-to-pink: linear-gradient(41deg, rgba(255,255,255,1) 12%, rgba(234,40,137,1) 100%)
 
     font-family:
       balsamiq: "#{'Balsamiq Sans', cursive}"
@@ -235,9 +232,11 @@ preons:
       performance: translate3d(0,0,0)
 
   properties:
-    background:
-      class: bg-
-      rule: theme-colors
+    background-image:
+      class: bgi-
+      values:
+        darkblue: linear-gradient(0, rgb(30, 21, 58) 10%, rgb(41, 32, 70) 40%, rgba(9,9,121,0) 100%)
+        trans-to-pink: linear-gradient(41deg, rgba(255,255,255,1) 12%, rgba(234,40,137,1) 100%)
 
     background-attachment:
       class: bga-
@@ -246,10 +245,6 @@ preons:
     background-color:
       class: bg-
       rule: theme-colors
-
-    background-image:
-      class: bgi-
-      rule: gradient
 
     background-position:
       class: bgp
@@ -406,7 +401,14 @@ preons:
         - special-sizes
 
     max-height:
-      class: mh
+      class: maxh
+      rule:
+        - percentaged
+        - discrete
+        - special-sizes
+
+    min-height:
+      class: minh
       rule:
         - percentaged
         - discrete
@@ -421,8 +423,16 @@ preons:
         - special-sizes
 
     max-width:
-      class: mw
+      class: maxw
       rule:
+        - percentaged
+        - discrete
+        - special-sizes
+
+    min-width:
+      class: minw
+      rule:
+        - scaled
         - percentaged
         - discrete
         - special-sizes
