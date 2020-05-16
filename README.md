@@ -202,10 +202,6 @@ My mission with Preons is to componentize the Web's UI and make building them fa
   - [ ] CLI
   - [ ] UI
 
-## 🏆 Contributing
-
-Coming soon
-
 ## ⛓ Versioning
 
 This project uses [SemVer](http://semver.org/) for versioning and [Intuit's Auto](https://intuit.github.io/auto/) to generate releases on the fly. For the versions available, see the [tags on this repository](https://github.com/preons/preons/tags).
@@ -221,7 +217,7 @@ You are free to modify and do as you choose to this library however, it uses [GP
 
 Here's a really helpful video explanation of GPL licences in general.
 
-[![](docs/notes/images/2020-05-09-14-18-35.png)](https://www.youtube.com/watch?v=JlIrSMzF8T4)
+https://www.youtube.com/watch?v=JlIrSMzF8T4
 
 ## Contributors ✨
 
