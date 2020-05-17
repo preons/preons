@@ -13,12 +13,8 @@ const error = console.error;
 program
   .option("-s, --scss", "Scss stylesheet")
   .option("-c, --css", "CSS stylesheet")
-  .option("-i, --input", "File of custom rules yaml")
+  .option("-i, --input <file>", "File of custom rules yaml")
   .parse(process.argv);
-
-const pkgs = program.args;
-
-// console.log(pkgs, program, process.cwd());
 
 const sassMaps = (set) => {
   return Object.entries(set.preons.rules)
@@ -65,8 +61,6 @@ const preons = (set) => {
           .map(([key, value]) => `${key}:${value}`)
           .join(",")} );` :
       null;
-
-    // console.log(mappedSass, "x");
 
     if (mappedSass) {
       return `
