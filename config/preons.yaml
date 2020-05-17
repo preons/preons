@@ -186,8 +186,10 @@ preons:
       5: 5
 
     text:
+      x: none
       u: uppercase
       c: capitalize
+      l: lowercase
 
     alignment:
       center: center
@@ -383,6 +385,12 @@ preons:
     font-size:
       class: fs
       rule: font-size
+
+    font-style:
+      class: fx
+      values:
+        n: normal
+        i: italic
 
     font-weight:
       class: fw
