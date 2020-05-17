@@ -11,7 +11,8 @@ preons:
 
     theme-colors:
       black: "#242027"
-      white: "#f4f2f9"
+      white: "#fefeff"
+      greyll: "#fcfbff"
       greyl: "#beb9cc"
       grey: "#7d778e"
       greyd: "#47454c"
@@ -32,7 +33,6 @@ preons:
       decimal-leading-zero: decimal-leading-zero
 
     font-family:
-      balsamiq: "#{'Balsamiq Sans', cursive}"
       raleway: "#{Raleway, sans-serif}"
 
     overflow:
