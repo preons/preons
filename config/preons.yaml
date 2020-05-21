@@ -600,7 +600,7 @@ preons:
     text-indent: null
 
     text-transform:
-      class:
+      class: tf
       rule: text
 
     vertical-align:
@@ -621,7 +621,7 @@ preons:
       rule: numbers
 
     flex-basis:
-      class: basis-
+      class: basis
       rule:
         - percentaged
         - discrete-percentage

@@ -6,10 +6,14 @@ if (require.main !== module) {
 
 const json = require("../../package.json");
 
-const { program } = require("commander");
+const {
+  program
+} = require("commander");
 program.version(json.version);
 
 program.command("stylesheet [name]", "Generates a stylesheet");
 program.command("config [name]", "Converts config");
+program.command("docs [name]", "Generate documentation");
+
 
 program.parse(process.argv);

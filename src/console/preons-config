@@ -35,8 +35,27 @@ program
                         ...cur
                     }
                 }, {})
+                set.preons.properties[property]['mappings'] = rules.reduce((arr, cur) => {
+                    let mapped = Object.keys(set.preons.properties[property]['values']).reduce((arr, key) => {
+                        arr[options['class'] ? `${options['class']}${key}` : key] = set.preons.properties[property]['values'][key]
+                        return arr
+                    }, {})
+                    return {
+                        ...arr,
+                        ...mapped
+                    }
+                }, {})
             } else if (options && options['rule']) {
                 set.preons.properties[property]['values'] = set.preons.rules[options['rule']]
+                set.preons.properties[property]['mappings'] = Object.keys(set.preons.properties[property]['values']).reduce((arr, key) => {
+                    arr[options['class'] ? `${options['class']}${key}` : key] = set.preons.properties[property]['values'][key]
+                    return arr
+                }, {})
+            } else if (options && options['values']) {
+                set.preons.properties[property]['mappings'] = Object.keys(set.preons.properties[property]['values']).reduce((arr, key) => {
+                    arr[options['class'] ? `${options['class']}${key}` : key] = set.preons.properties[property]['values'][key]
+                    return arr
+                }, {})
             }
         })
 

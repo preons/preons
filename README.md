@@ -173,11 +173,9 @@ Thus, we can reuse different sass-maps for several rules. Here's an example use:
 
 ## 📚 Reference
 
+Look up the reference [here](https://preons.netlify.app/search) or peruse them below.
+
 <!-- Reference -->
-
-Look up the reference here.
-
-https://preons.netlify.app/search
 
 <!-- sReference -->
 
@@ -198,6 +196,7 @@ My mission with Preons is to componentize the Web's UI and make building them fa
   - [ ] References generator
   - [ ] Documentation generator
   - [ ] Components generator
+  - [ ] Reverse generator. Create preons.yaml from functional css styles
 - [ ] Tests
   - [ ] CLI
   - [ ] UI
