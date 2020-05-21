@@ -1,3 +1,23 @@
+# v0.3.28 (Thu May 21 2020)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Gemma Black ([@gemmadlou](https://github.com/gemmadlou)), for all your work!
+
+#### 🐛 Bug Fix
+
+- fix: incorrect rules and have css mappings created by config generator ([@gemmadlou](https://github.com/gemmadlou))
+
+#### ⚠️  Pushed to `master`
+
+- 0.3.27 ([@gemmadlou](https://github.com/gemmadlou))
+
+#### Authors: 1
+
+- Gemma Black ([@gemmadlou](https://github.com/gemmadlou))
+
+---
+
 # v0.3.27 (Sun May 17 2020)
 
 :tada: This release contains work from a new contributor! :tada:
