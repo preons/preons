@@ -65,7 +65,7 @@ preons:
 
 ### Baseline
 
-This is the veritical rhythm of your stylesheet.
+This is the vertical rhythm of your stylesheet.
 
 ### Rules
 
