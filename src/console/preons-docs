@@ -1,32 +1,43 @@
 #!/usr/bin/env node
 
 const program = require("commander");
-const yaml = require("yaml");
-const path = require("path");
-const fs = require("fs");
+const toTable = require("markdown-table");
+const { exec } = require("child_process");
+const util = require("util");
+const pExec = util.promisify(exec);
+const strip = require("strip-indent");
 
 const log = console.info;
 const error = console.error;
 
-program
-    .option("-m, --minify", "Minifies json config generation")
-    .parse(process.argv);
+program.parse(process.argv);
 
 (async () => {
-    try {
-        let defaultFile = path.join(__dirname, "..", "..", "config", "preons.yaml");
+  try {
+    let { stdout } = await pExec("preons config");
+    let set = JSON.parse(stdout);
 
-        let file = program.input ?
-            path.join(process.cwd(), ...program.input.toString().split("/")) :
-            defaultFile;
+    let tables = Object.keys(set.preons.properties)
+      .filter((property) => set.preons.properties[property])
+      .map((property, index) => {
+        let mappings = Object.entries(
+          set.preons.properties[property].mappings
+        ).reduce(
+          (acc, entry) => {
+            acc.push([...entry]);
+            return acc;
+          },
+          [["class", "value"]]
+        );
+        let table = toTable(mappings);
+        return strip(`### ${property}
 
-        let contents = fs.readFileSync(file, "utf8");
-        let set = yaml.parse(contents);
+        ${table}`);
+      })
+      .map((i) => strip(i).replace(/[\s]+\|/, "\n\n|"));
 
-
-        log("_todo_");
-
-    } catch (e) {
-        error(e.message);
-    }
+    log(tables.join("\n\n"));
+  } catch (e) {
+    error(e.message);
+  }
 })();

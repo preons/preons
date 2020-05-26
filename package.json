@@ -37,8 +37,10 @@
   "dependencies": {
     "command-line-args": "^5.1.1",
     "commander": "^5.1.0",
+    "markdown-table": "^2.0.0",
     "prettier": "^2.0.5",
     "sass": "^1.26.5",
+    "strip-indent": "^3.0.0",
     "yaml": "^1.9.2"
   },
   "files": [

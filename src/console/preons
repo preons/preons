@@ -13,7 +13,7 @@ program.version(json.version);
 
 program.command("stylesheet [name]", "Generates a stylesheet");
 program.command("config [name]", "Converts config");
-program.command("docs [name]", "Generate documentation");
+program.command("docs", "Generate documentation");
 
 
 program.parse(process.argv);
