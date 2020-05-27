@@ -1,3 +1,24 @@
+# v0.3.30 (Wed May 27 2020)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Gemma Black ([@gemmadlou](https://github.com/gemmadlou)), for all your work!
+
+#### 🐛 Bug Fix
+
+- fix: clean readme of dead links and add image ([@gemmadlou](https://github.com/gemmadlou))
+- fix: readme includes reference and move getting started into preons.co ([@gemmadlou](https://github.com/gemmadlou))
+
+#### ⚠️  Pushed to `master`
+
+- 0.3.29 ([@gemmadlou](https://github.com/gemmadlou))
+
+#### Authors: 1
+
+- Gemma Black ([@gemmadlou](https://github.com/gemmadlou))
+
+---
+
 # v0.3.29 (Tue May 26 2020)
 
 :tada: This release contains work from a new contributor! :tada:
