@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="https://unpkg.com/preons@0.3.30/dist/reset.css" rel="stylesheet" type="text/css" />
+    <link href="https://unpkg.com/preons@0.3.30/dist/preons.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script>
+      var json = '#jsonRule'
+    </script>
+    <div class="ff-raleway fs1 lh1 greyd pa2">
+      <h1 class="mb2">Preons reference</h1>
+      <div id="app">
+        <p class="fs-1 greyl">{{ filtered.length }} properties</p>
+        <input v-on:keyup="findStyle" class="mb2" type="text" placeholder="Lookup styles" />
+        <div class="mb2" v-for="property in filtered">
+            <h3>{{ property.property }}</h3>
+            <div class="fs0 lh0 df" v-bind:key="key" v-for="(mapping, key) in property.mappings">
+              <div class="w12 mr2"> {{ key }} </div> 
+              <div>{{ mapping }} </div>
+            </div> 
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script>
+      var app = new Vue({
+        el: '#app',
+        data: {
+          properties: [],
+          filtered: []
+        },
+        async created() {
+          // Or reference a json object directly on the page
+          let response = await axios.get('https://unpkg.com/preons@0.3.30/dist/preons-config.json')
+
+          let mapped = Object.keys(response.data.preons.properties).map(property => {
+            return {...response.data.preons.properties[property],
+            property
+            }
+          })
+
+          this.properties = mapped;
+          this.filtered = mapped;
+        },
+        methods: {
+          findStyle(event) {
+            this.filtered = this.properties
+            .filter((i) => i.property.indexOf(event.target.value.toLowerCase()) > -1)
+            .sort((a, b) => {
+              if (a.property.indexOf('-') === -1) {
+                return -1
+              }
+
+              if (b.property.indexOf('-') === -1) {
+                return 1
+              }
+
+              return 0
+            })
+          }
+        }
+      })
+    </script>
+  </body>
+</html>
