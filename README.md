@@ -126,7 +126,7 @@ My mission with Preons is to componentize the Web's UI and make building them fa
   - [x] Sass generator
   - [x] Css generator
   - [x] References generator
-  - [ ] Documentation generator
+  - [x] Documentation generator
   - [ ] Components generator
   - [ ] Reverse generator. Create preons.yaml from functional css styles
 - [ ] Tests
@@ -167,6 +167,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
