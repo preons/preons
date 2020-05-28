@@ -1,3 +1,24 @@
+# v0.3.32 (Thu May 28 2020)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Gemma Black ([@gemmadlou](https://github.com/gemmadlou)), for all your work!
+
+#### 🐛 Bug Fix
+
+- fix: tick off 'documentation generator' in readme roadmap ([@gemmadlou](https://github.com/gemmadlou))
+- fix: generate single page reference html with `preons docs --html` ([@gemmadlou](https://github.com/gemmadlou))
+
+#### ⚠️  Pushed to `master`
+
+- 0.3.31 ([@gemmadlou](https://github.com/gemmadlou))
+
+#### Authors: 1
+
+- Gemma Black ([@gemmadlou](https://github.com/gemmadlou))
+
+---
+
 # v0.3.31 (Thu May 28 2020)
 
 :tada: This release contains work from new contributors! :tada:
