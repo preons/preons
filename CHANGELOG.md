@@ -1,3 +1,29 @@
+# v0.3.31 (Thu May 28 2020)
+
+:tada: This release contains work from new contributors! :tada:
+
+Thanks for all your work!
+
+:heart: Gemma Black ([@gemmadlou](https://github.com/gemmadlou))
+
+:heart: Pierre Grimaud ([@pgrimaud](https://github.com/pgrimaud))
+
+#### 🐛 Bug Fix
+
+- Fix typos [#1](https://github.com/preons/preons/pull/1) ([@pgrimaud](https://github.com/pgrimaud))
+
+#### ⚠️  Pushed to `master`
+
+- Merge branch 'master' of https://github.com/preons/preons ([@gemmadlou](https://github.com/gemmadlou))
+- 0.3.30 ([@gemmadlou](https://github.com/gemmadlou))
+
+#### Authors: 2
+
+- Gemma Black ([@gemmadlou](https://github.com/gemmadlou))
+- Pierre Grimaud ([@pgrimaud](https://github.com/pgrimaud))
+
+---
+
 # v0.3.30 (Wed May 27 2020)
 
 :tada: This release contains work from a new contributor! :tada:
