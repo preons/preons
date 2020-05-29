@@ -1,3 +1,19 @@
+# v0.3.36 (Fri May 29 2020)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Gemma Black ([@gemmadlou](https://github.com/gemmadlou)), for all your work!
+
+#### ⚠️  Pushed to `master`
+
+- 0.3.35 ([@gemmadlou](https://github.com/gemmadlou))
+
+#### Authors: 1
+
+- Gemma Black ([@gemmadlou](https://github.com/gemmadlou))
+
+---
+
 # v0.3.35 (Fri May 29 2020)
 
 :tada: This release contains work from a new contributor! :tada:
