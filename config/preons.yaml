@@ -654,12 +654,16 @@ preons:
       values:
         0: 0
         1: 1
+        10: 10
+        20: 20
 
     flex-shrink:
       class: shrink-
       values:
         0: 0
         1: 1
+        10: 10
+        20: 20
 
     flex-wrap:
       class:
