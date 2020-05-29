@@ -1,3 +1,23 @@
+# v0.3.35 (Fri May 29 2020)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Gemma Black ([@gemmadlou](https://github.com/gemmadlou)), for all your work!
+
+#### 🐛 Bug Fix
+
+- fix: grey color alteration ([@gemmadlou](https://github.com/gemmadlou))
+
+#### ⚠️  Pushed to `master`
+
+- 0.3.34 ([@gemmadlou](https://github.com/gemmadlou))
+
+#### Authors: 1
+
+- Gemma Black ([@gemmadlou](https://github.com/gemmadlou))
+
+---
+
 # v0.3.34 (Fri May 29 2020)
 
 :tada: This release contains work from a new contributor! :tada:
