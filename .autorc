@@ -8,7 +8,7 @@
     [
       "exec",
       {
-        "afterRelease": "npm version from-git && npm publish"
+        "afterRelease": "npm version from-git && yarn publish --non-interactive --no-git-tag-version"
       }
     ]
   ],
