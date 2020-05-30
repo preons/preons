@@ -1,0 +1,38 @@
+#!/usr/bin/env node
+
+const program = require("commander");
+const toTable = require("markdown-table");
+const {
+    exec
+} = require("child_process");
+const util = require("util");
+const pExec = util.promisify(exec);
+const strip = require("strip-indent");
+const fs = require("fs")
+const path = require("path")
+const translate = require("../lib/translate/index")
+const yaml = require('yaml')
+
+const log = console.info;
+const error = console.error;
+
+program
+    .parse(process.argv);
+
+(async () => {
+    try {
+        let defaultFile = path.join(__dirname, "..", "..", "config", "preons.yaml");
+
+        let file = program.args[0] ?
+            path.join(process.cwd(), ...program.args[0].toString().split("/")) :
+            defaultFile;
+
+        let contents = fs.readFileSync(file, "utf8");
+
+        let translated = await translate(contents)
+
+        log(yaml.stringify(translated));
+    } catch (e) {
+        error(e.message);
+    }
+})();

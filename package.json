@@ -8,7 +8,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "release": "auto shipit",
     "prepare": "src/console/preons stylesheet > dist/preons.css && src/console/preons stylesheet --scss > dist/preons.scss && src/console/preons config -m > dist/preons-config.min.json && src/console/preons config > dist/preons-config.json"
   },
@@ -30,6 +30,7 @@
     "@auto-it/git-tag": "^9.31.1",
     "@auto-it/npm": "^9.31.1",
     "@auto-it/released": "^9.31.1",
+    "@types/jest": "^25.2.3",
     "all-contributors-cli": "^6.14.2",
     "auto": "^9.31.1",
     "husky": "^4.2.5"
@@ -37,6 +38,8 @@
   "dependencies": {
     "command-line-args": "^5.1.1",
     "commander": "^5.1.0",
+    "cssom": "^0.4.4",
+    "jest": "^26.0.1",
     "markdown-table": "^2.0.0",
     "prettier": "^2.0.5",
     "sass": "^1.26.5",
@@ -48,5 +51,13 @@
     "dist",
     "src/console",
     "src/scss"
-  ]
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test"
+    }
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  }
 }

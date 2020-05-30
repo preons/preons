@@ -14,6 +14,7 @@ program.version(json.version);
 program.command("stylesheet [name]", "Generates a stylesheet");
 program.command("config [name]", "Converts config");
 program.command("docs", "Generate documentation");
+program.command("translate [file]", "Translate css into preons config");
 
 
 program.parse(process.argv);
