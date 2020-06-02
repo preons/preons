@@ -1,6 +1,6 @@
 {
   "name": "preons",
-  "version": "0.3.37",
+  "version": "0.3.38",
   "description": "Functional css library and utility belt",
   "main": "index.js",
   "bin": "src/console/preons",
