@@ -2,7 +2,7 @@
 
 A functional CSS system for building user interfaces 🛰
 
-[Documentation](#-documentation) | [CLI](#-cli) | [Reference](#-reference) | [Roadmap](#-roadmap)
+[Documentation](#-documentation) | [CLI](#-cli) | [Reference](#-reference)
 
 ![](docs/notes/images/preons-tech.png)
 
@@ -12,7 +12,7 @@ This repo is subject to lots of changes as it's in prime experimental mode. See 
 
 ## 🚀 Documentation
 
-Get started [here](https://www.preons.co/learn/#build-the-ui).
+Get started [here](https://www.preons.co/learn).
 
 ## 💠 Themes
 
@@ -20,66 +20,13 @@ Coming soon
 
 ## 💻 CLI
 
-<!-- Config -->
-
-```bash
-Usage: preons [options] [command]
-
-Options:
-  -V, --version      output the version number
-  -h, --help         display help for command
-
-Commands:
-  stylesheet [name]  Generates a stylesheet
-  config [name]      Converts config
-  help [command]     display help for command
-```
-
-<!-- Config -->
+Learn more [here](https://www.preons.co/learn/cli/installation).
 
 ## 🗒 Configuration
 
 Example [preons.yaml](/config/preons.yaml).
 
-### Preons yaml structure
-
-```yaml
-preons:
-  baseline: # Baseline rule
-
-  rules:
-    # Object reusable rules
-
-  properties:
-    # Css properties
-
-  breakpoints:
-    # Stylesheet breakpoints
-```
-
-### Baseline
-
-This is the vertical rhythm of your stylesheet.
-
-### Rules
-
-These are reusable rules across multiple css properties.
-
-```yaml
-preons:
-  theme-colors:
-    black: "#242027"
-    white: "#f4f2f9"
-    greyl: "#beb9cc"
-    grey: "#7d778e"
-    greyd: "#312948"
-    transparent: "transparent"
-    hotpink: "#ea2889"
-```
-
-### Properties
-
-These are css properties and the functional css prefix.
+Read the docs [here](https://preons.co/learn/cli/generate).
 
 ## Preonize Function
 
@@ -111,27 +58,9 @@ Thus, we can reuse different sass-maps for several rules. Here's an example use:
 
 Look up the reference [here](https://preons.netlify.app/search) or peruse them below.
 
-## 🛠 Functional CSS
-
-Coming soon
-
 ## 🗺️ Roadmap
 
-My mission with Preons is to componentize the Web's UI and make building them fast, systemized, and available to all sorts of people regardless of coding ability.
-
-- [ ] Preons documentation
-- [x] Cheatsheet lookup (reference)
-- [x] Configuaration syntax
-- [ ] CLI
-  - [x] Sass generator
-  - [x] Css generator
-  - [x] References generator
-  - [x] Documentation generator
-  - [ ] Components generator
-  - [ ] Reverse generator. Create preons.yaml from functional css styles
-- [ ] Tests
-  - [ ] CLI
-  - [ ] UI
+Read the roadmap [here](https://preons.co/articles/roadmap).
 
 ## ⛓ Versioning
 
@@ -140,7 +69,6 @@ This project uses [SemVer](http://semver.org/) for versioning and [Intuit's Auto
 ## 🙌 Thank yous
 
 - [Intuit's Auto](https://intuit.github.io/auto/) for making releases easier
-- [Unsplash](https://unsplash.com/) for the title image
 - [Adam Moore & Tachyons](https://tachyons.io/) for creating their wonderful library
 
 ## 🔖 Licence
@@ -167,6 +95,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
