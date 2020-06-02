@@ -2,24 +2,19 @@ preons:
   baseline: 1.6rem
 
   rules:
-    background-attachment:
-      s: scroll
-      f: fixed
-      l: local
-      i: initial
-      x: inherit
-
     theme-colors:
-      black: "#242027"
+      black: "#302f31"
       white: "#fefeff"
-      greyll: "#f9f8fb"
-      greyl: "#se2deea"
-      grey: "#7d778e"
-      greyd: "#47454c"
-      bluel: "#e6dff7"
+      greyxl: "#f9f8fb"
+      greyl: "#dedbe2"
+      grey: "#9c97a7"
+      greyd: "#6a696f"
+      lilacd: "#a992de"
+      lilac: "#c4b4ea"
+      lilacl: "#e6dff7"
       transparent: "transparent"
-      hotpinkll: "#e8dee4"
-      hotpinkl: "#e8dee4"
+      hotpinkxl: "#f3d7e8"
+      hotpinkl: "#e872ae"
       hotpink: "#ea2889"
 
     border-style:
@@ -34,9 +29,6 @@ preons:
       decimal: decimal
       none: none
       decimal-leading-zero: decimal-leading-zero
-
-    font-family:
-      raleway: "#{Raleway, sans-serif}"
 
     overflow:
       scroll: scroll
@@ -126,20 +118,18 @@ preons:
       -100: 100%
 
     discrete-percentage:
-      -third: "(100% / 3)"
-      -two-thirds: "(100% / 3 * 2)"
-      -1-12: "(100% / 12)"
-      -2-12: "(100% / 12 * 2)"
-      -3-12: "(100% / 12 * 3)"
-      -4-12: "(100% / 12 * 4)"
-      -5-12: "(100% / 12 * 5)"
-      -6-12: "(100% / 12 * 6)"
-      -7-12: "(100% / 12 * 7)"
-      -8-12: "(100% / 12 * 8)"
-      -9-12: "(100% / 12 * 9)"
-      -10-12: "(100% / 12 * 10)"
-      -11-12: "(100% / 12 * 11)"
-      -12-12: "(100% / 12 * 12)"
+      -1-12: 100% / 12
+      -2-12: 100% / 12 * 2
+      -3-12: 100% / 12 * 3
+      -4-12: 100% / 12 * 4
+      -5-12: 100% / 12 * 5
+      -6-12: 100% / 12 * 6
+      -7-12: 100% / 12 * 7
+      -8-12: 100% / 12 * 8
+      -9-12: 100% / 12 * 9
+      -10-12: 100% / 12 * 10
+      -11-12: 100% / 12 * 11
+      -12-12: 100% / 12 * 12
 
     special-sizes:
       x: none
@@ -172,9 +162,27 @@ preons:
       -xxxsuper: 100rem
 
     vh:
+      -10vh: 10vh
+      -20vh: 20vh
+      -30vh: 30vh
+      -40vh: 40vh
+      -50vh: 50vh
+      -60vh: 60vh
+      -70vh: 70vh
+      -80vh: 80vh
+      -90vh: 90vh
       -100vh: 100vh
 
     vw:
+      -10vw: 10vw
+      -20vw: 20vw
+      -30vw: 30vw
+      -40vw: 40vw
+      -50vw: 50vw
+      -60vw: 60vw
+      -70vw: 70vw
+      -80vw: 80vw
+      -90vw: 90vw
       -100vw: 100vw
 
     negative-discrete:
@@ -205,37 +213,6 @@ preons:
       right: right
       left: left
 
-    justify:
-      justify: justify
-
-    decoration:
-      x: none
-      u: underline
-
-    letter-spacing:
-      1: 1px
-      2: 2px
-      3: 3px
-      4: 4px
-
-    font-size:
-      -2: .90rem
-      -1: 1.2rem
-      0: 1.60rem
-      1: 2.133rem
-      2: 2.843rem
-      3: 3.790rem
-      4: 5.522rem
-      5: 6.734rem
-      6: 8.976rem
-      7: 11.966re
-
-    image-fill:
-      fill: fill
-      cover: cover
-      contain: contain
-      none: none
-
     transforms:
       translate-x50n: translateX(-50%)
       translate-y50n: translateY(-50%)
@@ -251,7 +228,12 @@ preons:
 
     background-attachment:
       class: bga-
-      rule: background-attachment
+      values:
+        s: scroll
+        f: fixed
+        l: local
+        i: initial
+        x: inherit
 
     background-color:
       class: bg-
@@ -377,7 +359,7 @@ preons:
         ib: inline-block
         t: table
         f: flex
-        fl: inline-flex
+        ifl: inline-flex
         n: none
 
     float:
@@ -389,11 +371,22 @@ preons:
 
     font-family:
       class: ff-
-      rule: font-family
+      values:
+        raleway: "#{Raleway, sans-serif}"
 
     font-size:
       class: fs
-      rule: font-size
+      values:
+        -2: .90rem
+        -1: 1.2rem
+        0: 1.60rem
+        1: 2.133rem
+        2: 2.843rem
+        3: 3.790rem
+        4: 5.522rem
+        5: 6.734rem
+        6: 8.976rem
+        7: 11.966rem
 
     font-style:
       class: fx
@@ -414,6 +407,7 @@ preons:
       rule:
         - scaled
         - percentaged
+        - discrete-percentage
         - discrete
         - special-sizes
         - vh
@@ -424,7 +418,6 @@ preons:
         - percentaged
         - discrete
         - special-sizes
-        - vh
 
     min-height:
       class: minh
@@ -432,13 +425,13 @@ preons:
         - percentaged
         - discrete
         - special-sizes
-        - vh
 
     width:
       class: w
       rule:
         - scaled
         - percentaged
+        - discrete-percentage
         - discrete
         - special-sizes
         - vw
@@ -449,7 +442,6 @@ preons:
         - percentaged
         - discrete
         - special-sizes
-        - vw
 
     min-width:
       class: minw
@@ -458,7 +450,6 @@ preons:
         - percentaged
         - discrete
         - special-sizes
-        - vw
 
     bottom:
       class: b
@@ -494,7 +485,11 @@ preons:
 
     letter-spacing:
       class: ls
-      rule: letter-spacing
+      values:
+        1: 1px
+        2: 2px
+        3: 3px
+        4: 4px
 
     line-height:
       class: lh
@@ -561,6 +556,14 @@ preons:
       class:
       rule: overflow
 
+    overflow-x:
+      class: x-
+      rule: overflow
+
+    overflow-y:
+      class: y-
+      rule: overflow
+
     padding:
       class: pa
       rule:
@@ -610,7 +613,9 @@ preons:
 
     text-decoration:
       class: td
-      rule: decoration
+      values:
+        x: none
+        u: underline
 
     text-indent: null
 
