@@ -1,3 +1,24 @@
+# v0.3.38 (Tue Jun 02 2020)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Gemma Black ([@gemmadlou](https://github.com/gemmadlou)), for all your work!
+
+#### 🐛 Bug Fix
+
+- fix: color conventions, percentage width fixes and removal of duplications in preons.yaml ([@gemmadlou](https://github.com/gemmadlou))
+- fix: translator beginnings, going from css into preons.yaml ([@gemmadlou](https://github.com/gemmadlou))
+
+#### ⚠️ Pushed to `master`
+
+- 0.3.37 ([@gemmadlou](https://github.com/gemmadlou))
+
+#### Authors: 1
+
+- Gemma Black ([@gemmadlou](https://github.com/gemmadlou))
+
+---
+
 # v0.3.37 (Fri May 29 2020)
 
 :tada: This release contains work from a new contributor! :tada:
