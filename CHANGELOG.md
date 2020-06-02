@@ -1,24 +1,3 @@
-# v0.3.38 (Tue Jun 02 2020)
-
-:tada: This release contains work from a new contributor! :tada:
-
-Thank you, Gemma Black ([@gemmadlou](https://github.com/gemmadlou)), for all your work!
-
-#### 🐛 Bug Fix
-
-- fix: color conventions, percentage width fixes and removal of duplications in preons.yaml ([@gemmadlou](https://github.com/gemmadlou))
-- fix: translator beginnings, going from css into preons.yaml ([@gemmadlou](https://github.com/gemmadlou))
-
-#### ⚠️ Pushed to `master`
-
-- 0.3.37 ([@gemmadlou](https://github.com/gemmadlou))
-
-#### Authors: 1
-
-- Gemma Black ([@gemmadlou](https://github.com/gemmadlou))
-
----
-
 # v0.3.37 (Fri May 29 2020)
 
 :tada: This release contains work from a new contributor! :tada:
@@ -29,7 +8,7 @@ Thank you, Gemma Black ([@gemmadlou](https://github.com/gemmadlou)), for all you
 
 - fix: flex-shrink and grow rules ([@gemmadlou](https://github.com/gemmadlou))
 
-#### ⚠️  Pushed to `master`
+#### ⚠️ Pushed to `master`
 
 - 0.3.36 ([@gemmadlou](https://github.com/gemmadlou))
 
@@ -45,7 +24,7 @@ Thank you, Gemma Black ([@gemmadlou](https://github.com/gemmadlou)), for all you
 
 Thank you, Gemma Black ([@gemmadlou](https://github.com/gemmadlou)), for all your work!
 
-#### ⚠️  Pushed to `master`
+#### ⚠️ Pushed to `master`
 
 - 0.3.35 ([@gemmadlou](https://github.com/gemmadlou))
 
@@ -65,7 +44,7 @@ Thank you, Gemma Black ([@gemmadlou](https://github.com/gemmadlou)), for all you
 
 - fix: grey color alteration ([@gemmadlou](https://github.com/gemmadlou))
 
-#### ⚠️  Pushed to `master`
+#### ⚠️ Pushed to `master`
 
 - 0.3.34 ([@gemmadlou](https://github.com/gemmadlou))
 
@@ -85,7 +64,7 @@ Thank you, Gemma Black ([@gemmadlou](https://github.com/gemmadlou)), for all you
 
 - fix: using yarn in autorc release ([@gemmadlou](https://github.com/gemmadlou))
 
-#### ⚠️  Pushed to `master`
+#### ⚠️ Pushed to `master`
 
 - 0.3.33 ([@gemmadlou](https://github.com/gemmadlou))
 
@@ -105,7 +84,7 @@ Thank you, Gemma Black ([@gemmadlou](https://github.com/gemmadlou)), for all you
 
 - fix: more colors, and vh/vw ([@gemmadlou](https://github.com/gemmadlou))
 
-#### ⚠️  Pushed to `master`
+#### ⚠️ Pushed to `master`
 
 - 0.3.32 ([@gemmadlou](https://github.com/gemmadlou))
 
@@ -126,7 +105,7 @@ Thank you, Gemma Black ([@gemmadlou](https://github.com/gemmadlou)), for all you
 - fix: tick off 'documentation generator' in readme roadmap ([@gemmadlou](https://github.com/gemmadlou))
 - fix: generate single page reference html with `preons docs --html` ([@gemmadlou](https://github.com/gemmadlou))
 
-#### ⚠️  Pushed to `master`
+#### ⚠️ Pushed to `master`
 
 - 0.3.31 ([@gemmadlou](https://github.com/gemmadlou))
 
@@ -150,7 +129,7 @@ Thanks for all your work!
 
 - Fix typos [#1](https://github.com/preons/preons/pull/1) ([@pgrimaud](https://github.com/pgrimaud))
 
-#### ⚠️  Pushed to `master`
+#### ⚠️ Pushed to `master`
 
 - Merge branch 'master' of https://github.com/preons/preons ([@gemmadlou](https://github.com/gemmadlou))
 - 0.3.30 ([@gemmadlou](https://github.com/gemmadlou))
@@ -173,7 +152,7 @@ Thank you, Gemma Black ([@gemmadlou](https://github.com/gemmadlou)), for all you
 - fix: clean readme of dead links and add image ([@gemmadlou](https://github.com/gemmadlou))
 - fix: readme includes reference and move getting started into preons.co ([@gemmadlou](https://github.com/gemmadlou))
 
-#### ⚠️  Pushed to `master`
+#### ⚠️ Pushed to `master`
 
 - 0.3.29 ([@gemmadlou](https://github.com/gemmadlou))
 
@@ -193,7 +172,7 @@ Thank you, Gemma Black ([@gemmadlou](https://github.com/gemmadlou)), for all you
 
 - fix: generate markdown doc with `preons docs` ([@gemmadlou](https://github.com/gemmadlou))
 
-#### ⚠️  Pushed to `master`
+#### ⚠️ Pushed to `master`
 
 - 0.3.28 ([@gemmadlou](https://github.com/gemmadlou))
 
@@ -213,7 +192,7 @@ Thank you, Gemma Black ([@gemmadlou](https://github.com/gemmadlou)), for all you
 
 - fix: incorrect rules and have css mappings created by config generator ([@gemmadlou](https://github.com/gemmadlou))
 
-#### ⚠️  Pushed to `master`
+#### ⚠️ Pushed to `master`
 
 - 0.3.27 ([@gemmadlou](https://github.com/gemmadlou))
 
@@ -233,7 +212,7 @@ Thank you, Gemma Black ([@gemmadlou](https://github.com/gemmadlou)), for all you
 
 - fix: argument missing for ---input file in stylesheet command ([@gemmadlou](https://github.com/gemmadlou))
 
-#### ⚠️  Pushed to `master`
+#### ⚠️ Pushed to `master`
 
 - 0.3.26 ([@gemmadlou](https://github.com/gemmadlou))
 
@@ -253,7 +232,7 @@ Thank you, Gemma Black ([@gemmadlou](https://github.com/gemmadlou)), for all you
 
 - fix: font-style and text-transform ([@gemmadlou](https://github.com/gemmadlou))
 
-#### ⚠️  Pushed to `master`
+#### ⚠️ Pushed to `master`
 
 - 0.3.25 ([@gemmadlou](https://github.com/gemmadlou))
 
@@ -273,7 +252,7 @@ Thank you, Gemma Black ([@gemmadlou](https://github.com/gemmadlou)), for all you
 
 - fix: include scss source as part of npm package ([@gemmadlou](https://github.com/gemmadlou))
 
-#### ⚠️  Pushed to `master`
+#### ⚠️ Pushed to `master`
 
 - 0.3.24 ([@gemmadlou](https://github.com/gemmadlou))
 
@@ -293,7 +272,7 @@ Thank you, Gemma Black ([@gemmadlou](https://github.com/gemmadlou)), for all you
 
 - fix: include config as part of npm package ([@gemmadlou](https://github.com/gemmadlou))
 
-#### ⚠️  Pushed to `master`
+#### ⚠️ Pushed to `master`
 
 - 0.3.23 ([@gemmadlou](https://github.com/gemmadlou))
 
@@ -313,7 +292,7 @@ Thank you, Gemma Black ([@gemmadlou](https://github.com/gemmadlou)), for all you
 
 - fix: darken greyll ([@gemmadlou](https://github.com/gemmadlou))
 
-#### ⚠️  Pushed to `master`
+#### ⚠️ Pushed to `master`
 
 - 0.3.22 ([@gemmadlou](https://github.com/gemmadlou))
 
@@ -333,7 +312,7 @@ Thank you, Gemma Black ([@gemmadlou](https://github.com/gemmadlou)), for all you
 
 - fix: theme-color adjustment ([@gemmadlou](https://github.com/gemmadlou))
 
-#### ⚠️  Pushed to `master`
+#### ⚠️ Pushed to `master`
 
 - 0.3.21 ([@gemmadlou](https://github.com/gemmadlou))
 
@@ -353,7 +332,7 @@ Thank you, Gemma Black ([@gemmadlou](https://github.com/gemmadlou)), for all you
 
 - fix: change dark grey color and remove youtube image ([@gemmadlou](https://github.com/gemmadlou))
 
-#### ⚠️  Pushed to `master`
+#### ⚠️ Pushed to `master`
 
 - 0.3.20 ([@gemmadlou](https://github.com/gemmadlou))
 
@@ -373,7 +352,7 @@ Thank you, Gemma Black ([@gemmadlou](https://github.com/gemmadlou)), for all you
 
 - fix: readme reference, cli and configuration info ([@gemmadlou](https://github.com/gemmadlou))
 
-#### ⚠️  Pushed to `master`
+#### ⚠️ Pushed to `master`
 
 - 0.3.19 ([@gemmadlou](https://github.com/gemmadlou))
 
@@ -393,7 +372,7 @@ Thank you, Gemma Black ([@gemmadlou](https://github.com/gemmadlou)), for all you
 
 - fix: clash between grey-l and grey _light_ ([@gemmadlou](https://github.com/gemmadlou))
 
-#### ⚠️  Pushed to `master`
+#### ⚠️ Pushed to `master`
 
 - 0.3.18 ([@gemmadlou](https://github.com/gemmadlou))
 
@@ -413,7 +392,7 @@ Thank you, Gemma Black ([@gemmadlou](https://github.com/gemmadlou)), for all you
 
 - fix: config has values even for sass mapped options ([@gemmadlou](https://github.com/gemmadlou))
 
-#### ⚠️  Pushed to `master`
+#### ⚠️ Pushed to `master`
 
 - 0.3.17 ([@gemmadlou](https://github.com/gemmadlou))
 
@@ -433,7 +412,7 @@ Thank you, Gemma Black ([@gemmadlou](https://github.com/gemmadlou)), for all you
 
 - fix: create json files ([@gemmadlou](https://github.com/gemmadlou))
 
-#### ⚠️  Pushed to `master`
+#### ⚠️ Pushed to `master`
 
 - 0.3.16 ([@gemmadlou](https://github.com/gemmadlou))
 
@@ -453,7 +432,7 @@ Thank you, Gemma Black ([@gemmadlou](https://github.com/gemmadlou)), for all you
 
 - fix: background image name breaks scss ([@gemmadlou](https://github.com/gemmadlou))
 
-#### ⚠️  Pushed to `master`
+#### ⚠️ Pushed to `master`
 
 - 0.3.15 ([@gemmadlou](https://github.com/gemmadlou))
 
@@ -473,7 +452,7 @@ Thank you, Gemma Black ([@gemmadlou](https://github.com/gemmadlou)), for all you
 
 - fix: change colour scheme and add max and min heights ([@gemmadlou](https://github.com/gemmadlou))
 
-#### ⚠️  Pushed to `master`
+#### ⚠️ Pushed to `master`
 
 - 0.3.14 ([@gemmadlou](https://github.com/gemmadlou))
 
@@ -493,7 +472,7 @@ Thank you, Gemma Black ([@gemmadlou](https://github.com/gemmadlou)), for all you
 
 - fix: bigger discrete sizes ([@gemmadlou](https://github.com/gemmadlou))
 
-#### ⚠️  Pushed to `master`
+#### ⚠️ Pushed to `master`
 
 - 0.3.13 ([@gemmadlou](https://github.com/gemmadlou))
 
@@ -513,7 +492,7 @@ Thank you, Gemma Black ([@gemmadlou](https://github.com/gemmadlou)), for all you
 
 - fix: prefix visiblity ([@gemmadlou](https://github.com/gemmadlou))
 
-#### ⚠️  Pushed to `master`
+#### ⚠️ Pushed to `master`
 
 - 0.3.12 ([@gemmadlou](https://github.com/gemmadlou))
 
@@ -533,7 +512,7 @@ Thank you, Gemma Black ([@gemmadlou](https://github.com/gemmadlou)), for all you
 
 - fix: border radius consitency `bra` not `br` ([@gemmadlou](https://github.com/gemmadlou))
 
-#### ⚠️  Pushed to `master`
+#### ⚠️ Pushed to `master`
 
 - 0.3.11 ([@gemmadlou](https://github.com/gemmadlou))
 
@@ -553,7 +532,7 @@ Thank you, Gemma Black ([@gemmadlou](https://github.com/gemmadlou)), for all you
 
 - fix: change baseline and discrete percentages ([@gemmadlou](https://github.com/gemmadlou))
 
-#### ⚠️  Pushed to `master`
+#### ⚠️ Pushed to `master`
 
 - 0.3.10 ([@gemmadlou](https://github.com/gemmadlou))
 
@@ -573,7 +552,7 @@ Thank you, Gemma Black ([@gemmadlou](https://github.com/gemmadlou)), for all you
 
 - fix: basic get started guide ([@gemmadlou](https://github.com/gemmadlou))
 
-#### ⚠️  Pushed to `master`
+#### ⚠️ Pushed to `master`
 
 - 0.3.9 ([@gemmadlou](https://github.com/gemmadlou))
 
@@ -593,7 +572,7 @@ Thank you, Gemma Black ([@gemmadlou](https://github.com/gemmadlou)), for all you
 
 - fix: really basic home page ([@gemmadlou](https://github.com/gemmadlou))
 
-#### ⚠️  Pushed to `master`
+#### ⚠️ Pushed to `master`
 
 - 0.3.8 ([@gemmadlou](https://github.com/gemmadlou))
 
@@ -613,7 +592,7 @@ Thank you, Gemma Black ([@gemmadlou](https://github.com/gemmadlou)), for all you
 
 - fix: auto publish to npm ([@gemmadlou](https://github.com/gemmadlou))
 
-#### ⚠️  Pushed to `master`
+#### ⚠️ Pushed to `master`
 
 - 0.3.7 ([@gemmadlou](https://github.com/gemmadlou))
 
