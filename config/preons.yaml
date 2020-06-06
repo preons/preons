@@ -8,6 +8,7 @@ preons:
       dark: "#211c4c"
       light: "#f0f2ff"
       layout: "#3634b5"
+      neutral: "#464079"
       neutrald: "#302a61"
       neutrall: "#c4c8e8"
       error: "#f13b3b"
