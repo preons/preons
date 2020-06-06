@@ -1,3 +1,29 @@
+# v0.3.41 (Sat Jun 06 2020)
+
+:tada: This release contains work from new contributors! :tada:
+
+Thanks for all your work!
+
+:heart: Gemma Black ([@gemmadlou](https://github.com/gemmadlou))
+
+:heart: Fábio Rosado ([@FabioRosado](https://github.com/FabioRosado))
+
+#### 🐛 Bug Fix
+
+- Add more colors - lime, orange, purple, red, yellow [#2](https://github.com/preons/preons/pull/2) ([@FabioRosado](https://github.com/FabioRosado) [@gemmadlou](https://github.com/gemmadlou))
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of https://github.com/preons/preons ([@gemmadlou](https://github.com/gemmadlou))
+- 0.3.40 ([@gemmadlou](https://github.com/gemmadlou))
+
+#### Authors: 2
+
+- Fábio Rosado ([@FabioRosado](https://github.com/FabioRosado))
+- Gemma Black ([@gemmadlou](https://github.com/gemmadlou))
+
+---
+
 # v0.3.40 (Sat Jun 06 2020)
 
 :tada: This release contains work from a new contributor! :tada:
