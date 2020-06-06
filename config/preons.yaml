@@ -3,19 +3,31 @@ preons:
 
   rules:
     theme-colors:
-      black: "#302f31"
-      white: "#fefeff"
-      greyxl: "#f9f8fb"
-      greyl: "#dedbe2"
-      grey: "#9c97a7"
-      greyd: "#6a696f"
-      lilacd: "#a992de"
-      lilac: "#c4b4ea"
-      lilacl: "#e6dff7"
-      transparent: "transparent"
-      hotpinkxl: "#f3d7e8"
-      hotpinkl: "#e872ae"
+      black: "#100d2b"
+      white: "#fdfdff"
+      dark: "#211c4c"
+      light: "#f0f2ff"
+      layout: "#3634b5"
+      neutrald: "#302a61"
+      neutrall: "#c4c8e8"
+      error: "#f13b3b"
+      success: "#28d0b1"
+      disabledd: "#5a5573"
+      disabledl: "#b2b6ca"
+      activexl: "#ffe76e"
+      activel: "#f9d41e"
+      active: "#d4b936"
+      actived: "#a99535"
+      activexd: "#73641b"
+      hotpinkxl: "#f188bc"
+      hotpinkl: "#f36fb0"
       hotpink: "#ea2889"
+      hotpinkd: "#cc0f6d"
+      hotpinkxd: "#900148"
+      transparent: transparent
+      greyl: "#f0f2ff"
+      grey: "#b2b6ca"
+      greyd: "#5a5573"
 
     border-style:
       solid: solid
@@ -145,12 +157,13 @@ preons:
 
     discrete:
       -wire: 1px
+      -xthin: 2px
       -thin: 3px
       -xxxsmall: 5px
       -xxsmall: 7px
       -xsmall: 1rem
       -small: 1.6rem
-      -icon: 3.2rem
+      -icon: 2.4rem
       -medium: 7rem
       -big: 16rem
       -xbig: 22rem
@@ -373,6 +386,12 @@ preons:
       class: ff-
       values:
         raleway: "#{Raleway, sans-serif}"
+        exo: "#{Exo, sans-serif}"
+        josefin: "#{'Josefin Sans', sans-serif}"
+        kanit: "#{'Kanit', sans-serif}"
+        martel: "#{'Martel', serif}"
+        prompt: "#{'Prompt', sans-serif}"
+        roboto-mono: "#{'Roboto Monp', monospace}"
 
     font-size:
       class: fs
@@ -720,6 +739,14 @@ preons:
         between: space-between
         around: space-around
         stretch: stretch
+
+    box-shadow:
+      class: bxsh-
+      values:
+        active: "0px 3px 5px #bb9d07"
+        actived: "0px 1px 8px #77660e"
+        dark: "0px 3px 5px #0a0913"
+        darkl: "0px 3px 5px #6c67a0"
 
   # Preon breakpoints
   breakpoints:

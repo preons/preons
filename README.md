@@ -71,6 +71,13 @@ This project uses [SemVer](http://semver.org/) for versioning and [Intuit's Auto
 - [Intuit's Auto](https://intuit.github.io/auto/) for making releases easier
 - [Adam Moore & Tachyons](https://tachyons.io/) for creating their wonderful library
 
+## Contributing
+
+Thank you for your desire to contribute. All you have to do is create a PR. Note the following conventions:
+
+- This project uses [Angular commit conventions](https://github.com/conventional-changelog/commitlint/tree/master/@commitlint/config-angular). As it's in version experimental, prefix your commits with `fix: `.
+
+
 ## 🔖 Licence
 
 You are free to modify and do as you choose to this library however, it uses [GPLv2.1](#LICENSE) to keep it free for all into the future. Of course, you can commercialize your product where this library is part of a larger piece of work and is merely a dependency.
