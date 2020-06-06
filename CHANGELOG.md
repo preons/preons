@@ -1,3 +1,44 @@
+# v0.3.40 (Sat Jun 06 2020)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Gemma Black ([@gemmadlou](https://github.com/gemmadlou)), for all your work!
+
+#### 🐛 Bug Fix
+
+- fix: additional neutral color ([@gemmadlou](https://github.com/gemmadlou))
+
+#### ⚠️ Pushed to `master`
+
+- 0.3.39 ([@gemmadlou](https://github.com/gemmadlou))
+
+#### Authors: 1
+
+- Gemma Black ([@gemmadlou](https://github.com/gemmadlou))
+
+---
+
+# v0.3.39 (Sat Jun 06 2020)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Gemma Black ([@gemmadlou](https://github.com/gemmadlou)), for all your work!
+
+#### 🐛 Bug Fix
+
+- fix: add commit linting as pre-commit hook ([@gemmadlou](https://github.com/gemmadlou))
+- fix: move more documentation to website version ([@gemmadlou](https://github.com/gemmadlou))
+
+#### ⚠️ Pushed to `master`
+
+- 0.3.38 ([@gemmadlou](https://github.com/gemmadlou))
+
+#### Authors: 1
+
+- Gemma Black ([@gemmadlou](https://github.com/gemmadlou))
+
+---
+
 # v0.3.38 (Tue Jun 02 2020)
 
 :tada: This release contains work from a new contributor! :tada:

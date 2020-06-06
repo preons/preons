@@ -3,53 +3,68 @@ preons:
 
   rules:
     theme-colors:
-      black: "#302f31"
-      blue: "#2889ea"
-      white: "#fefeff"
-      greenxl: "#00ce00"
-      greenl: "#00a700"
-      green: "#008000"
-      greend: "#006c00"
-      greenxd: "#005900"
-      greyxl: "#f9f8fb"
-      greyl: "#dedbe2"
-      grey: "#9c97a7"
-      greyd: "#6a696f"
-      greyxd: "#4d4c51"
-      lilacd: "#a992de"
-      lilac: "#c4b4ea"
-      lilacl: "#e6dff7"
-      limexl: "#c4f493"
-      limel: "#a6ef5e"
-      lime: "#89ea28"
-      limed: "#6cc413"
-      limexd: "#4e8e0e"
-      orangexl: "#f4c493"
-      orangel: "#efa65e"
-      orange: "#ea8928"
-      oranged: "#d67515"
-      orangexd: "#b26211"
-      purplexl: "#c493f4"
-      purplel: "#a65eef"
-      purple: "#8928ea"
-      purpled: "#6c13c4"
-      purplexd: "#5810a0"
-      transparent: "transparent"
-      redxl: "#f3a6a6"
-      redl: "#ec7272"
-      red: "#e53e3e"
-      redd: "#cd1c1c"
-      redxd: "#991515"
-      hotpinkxl: "#f3d7e8"
-      hotpinkl: "#e872ae"
+      black: "#100d2b"
+      white: "#fdfdff"
+      dark: "#211c4c"
+      light: "#f0f2ff"
+      layout: "#3634b5"
+      neutral: "#464079"
+      neutrald: "#302a61"
+      neutrall: "#c4c8e8"
+      error: "#f13b3b"
+      success: "#28d0b1"
+      disabledd: "#5a5573"
+      disabledl: "#b2b6ca"
+      activexl: "#ffe76e"
+      activel: "#f9d41e"
+      active: "#d4b936"
+      actived: "#a99535"
+      activexd: "#73641b"
+      hotpinkxl: "#f188bc"
+      hotpinkl: "#f36fb0"
       hotpink: "#ea2889"
-      hotpinkd: "#d61575"
-      hotpinkxd: "##b21162"
+      hotpinkd: "#cc0f6d"
+      hotpinkxd: "#900148"
+      transparent: transparent
+      greyxl: "#f0f2ff"
+      greyl: "#dedbe2"
+      grey: "#b2b6ca"
+      greyd: "#5a5573"
+      greyxd: "#4d4c51"
       yellowxl: "#f8f8b7"
       yellowl: "#f1f16f"
       yellow: "#eaea28"
       yellowd: "#d6d615"
       yellowxd: "#b2b211"
+      redxl: "#f3a6a6"
+      redl: "#ec7272"
+      red: "#e53e3e"
+      redd: "#cd1c1c"
+      redxd: "#991515"
+      purplexl: "#c493f4"
+      purplel: "#a65eef"
+      purple: "#8928ea"
+      purpled: "#6c13c4"
+      purplexd: "#5810a0"
+      orangexl: "#f4c493"
+      orangel: "#efa65e"
+      orange: "#ea8928"
+      oranged: "#d67515"
+      orangexd: "#b26211"
+      limexl: "#c4f493"
+      limel: "#a6ef5e"
+      lime: "#89ea28"
+      limed: "#6cc413"
+      limexd: "#4e8e0e"
+      lilacd: "#a992de"
+      lilac: "#c4b4ea"
+      lilacl: "#e6dff7"
+      greenxl: "#00ce00"
+      greenl: "#00a700"
+      green: "#008000"
+      greend: "#006c00"
+      greenxd: "#005900"
+      blue: "#2889ea"
 
     border-style:
       solid: solid
@@ -179,12 +194,13 @@ preons:
 
     discrete:
       -wire: 1px
+      -xthin: 2px
       -thin: 3px
       -xxxsmall: 5px
       -xxsmall: 7px
       -xsmall: 1rem
       -small: 1.6rem
-      -icon: 3.2rem
+      -icon: 2.4rem
       -medium: 7rem
       -big: 16rem
       -xbig: 22rem
@@ -407,6 +423,12 @@ preons:
       class: ff-
       values:
         raleway: "#{Raleway, sans-serif}"
+        exo: "#{Exo, sans-serif}"
+        josefin: "#{'Josefin Sans', sans-serif}"
+        kanit: "#{'Kanit', sans-serif}"
+        martel: "#{'Martel', serif}"
+        prompt: "#{'Prompt', sans-serif}"
+        roboto-mono: "#{'Roboto Monp', monospace}"
 
     font-size:
       class: fs
@@ -754,6 +776,14 @@ preons:
         between: space-between
         around: space-around
         stretch: stretch
+
+    box-shadow:
+      class: bxsh-
+      values:
+        active: "0px 3px 5px #bb9d07"
+        actived: "0px 1px 8px #77660e"
+        dark: "0px 3px 5px #0a0913"
+        darkl: "0px 3px 5px #6c67a0"
 
   # Preon breakpoints
   breakpoints:
