@@ -1,3 +1,23 @@
+# v0.3.42 (Tue Jun 09 2020)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Gemma Black ([@gemmadlou](https://github.com/gemmadlou)), for all your work!
+
+#### 🐛 Bug Fix
+
+- fix: transforms ([@gemmadlou](https://github.com/gemmadlou))
+
+#### ⚠️ Pushed to `master`
+
+- 0.3.41 ([@gemmadlou](https://github.com/gemmadlou))
+
+#### Authors: 1
+
+- Gemma Black ([@gemmadlou](https://github.com/gemmadlou))
+
+---
+
 # v0.3.41 (Sat Jun 06 2020)
 
 :tada: This release contains work from new contributors! :tada:
