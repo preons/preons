@@ -679,6 +679,10 @@ preons:
       class: tf
       rule: text
 
+    transform:
+      class: tr
+      rule: transforms
+
     vertical-align:
       class: va-
       values:
