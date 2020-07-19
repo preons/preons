@@ -22,7 +22,7 @@ Afterwards, that config can be tweaked and/or converted into a stylesheet again 
 preons stylesheet your.preons.yaml
 ```
 
-## Piping
+## Piping
 
 The intermediate config file can be skipped and the CSS be generated automatically. This is more to highlight the flexibility of the CLI tool rather than there being a real use case.
 
@@ -30,7 +30,7 @@ The intermediate config file can be skipped and the CSS be generated automatical
 preons translate tachyons.css | preons stylesheet > generated.css
 ```
 
-## Principles
+## Principles
 
 The reverse generator doesn't try to interpret unique rules at each breakpoint. Only the mobile breakpoint gets converted. Also, it doesn't try to create styles with multiple rules. That's a convention in Preons. But there's nothing stopping preons from having composable types in future.
 
