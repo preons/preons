@@ -1,3 +1,15 @@
+# v0.3.45 (Sun Jul 19 2020)
+
+#### 🐛 Bug Fix
+
+- Pre commit hooks [#17](https://github.com/preons/preons/pull/17) ([@gemmadlou](https://github.com/gemmadlou))
+
+#### Authors: 1
+
+- Gemma Black ([@gemmadlou](https://github.com/gemmadlou))
+
+---
+
 # v0.3.44 (Sun Jul 19 2020)
 
 :tada: This release contains work from a new contributor! :tada:
