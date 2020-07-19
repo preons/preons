@@ -1,11 +1,12 @@
 const translate = require("./");
 const fs = require("fs");
 const path = require("path");
-const css = fs.readFileSync(path.resolve(__dirname, "index.example.css"), {
-  encoding: "utf8",
-});
 
-it("should extract a class with a single css property", async () => {
+it("should extract classes with a single css property", async () => {
+  const css = fs.readFileSync(path.resolve(__dirname, "examples", "simple.css"), {
+    encoding: "utf8",
+  });
+
   let translated = await translate(css);
 
   expect(translated).toEqual({
@@ -14,16 +15,10 @@ it("should extract a class with a single css property", async () => {
       properties: {
         display: {
           class: "",
-          values: { db: "block", flex: "flex", "inline-flex": "inline-flex" },
-        },
-        right: {
-          class: "",
           values: {
-            "right-0": "0",
-            "right-1": "1rem",
-            "right-2": "2rem",
-            "right--1": "-1rem",
-            "right--2": "-2rem",
+            db: "block",
+            flex: "flex",
+            "inline-flex": "inline-flex"
           },
         },
         top: {
@@ -36,30 +31,47 @@ it("should extract a class with a single css property", async () => {
             "top--2": "-2rem",
           },
         },
-        left: {
+        flex: {
           class: "",
           values: {
-            "left-0": "0",
-            "left-1": "1rem",
-            "left-2": "2rem",
-            "left--1": "-1rem",
-            "left--2": "-2rem",
-          },
+            "flex-none": "none"
+          }
         },
-        flex: { class: "", values: { "flex-none": "none" } },
-        "flex-direction": { class: "", values: { "flex-column": "column" } },
-        bottom: {
+        "flex-direction": {
           class: "",
           values: {
-            "bottom-0": "0",
-            "bottom-1": "1rem",
-            "bottom-2": "2rem",
-            "bottom--1": "-1rem",
-            "bottom--2": "-2rem",
-          },
-        },
+            "flex-column": "column"
+          }
+        }
       },
-      breakpoints: [],
+      breakpoints: {},
     },
   });
 });
+
+it.each([
+  ["breakpoints.css", {m: '768px', l: '1200px'}],
+  ["breakpoints-em.css", {m: '30em', l: '80em'}],
+  ["breakpoints-minified.css", {m: '60em'}]
+])("should extract all breakpoints", async (file, breakpoints) => {
+  const css = fs.readFileSync(path.resolve(__dirname, "examples", file), {
+    encoding: "utf8",
+  });
+
+  let translated = await translate(css);
+
+  expect(translated).toEqual({
+    preons: {
+      rules: {},
+      properties: {
+        display: {
+          class: "",
+          values: {
+            db: "block"
+          },
+        }
+      },
+      breakpoints
+    },
+  });
+})

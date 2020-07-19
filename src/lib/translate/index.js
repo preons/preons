@@ -42,8 +42,33 @@ const groupByProperty = (acc, cur) => {
     return acc;
 };
 
+const breakpoints = ['m', 'l', 'xl', 'xxl']
+
+const getMobileUpMediaQueries = (string) => {
+    let regex = /\@media[\w\s]+\([\w-]+:([\s]+)?(\d+)(px|rem|em)\)([\s]+)?\{/img
+    let regex2 = /\@media[\w\s]+\([\w-]+:([\s]+)?(\d+)(px|rem|em)\)([\s]+)?\{/i
+
+    let output = string.match(regex);
+    if (Array.isArray(output)) {
+        let mapped = output.map(i => {
+                let num = i.match(regex2)
+                if (num) {
+                    return `${num[2]}${num[3]}`
+                }
+            })
+            .filter(i => i)
+            .reduce((acc, current, index) => {
+                acc[breakpoints[index]] = current;
+                return acc
+            }, {})
+        return mapped
+    }
+
+    return {}
+}
+
 /**
- * @param {string} css
+ * @param {string} css string file
  * @return {Promise<object>}
  */
 module.exports = async (css) => {
@@ -53,11 +78,13 @@ module.exports = async (css) => {
 
     let grouped = mapped.reduce(groupByProperty, {});
 
+    let mediaQueries = getMobileUpMediaQueries(css)
+
     return {
         preons: {
             rules: {},
             properties: grouped,
-            breakpoints: []
+            breakpoints: mediaQueries
         },
     };
 };
