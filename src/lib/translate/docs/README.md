@@ -2,6 +2,8 @@
 
 The translator will take a css file, and convert it into the preons.yaml. This means users who didn't start with preons can migrate easily. Once migrated, they can generate their own documentation also from the preons config. It's also easier to make changes and generate a stylesheet once again.
 
+[![asciicast](https://asciinema.org/a/348405.svg)](https://asciinema.org/a/348405)
+
 ## How to use it
 
 ```bash
@@ -30,7 +32,7 @@ preons translate tachyons.css | preons stylesheet > generated.css
 
 ## Principles
 
-The reverse generator doesn't try to interpret unique rules at each breakpoint. Only the mobile breakpoint gets converted. Also, it doesn't try to create styles with multiple rules. That's a convention in Preons. But there's nothing stopping preons from having composible types in future.
+The reverse generator doesn't try to interpret unique rules at each breakpoint. Only the mobile breakpoint gets converted. Also, it doesn't try to create styles with multiple rules. That's a convention in Preons. But there's nothing stopping preons from having composable types in future.
 
 ## Notes
 
