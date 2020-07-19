@@ -1,66 +1,86 @@
 {
-  "name": "preons",
-  "version": "0.3.44",
-  "description": "Functional css library and utility belt",
-  "main": "index.js",
-  "bin": "src/console/preons",
-  "directories": {
-    "doc": "docs"
-  },
-  "scripts": {
-    "test": "jest",
-    "release": "auto shipit",
-    "prepare": "src/console/preons stylesheet > dist/preons.css && src/console/preons stylesheet --scss > dist/preons.scss && src/console/preons config -m > dist/preons-config.min.json && src/console/preons config > dist/preons-config.json"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/preons/preons.git"
-  },
-  "author": "Gemma Black",
-  "license": "SEE LICENSE IN LICENSE",
-  "bugs": {
-    "url": "https://github.com/preons/preons/issues"
-  },
-  "homepage": "https://github.com/preons/preons#readme",
-  "devDependencies": {
-    "@auto-it/all-contributors": "^9.31.1",
-    "@auto-it/conventional-commits": "^9.31.1",
-    "@auto-it/exec": "^9.31.1",
-    "@auto-it/first-time-contributor": "^9.31.1",
-    "@auto-it/git-tag": "^9.31.1",
-    "@auto-it/npm": "^9.31.1",
-    "@auto-it/released": "^9.31.1",
-    "@types/jest": "^25.2.3",
-    "all-contributors-cli": "^6.14.2",
-    "auto": "^9.31.1",
-    "husky": "^4.2.5"
-  },
-  "dependencies": {
-    "@commitlint/cli": "^8.3.5",
-    "@commitlint/config-angular": "^8.3.4",
-    "command-line-args": "^5.1.1",
-    "commander": "^5.1.0",
-    "cssom": "^0.4.4",
-    "jest": "^26.0.1",
-    "markdown-table": "^2.0.0",
-    "prettier": "^2.0.5",
-    "sass": "^1.26.5",
-    "strip-indent": "^3.0.0",
-    "yaml": "^1.9.2"
-  },
-  "files": [
-    "config",
-    "dist",
-    "src/console",
-    "src/scss"
-  ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn test",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    "name": "preons",
+    "version": "0.3.44",
+    "description": "Functional css library and utility belt",
+    "main": "index.js",
+    "bin": "src/console/preons",
+    "directories": {
+        "doc": "docs"
+    },
+    "scripts": {
+        "test": "jest",
+        "release": "auto shipit",
+        "prepare": "src/console/preons stylesheet > dist/preons.css && src/console/preons stylesheet --scss > dist/preons.scss && src/console/preons config -m > dist/preons-config.min.json && src/console/preons config > dist/preons-config.json",
+        "lint": "eslint src",
+        "typecheck": "tsc"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/preons/preons.git"
+    },
+    "author": "Gemma Black",
+    "license": "SEE LICENSE IN LICENSE",
+    "bugs": {
+        "url": "https://github.com/preons/preons/issues"
+    },
+    "homepage": "https://github.com/preons/preons#readme",
+    "devDependencies": {
+        "@auto-it/all-contributors": "^9.31.1",
+        "@auto-it/conventional-commits": "^9.31.1",
+        "@auto-it/exec": "^9.31.1",
+        "@auto-it/first-time-contributor": "^9.31.1",
+        "@auto-it/git-tag": "^9.31.1",
+        "@auto-it/npm": "^9.31.1",
+        "@auto-it/released": "^9.31.1",
+        "@types/jest": "^25.2.3",
+        "all-contributors-cli": "^6.14.2",
+        "auto": "^9.31.1",
+        "eslint": "^7.5.0",
+        "eslint-plugin-jsdoc": "^30.0.0",
+        "husky": "^4.2.5",
+        "lint-staged": "^10.2.11",
+        "typescript": "^3.9.7"
+    },
+    "dependencies": {
+        "@commitlint/cli": "^8.3.5",
+        "@commitlint/config-angular": "^8.3.4",
+        "@types/cssom": "^0.4.1",
+        "command-line-args": "^5.1.1",
+        "commander": "^5.1.0",
+        "cssom": "^0.4.4",
+        "jest": "^26.0.1",
+        "markdown-table": "^2.0.0",
+        "prettier": "^2.0.5",
+        "sass": "^1.26.5",
+        "strip-indent": "^3.0.0",
+        "yaml": "^1.9.2"
+    },
+    "files": [
+        "config",
+        "dist",
+        "src/console",
+        "src/scss"
+    ],
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged && yarn typecheck && yarn test",
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+        }
+    },
+    "eslintIgnore": [
+        "**/*.test.js"
+    ],
+    "lint-staged": {
+        "*.{js,css,json,md}": [
+            "prettier --write",
+            "git add"
+        ],
+        "*.js": [
+            "eslint --fix",
+            "git add"
+        ]
+    },
+    "engines": {
+        "node": ">=10.0.0"
     }
-  },
-  "engines": {
-    "node": ">=10.0.0"
-  }
 }
