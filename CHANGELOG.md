@@ -1,3 +1,19 @@
+# v0.4.0 (Tue Jul 28 2020)
+
+#### 🚀 Enhancement
+
+- feat: major preon config convention changes ([@gemmadlou](https://github.com/gemmadlou))
+
+#### ⚠️ Pushed to `master`
+
+- 0.3.45 ([@gemmadlou](https://github.com/gemmadlou))
+
+#### Authors: 1
+
+- Gemma Black ([@gemmadlou](https://github.com/gemmadlou))
+
+---
+
 # v0.3.45 (Sun Jul 19 2020)
 
 #### 🐛 Bug Fix
