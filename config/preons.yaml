@@ -4,22 +4,7 @@ preons:
   rules:
     theme-colors:
       black: "#100d2b"
-      white: "#fdfdff"
-      dark: "#211c4c"
-      light: "#f0f2ff"
-      layout: "#3634b5"
-      neutral: "#464079"
-      neutrald: "#302a61"
-      neutrall: "#c4c8e8"
-      error: "#f13b3b"
-      success: "#28d0b1"
-      disabledd: "#5a5573"
-      disabledl: "#b2b6ca"
-      activexl: "#ffe76e"
-      activel: "#f9d41e"
-      active: "#d4b936"
-      actived: "#a99535"
-      activexd: "#73641b"
+      white: "#ffffff"
       hotpinkxl: "#f188bc"
       hotpinkl: "#f36fb0"
       hotpink: "#ea2889"
@@ -105,31 +90,31 @@ preons:
       12: $baseline * 12
 
     negative-scaled:
-      n1: -1rem
-      n2: -2rem
-      n3: -3rem
-      n4: -4rem
-      n5: -5rem
-      n6: -6rem
-      n7: -7rem
-      n8: -8rem
-      n9: -9rem
-      n10: -10rem
+      1x: -1rem
+      2x: -2rem
+      3x: -3rem
+      4x: -4rem
+      5x: -5rem
+      6x: -6rem
+      7x: -7rem
+      8x: -8rem
+      9x: -9rem
+      10x: -10rem
 
     # For font line-heights
     baselined:
-      -2: $baseline * 0.5
-      -1: $baseline * 1
-      0: $baseline * 1.5
-      1: $baseline * 2
-      2: $baseline * 2.5
-      3: $baseline * 3
-      -large: 4rem
-      4: $baseline * 4
-      5: $baseline * 5
-      6: $baseline * 6
-      7: $baseline * 6.5
-      8: $baseline * 7.5
+      1: $baseline * 0.5
+      2: $baseline * 1
+      3: $baseline * 1.5
+      4: $baseline * 2
+      5: $baseline * 2.5
+      6: $baseline * 3
+      7: $baseline * 3.5
+      8: $baseline * 4
+      9: $baseline * 4.5
+      10: $baseline * 5
+      11: $baseline * 5.5
+      12: $baseline * 6
 
     decimal:
       0: 0
@@ -181,7 +166,7 @@ preons:
       -12-12: 100% / 12 * 12
 
     special-sizes:
-      x: none
+      n: none
       -au: auto
 
     tiny:
@@ -191,11 +176,16 @@ preons:
       3: 3px
       4: 4px
       5: 5px
+      6: 6px
+      7: 7px
+      8: 8px
+      9: 9px
+      10: 10px
 
     discrete:
       -wire: 1px
-      -xthin: 2px
-      -thin: 3px
+      -xxthin: 2px
+      -xthin: 3px
       -xxxsmall: 5px
       -xxsmall: 7px
       -xsmall: 1rem
@@ -236,27 +226,14 @@ preons:
       -100vw: 100vw
 
     negative-discrete:
-      -nbig: -16rem
-      -nxbig: 22rem
-      -nxxbig: -32rem
-      -nxxxbig: -44rem
-      -nsuper: -56rem
-      -nxsuper: -68rem
-      -nxxsuper: -80rem
-      -nxxxsuper: -100rem
-
-    numbers:
-      1: 1
-      2: 2
-      3: 3
-      4: 4
-      5: 5
-
-    text:
-      x: none
-      u: uppercase
-      c: capitalize
-      l: lowercase
+      -bigx: -16rem
+      -xbigx: 22rem
+      -xxbigx: -32rem
+      -xxxbigx: -44rem
+      -superx: -56rem
+      -xsuperx: -68rem
+      -xxsuperx: -80rem
+      -xxxsuperx: -100rem
 
     alignment:
       center: center
@@ -264,33 +241,40 @@ preons:
       left: left
 
     transforms:
-      translate-x50n: translateX(-50%)
-      translate-y50n: translateY(-50%)
-      translate-50n: translate(-50%, -50%)
+      translate-x50x: translateX(-50%)
+      translate-y50x: translateY(-50%)
+      translate-50x: translate(-50%, -50%)
       performance: translate3d(0,0,0)
 
-  properties:
-    background-image:
-      class: bgi-
-      values:
-        trans-to-blue: linear-gradient(0, rgb(30, 21, 58) 10%, rgb(41, 32, 70) 40%, rgba(9,9,121,0) 100%)
-        trans-to-pink: linear-gradient(41deg, rgba(255,255,255,1) 12%, rgba(234,40,137,1) 100%)
+    override:
+      0: 0
+      1: 1
+      2: 2
+      3: 3
+      4: 4
+      5: 5
+      10: 10
+      20: 20
+      30: 30
+      999: 999
+      9999: 9999
 
+  properties:
     background-attachment:
       class: bga-
       values:
-        s: scroll
-        f: fixed
-        l: local
-        i: initial
-        x: inherit
+        sc: scroll
+        fi: fixed
+        lo: local
+        in: initial
+        inherit: inherit
 
     background-color:
       class: bg-
       rule: theme-colors
 
     background-position:
-      class: bgp
+      class: bgp-
       rule: alignment
 
     background-position-x:
@@ -305,8 +289,8 @@ preons:
       class: bgr-
       values:
         rx: repeat-x
-        r: repeat
-        s: space
+        rp: repeat
+        sp: space
         ro: round
         nr: no-repeat
 
@@ -402,15 +386,15 @@ preons:
         grab: grab
 
     display:
-      class: d
+      class: d-
       values:
-        b: block
-        i: inline
-        ib: inline-block
-        t: table
-        f: flex
-        ifl: inline-flex
-        n: none
+        bl: block
+        in: inline
+        inbl: inline-block
+        ta: table
+        fl: flex
+        infl: inline-flex
+        no: none
 
     float:
       class: fl
@@ -433,22 +417,22 @@ preons:
     font-size:
       class: fs
       values:
-        -2: .90rem
-        -1: 1.2rem
-        0: 1.60rem
-        1: 2.133rem
-        2: 2.843rem
-        3: 3.790rem
-        4: 5.522rem
-        5: 6.734rem
-        6: 8.976rem
-        7: 11.966rem
+        1: .90rem
+        2: 1.2rem
+        3: 1.60rem
+        4: 2.133rem
+        5: 2.843rem
+        6: 3.790rem
+        7: 5.522rem
+        8: 6.734rem
+        9: 8.976rem
+        10: 11.966rem
 
     font-style:
-      class: fx
+      class: fst-
       values:
-        n: normal
-        i: italic
+        no: normal
+        it: italic
 
     font-weight:
       class: fw
@@ -456,7 +440,15 @@ preons:
         l: 300
         n: 400
         b: 700
-        xb: 900
+        1: 100
+        2: 200
+        3: 300
+        4: 400
+        5: 500
+        6: 600
+        7: 700
+        8: 800
+        9: 900
 
     height:
       class: h
@@ -668,16 +660,20 @@ preons:
       rule: alignment
 
     text-decoration:
-      class: td
+      class: td-
       values:
-        x: none
-        u: underline
+        no: none
+        un: underline
 
     text-indent: null
 
     text-transform:
-      class: tf
-      rule: text
+      class: tt-
+      values:
+        no: none
+        up: uppercase
+        ca: capitalize
+        lo: lowercase
 
     transform:
       class: tr-
@@ -686,9 +682,9 @@ preons:
     vertical-align:
       class: va-
       values:
-        b: bottom
-        m: middle
-        t: top
+        bo: bottom
+        mi: middle
+        to: top
 
     visibility:
       class: v-
@@ -697,8 +693,8 @@ preons:
         visible: visible
 
     z-index:
-      class: z-
-      rule: numbers
+      class: z
+      rule: override
 
     flex-basis:
       class: basis
@@ -716,19 +712,13 @@ preons:
 
     flex-grow:
       class: grow-
-      values:
-        0: 0
-        1: 1
-        10: 10
-        20: 20
+      rule:
+        - override
 
     flex-shrink:
       class: shrink-
-      values:
-        0: 0
-        1: 1
-        10: 10
-        20: 20
+      rule:
+        - override
 
     flex-wrap:
       class:
@@ -738,13 +728,13 @@ preons:
         wrap-reverse: wrap-reverse
 
     box-sizing:
-      class:
+      class: box-
       values:
-        b: border-box
-        c: content-box
+        bo: border-box
+        co: content-box
 
     align-items:
-      class: items-
+      class: ai-
       values:
         start: flex-start
         end: flex-end
@@ -753,7 +743,7 @@ preons:
         stretch: stretch
 
     align-self:
-      class: self-
+      class: as-
       values:
         start: flex-start
         end: flex-end
@@ -761,8 +751,8 @@ preons:
         baseline: baseline
         stretch: stretch
 
-    justify-content:
-      class: justify-
+    align-content:
+      class: ac-
       values:
         start: flex-start
         end: flex-end
@@ -771,8 +761,26 @@ preons:
         around: space-around
         stretch: stretch
 
-    align-content:
-      class: content-
+    justify-items:
+      class: ji-
+      values:
+        start: flex-start
+        end: flex-end
+        center: center
+        baseline: baseline
+        stretch: stretch
+
+    justify-self:
+      class: js-
+      values:
+        start: flex-start
+        end: flex-end
+        center: center
+        baseline: baseline
+        stretch: stretch
+
+    justify-content:
+      class: jc-
       values:
         start: flex-start
         end: flex-end
