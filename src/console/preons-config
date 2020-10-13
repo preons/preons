@@ -1,71 +1,93 @@
 #!/usr/bin/env node
 
-const program = require("commander");
-const yaml = require("yaml");
-const path = require("path");
-const fs = require("fs");
+const program = require("commander")
+const yaml = require("yaml")
+const path = require("path")
+const fs = require("fs")
+const pather = require("../lib/pather/index")
 
-const log = console.info;
-const error = console.error;
+const log = console.info
+const error = console.error
 
 program
+    .usage("preons config [path/to/file] [options]")
     .option("-m, --minify", "Minifies json config generation")
-    .parse(process.argv);
-
-(async () => {
+    .parse(process.argv)
+;(async () => {
     try {
-        let defaultFile = path.join(__dirname, "..", "..", "config", "preons.yaml");
+        let defaultFile = path.join(
+            __dirname,
+            "..",
+            "..",
+            "config",
+            "preons.yaml"
+        )
 
-        let file = program.input ?
-            path.join(process.cwd(), ...program.input.toString().split("/")) :
-            defaultFile;
+        let file = pather.getAbsolute(program.args[0] || defaultFile)
 
-        let contents = fs.readFileSync(file, "utf8");
-        let set = yaml.parse(contents);
+        let contents = fs.readFileSync(file, "utf8")
+        let set = yaml.parse(contents)
 
         Object.entries(set.preons.properties).forEach(([property, options]) => {
-
-            if (options && options['rule'] && Array.isArray(options['rule'])) {
-                let rules = options['rule'].map(rule => {
+            if (options && options["rule"] && Array.isArray(options["rule"])) {
+                let rules = options["rule"].map((rule) => {
                     return set.preons.rules[rule]
                 })
-                set.preons.properties[property]['values'] = rules.reduce((arr, cur) => {
-                    return {
-                        ...arr,
-                        ...cur
-                    }
-                }, {})
-                set.preons.properties[property]['mappings'] = rules.reduce((arr, cur) => {
-                    let mapped = Object.keys(set.preons.properties[property]['values']).reduce((arr, key) => {
-                        arr[options['class'] ? `${options['class']}${key}` : key] = set.preons.properties[property]['values'][key]
-                        return arr
-                    }, {})
-                    return {
-                        ...arr,
-                        ...mapped
-                    }
-                }, {})
-            } else if (options && options['rule']) {
-                set.preons.properties[property]['values'] = set.preons.rules[options['rule']]
-                set.preons.properties[property]['mappings'] = Object.keys(set.preons.properties[property]['values']).reduce((arr, key) => {
-                    arr[options['class'] ? `${options['class']}${key}` : key] = set.preons.properties[property]['values'][key]
+                set.preons.properties[property]["values"] = rules.reduce(
+                    (arr, cur) => {
+                        return {
+                            ...arr,
+                            ...cur,
+                        }
+                    },
+                    {}
+                )
+                set.preons.properties[property]["mappings"] = rules.reduce(
+                    (arr, cur) => {
+                        let mapped = Object.keys(
+                            set.preons.properties[property]["values"]
+                        ).reduce((arr, key) => {
+                            arr[
+                                options["class"]
+                                    ? `${options["class"]}${key}`
+                                    : key
+                            ] = set.preons.properties[property]["values"][key]
+                            return arr
+                        }, {})
+                        return {
+                            ...arr,
+                            ...mapped,
+                        }
+                    },
+                    {}
+                )
+            } else if (options && options["rule"]) {
+                set.preons.properties[property]["values"] =
+                    set.preons.rules[options["rule"]]
+                set.preons.properties[property]["mappings"] = Object.keys(
+                    set.preons.properties[property]["values"]
+                ).reduce((arr, key) => {
+                    arr[options["class"] ? `${options["class"]}${key}` : key] =
+                        set.preons.properties[property]["values"][key]
                     return arr
                 }, {})
-            } else if (options && options['values']) {
-                set.preons.properties[property]['mappings'] = Object.keys(set.preons.properties[property]['values']).reduce((arr, key) => {
-                    arr[options['class'] ? `${options['class']}${key}` : key] = set.preons.properties[property]['values'][key]
+            } else if (options && options["values"]) {
+                set.preons.properties[property]["mappings"] = Object.keys(
+                    set.preons.properties[property]["values"]
+                ).reduce((arr, key) => {
+                    arr[options["class"] ? `${options["class"]}${key}` : key] =
+                        set.preons.properties[property]["values"][key]
                     return arr
                 }, {})
             }
         })
 
-        if (program['minify']) {
-            return log(JSON.stringify(set));
+        if (program["minify"]) {
+            return log(JSON.stringify(set))
         }
 
-        log(JSON.stringify(set, null, 4));
-
+        log(JSON.stringify(set, null, 4))
     } catch (e) {
-        error(e.message);
+        error(e.message)
     }
-})();
+})()

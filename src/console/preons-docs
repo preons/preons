@@ -1,67 +1,65 @@
 #!/usr/bin/env node
 
-const program = require("commander");
-const toTable = require("markdown-table");
-const {
-  exec
-} = require("child_process");
-const util = require("util");
-const pExec = util.promisify(exec);
-const strip = require("strip-indent");
+const program = require("commander")
+const toTable = require("markdown-table")
+const { exec } = require("child_process")
+const util = require("util")
+const pExec = util.promisify(exec)
+const strip = require("strip-indent")
 const fs = require("fs")
 const path = require("path")
 
-const log = console.info;
-const error = console.error;
+const log = console.info
+const error = console.error
 
 program
-  .option("-d, --html", "Creates an html reference page")
-  .parse(process.argv);
+    .option("-d, --html", "Creates a html reference page")
+    .parse(process.argv)
 
 const generateTable = (set) => {
-  let tables = Object.keys(set.preons.properties)
-    .filter((property) => set.preons.properties[property])
-    .map((property, index) => {
-      let mappings = Object.entries(
-        set.preons.properties[property].mappings
-      ).reduce(
-        (acc, entry) => {
-          acc.push([...entry]);
-          return acc;
-        },
-        [
-          ["class", "value"]
-        ]
-      );
-      let table = toTable(mappings);
-      return strip(`### ${property}
+    let tables = Object.keys(set.preons.properties)
+        .filter((property) => set.preons.properties[property])
+        .map((property, index) => {
+            let mappings = Object.entries(
+                set.preons.properties[property].mappings
+            ).reduce(
+                (acc, entry) => {
+                    acc.push([...entry])
+                    return acc
+                },
+                [["class", "value"]]
+            )
+            let table = toTable(mappings)
+            return strip(`### ${property}
 
-        ${table}`);
-    })
-    .map((i) => strip(i).replace(/[\s]+\|/, "\n\n|"));
-  return tables.join("\n\n");
+        ${table}`)
+        })
+        .map((i) => strip(i).replace(/[\s]+\|/, "\n\n|"))
+    return tables.join("\n\n")
 }
 
 const generateHtml = (set) => {
-  let contents = fs.readFileSync(path.resolve(__dirname, "../templates/reference.html"), {
-    encoding: "utf8"
-  })
-  return contents.replace('#jsonRule', JSON.stringify(set));
+    let contents = fs.readFileSync(
+        path.resolve(__dirname, "../templates/reference.html"),
+        {
+            encoding: "utf8",
+        }
+    )
+    return contents.replace("#jsonRule", JSON.stringify(set))
 }
 
-(async () => {
-  try {
-    let {
-      stdout
-    } = await pExec("preons config");
-    let set = JSON.parse(stdout);
-    if (program.html) {
-      return log(generateHtml(set))
-    }
-    let tables = generateTable(set)
+;(async () => {
+    try {
+        let { stdout } = await pExec(`preons config ${program.args[0] || ""}`)
 
-    log(tables);
-  } catch (e) {
-    error(e.message);
-  }
-})();
+        let set = JSON.parse(stdout)
+        if (program.html) {
+            return log(generateHtml(set))
+        }
+        let tables = generateTable(set)
+
+        log(tables)
+    } catch (e) {
+        error(e.message)
+    }
+})()
