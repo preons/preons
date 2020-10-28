@@ -7,22 +7,24 @@ const fs = require("fs")
 
 const blankLineRegex = /^(?=\n)$|^\s*|\s*$|\n\n+/gm
 
-it("should create a css stylesheet from a preons config", async () => {
-    let { stdout } = await pExec(
-        "src/console/preons stylesheet tests/cli/examples/preons-stylesheet-input.yaml"
-    )
+it.each([["preons-stylesheet-input.yaml", "preons-stylesheet-output.css"]])(
+    "converting a preons config into a css file",
+    async (inputFile, outputFile) => {
+        let { stdout } = await pExec(
+            `src/console/preons stylesheet tests/cli/examples/${inputFile}`
+        )
 
-    let result = fs.readFileSync(
-        "tests/cli/examples/preons-stylesheet-output.css",
-        { encoding: "utf-8" }
-    )
+        let result = fs.readFileSync(`tests/cli/examples/${outputFile}`, {
+            encoding: "utf-8",
+        })
 
-    let actual = prettier
-        .format(result, { parser: "css" })
-        .replace(blankLineRegex, "")
-    let expected = prettier
-        .format(stdout, { parser: "css" })
-        .replace(blankLineRegex, "")
+        let actual = prettier
+            .format(result, { parser: "css" })
+            .replace(blankLineRegex, "")
+        let expected = prettier
+            .format(stdout, { parser: "css" })
+            .replace(blankLineRegex, "")
 
-    expect(actual).toEqual(expected)
-})
+        expect(actual).toEqual(expected)
+    }
+)

@@ -78,3 +78,30 @@ it.each([
         },
     })
 })
+
+it.each([["non-singular-style-rules.css"]])(
+    "should split non-singular style rules",
+    async (file) => {
+        const css = fs.readFileSync(path.resolve(__dirname, "examples", file), {
+            encoding: "utf8",
+        })
+
+        let translated = await translate(css)
+
+        expect(translated).toEqual({
+            preons: {
+                rules: {},
+                properties: {
+                    display: {
+                        class: "",
+                        values: {
+                            "leaflet-marker-icon": "block",
+                            "leaflet-marker-shadow": "block",
+                        },
+                    },
+                },
+                breakpoints: {},
+            },
+        })
+    }
+)

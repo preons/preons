@@ -35,6 +35,34 @@ const intoSimpleMap = (property) => {
 }
 
 /**
+ * Splits multi css rules into their own rules.
+ *
+ * @description Given .wp-block,.dlb { display: block: }, it will create two rules.
+ *
+ * @param {Array<Preons.Property|null>} accummulative
+ * @param {Preons.Property} current
+ * @returns {Array<Preons.Property|null>}
+ *
+ */
+const splitByNonSingularCssRules = (accummulative, current) => {
+    let rules = current.class.split(".").filter((x) => x)
+
+    if (rules.length > 1) {
+        rules.forEach((rule) => {
+            accummulative.push({
+                ...current,
+                class: rule.replace(/(\r\n|\n|\r|,)/gm, ""),
+            })
+        })
+    } else {
+        accummulative.push(current)
+    }
+
+    return accummulative
+}
+
+/**
+ * Groups a property object by properties.
  *
  * @param {any} acc
  * @param {object} cur
@@ -58,7 +86,7 @@ const breakpoints = ["m", "l", "xl", "xxl"]
 
 /**
  * Takes a css stylesheet in string form and
- * eturns an object of breakpoints.
+ * returns an object of breakpoints.
  *
  * @example
  *  getMobileUpMediaQueries(stylesheet) - { m: '720px', 'l': '1000px' }
@@ -100,8 +128,12 @@ const getMobileUpMediaQueries = (string) => {
 module.exports = async (css) => {
     let parsed = cssom.parse(css)
 
-    // @ts-ignore
-    let mapped = parsed.cssRules.filter(withSingleStyle).map(intoSimpleMap)
+    let mapped = parsed.cssRules
+        // @ts-ignore
+        .filter(withSingleStyle)
+        // @ts-ignore
+        .map(intoSimpleMap)
+        .reduce(splitByNonSingularCssRules, [])
 
     // @ts-ignore
     let grouped = mapped.reduce(groupByProperty, {})
