@@ -1,0 +1,39 @@
+{
+    "preons": {
+        "rules": {
+            "theme-colors": {
+                "black": "#100d2b",
+                "white": "#ffffff"
+            }
+        },
+        "properties": {
+            "display": {
+                "class": "disp-",
+                "values": {
+                    "bl": "block",
+                    "in": "inline"
+                },
+                "mappings": {
+                    "disp-bl": "block",
+                    "disp-in": "inline"
+                }
+            },
+            "background-color": {
+                "class": "bg-",
+                "rule": "theme-colors",
+                "values": {
+                    "black": "#100d2b",
+                    "white": "#ffffff"
+                },
+                "mappings": {
+                    "bg-black": "#100d2b",
+                    "bg-white": "#ffffff"
+                }
+            }
+        },
+        "breakpoints": {
+            "m": "800px",
+            "l": "1400px"
+        }
+    }
+}

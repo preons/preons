@@ -13,6 +13,7 @@ const log = console.info
 const error = console.error
 
 program
+    .usage("[file] [options]")
     .option("-d, --html", "Creates a html reference page")
     .parse(process.argv)
 
