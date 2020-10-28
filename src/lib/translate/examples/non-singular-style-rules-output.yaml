@@ -1,0 +1,9 @@
+preons:
+    rules: {}
+    properties:
+        display:
+            class: ""
+            values:
+                leaflet-marker-icon: block
+                leaflet-marker-shadow: block
+    breakpoints: {}

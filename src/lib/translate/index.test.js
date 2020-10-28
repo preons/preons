@@ -1,6 +1,7 @@
 const translate = require("./")
 const fs = require("fs")
 const path = require("path")
+const yaml = require("yaml")
 
 it("should extract classes with a single css property", async () => {
     const css = fs.readFileSync(
@@ -79,29 +80,31 @@ it.each([
     })
 })
 
-it.each([["non-singular-style-rules.css"]])(
-    "should split non-singular style rules",
-    async (file) => {
-        const css = fs.readFileSync(path.resolve(__dirname, "examples", file), {
+it.each([
+    [
+        "non-singular-style-rules-input.css",
+        "non-singular-style-rules-output.yaml",
+    ],
+    ["ignore-space-rules-input.css", "ignore-space-rules-output.yaml"],
+    ["ignore-elements-rules-input.css", "ignore-elements-rules-output.yaml"],
+    ["ignore-pseudo-classes-input.css", "ignore-pseudo-classes-output.yaml"],
+])("should split non-singular style rules", async (inputFile, outputFile) => {
+    const css = fs.readFileSync(
+        path.resolve(__dirname, "examples", inputFile),
+        {
             encoding: "utf8",
-        })
+        }
+    )
 
-        let translated = await translate(css)
+    const result = fs.readFileSync(
+        path.resolve(__dirname, "examples", outputFile),
+        {
+            encoding: "utf8",
+        }
+    )
 
-        expect(translated).toEqual({
-            preons: {
-                rules: {},
-                properties: {
-                    display: {
-                        class: "",
-                        values: {
-                            "leaflet-marker-icon": "block",
-                            "leaflet-marker-shadow": "block",
-                        },
-                    },
-                },
-                breakpoints: {},
-            },
-        })
-    }
-)
+    let actual = await translate(css)
+    let expected = yaml.parse(result)
+
+    expect(actual).toEqual(expected)
+})

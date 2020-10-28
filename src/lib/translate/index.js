@@ -39,13 +39,13 @@ const intoSimpleMap = (property) => {
  *
  * @description Given .wp-block,.dlb { display: block: }, it will create two rules.
  *
- * @param {Array<Preons.Property|null>} accummulative
+ * @param {Array<Preons.Property>} accummulative
  * @param {Preons.Property} current
- * @returns {Array<Preons.Property|null>}
+ * @returns {Array<Preons.Property>}
  *
  */
 const splitByNonSingularCssRules = (accummulative, current) => {
-    let rules = current.class.split(".").filter((x) => x)
+    let rules = current.class.split(",").filter((x) => x)
 
     if (rules.length > 1) {
         rules.forEach((rule) => {
@@ -59,6 +59,50 @@ const splitByNonSingularCssRules = (accummulative, current) => {
     }
 
     return accummulative
+}
+
+/**
+ * Removes css rules with spaces in them, as this is not functional.
+ *
+ * @description Given .wp-block ul { display: block: }, it will remove that rule.
+ *
+ * @param {Preons.Property} property
+ * @returns {boolean}
+ *
+ */
+const ignoreCssSpaceRules = (property) => {
+    let isNonFunctionalClass =
+        property.class.includes(" ") ||
+        property.class.includes("+") ||
+        property.class.includes(">") ||
+        property.class.includes("~")
+    return !isNonFunctionalClass
+}
+
+/**
+ * Ignores anything that is not a class.
+ *
+ * @description Given div { display: block: }, it will remove that rule.
+ *
+ * @param {Preons.Property} property
+ * @returns {boolean}
+ *
+ */
+const ignoreElementsCssRule = (property) => {
+    return property.class.includes(".")
+}
+
+/**
+ * Ignores pseudo classes.
+ *
+ * @description Given .box:hover { display: block: }, it will remove that rule.
+ *
+ * @param {Preons.Property} property
+ * @returns {boolean}
+ *
+ */
+const ignorePseudoClassesRule = (property) => {
+    return !property.class.includes(":")
 }
 
 /**
@@ -134,6 +178,9 @@ module.exports = async (css) => {
         // @ts-ignore
         .map(intoSimpleMap)
         .reduce(splitByNonSingularCssRules, [])
+        .filter(ignoreCssSpaceRules)
+        .filter(ignoreElementsCssRule)
+        .filter(ignorePseudoClassesRule)
 
     // @ts-ignore
     let grouped = mapped.reduce(groupByProperty, {})
