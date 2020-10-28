@@ -1,5 +1,7 @@
 # Preons 🛰
 
+[![Build Status](https://travis-ci.com/preons/preons.svg?branch=master)](https://travis-ci.com/preons/preons)
+
 A functional CSS system for building user interfaces 🛰
 
 [Documentation](#-documentation) | [CLI](#-cli) | [Reference](#-reference)
@@ -47,10 +49,10 @@ Thus, we can reuse different sass-maps for several rules. Here's an example use:
 
 ```scss
 @include preonize(
-  "h",
-  width,
-  map-collection(scaled, percentaged, discrete, special-sizes),
-  $breakpoints
+    "h",
+    width,
+    map-collection(scaled, percentaged, discrete, special-sizes),
+    $breakpoints
 );
 ```
 
@@ -68,15 +70,14 @@ This project uses [SemVer](http://semver.org/) for versioning and [Intuit's Auto
 
 ## 🙌 Thank yous
 
-- [Intuit's Auto](https://intuit.github.io/auto/) for making releases easier
-- [Adam Moore & Tachyons](https://tachyons.io/) for creating their wonderful library
+-   [Intuit's Auto](https://intuit.github.io/auto/) for making releases easier
+-   [Adam Moore & Tachyons](https://tachyons.io/) for creating their wonderful library
 
 ## Contributing
 
 Thank you for your desire to contribute. All you have to do is create a PR. Note the following conventions:
 
-- This project uses [Angular commit conventions](https://github.com/conventional-changelog/commitlint/tree/master/@commitlint/config-angular). As it's in version experimental, prefix your commits with `fix: `.
-
+-   This project uses [Angular commit conventions](https://github.com/conventional-changelog/commitlint/tree/master/@commitlint/config-angular). As it's in version experimental, prefix your commits with `fix: `.
 
 ## 🔖 Licence
 
@@ -103,6 +104,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
