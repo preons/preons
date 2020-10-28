@@ -1,0 +1,8 @@
+preons:
+    rules: {}
+    properties:
+        display:
+            class: ""
+            values:
+                article: inline
+    breakpoints: {}

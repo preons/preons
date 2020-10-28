@@ -1,20 +1,17 @@
 #!/usr/bin/env node
 
 if (require.main !== module) {
-  throw new Error("Executable-only module should not be required");
+    throw new Error("Executable-only module should not be required")
 }
 
-const json = require("../../package.json");
+const json = require("../../package.json")
 
-const {
-  program
-} = require("commander");
-program.version(json.version);
+const { program } = require("commander")
+program.version(json.version)
 
-program.command("stylesheet [name]", "Generates a stylesheet");
-program.command("config [name]", "Converts config");
-program.command("docs", "Generate documentation");
-program.command("translate [file]", "Translate css into preons config");
+program.command("stylesheet [name]", "Generates a stylesheet")
+program.command("config [name]", "Converts config")
+program.command("docs", "Generate documentation")
+program.command("translate [file]", "Translate css into preons config")
 
-
-program.parse(process.argv);
+program.parse(process.argv)

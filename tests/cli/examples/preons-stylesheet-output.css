@@ -1,0 +1,51 @@
+.disp-bl {
+    display: block;
+}
+
+.disp-in {
+    display: inline;
+}
+
+@media only screen and (min-width: 800px) {
+    .disp-bl-m {
+        display: block;
+    }
+
+    .disp-in-m {
+        display: inline;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .disp-bl-l {
+        display: block;
+    }
+
+    .disp-in-l {
+        display: inline;
+    }
+}
+.bg-black {
+    background-color: #100d2b;
+}
+.bg-white {
+    background-color: #ffffff;
+}
+@media only screen and (min-width: 800px) {
+    .bg-black-m {
+        background-color: #100d2b;
+    }
+
+    .bg-white-m {
+        background-color: #ffffff;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .bg-black-l {
+        background-color: #100d2b;
+    }
+
+    .bg-white-l {
+        background-color: #ffffff;
+    }
+}

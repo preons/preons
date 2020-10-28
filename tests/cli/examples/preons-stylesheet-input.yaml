@@ -1,0 +1,20 @@
+preons:
+    rules:
+        theme-colors:
+            black: "#100d2b"
+            white: "#ffffff"
+
+    properties:
+        display:
+            class: disp-
+            values:
+                bl: block
+                in: inline
+
+        background-color:
+            class: bg-
+            rule: theme-colors
+
+    breakpoints:
+        m: 800px
+        l: 1200px

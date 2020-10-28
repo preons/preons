@@ -1,0 +1,10 @@
+preons:
+    rules: {}
+    properties:
+        display:
+            class: ""
+            values:
+                db: block
+    breakpoints:
+        m: 768px
+        l: 1200px
