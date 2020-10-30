@@ -96,13 +96,13 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="http://getrentr.com"><img src="https://avatars0.githubusercontent.com/u/4562670?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Gemma Black</b></sub></a><br /><a href="https://github.com/preons/preons/commits?author=gemmadlou" title="Documentation">📖</a> <a href="https://github.com/preons/preons/commits?author=gemmadlou" title="Code">💻</a> <a href="https://github.com/preons/preons/commits?author=gemmadlou" title="Tests">⚠️</a></td>
+    <td align="center"><a href="http://getrentr.com"><img src="https://avatars0.githubusercontent.com/u/4562670?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Gemma Black</b></sub></a><br /><a href="https://github.com/preons/preons/commits?author=gemmadlou" title="Documentation">📖</a> <a href="https://github.com/preons/preons/commits?author=gemmadlou" title="Code">💻</a> <a href="https://github.com/preons/preons/commits?author=gemmadlou" title="Tests">⚠️</a> <a href="#infra-gemmadlou" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
     <td align="center"><a href="https://github.com/pgrimaud"><img src="https://avatars1.githubusercontent.com/u/1866496?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Pierre Grimaud</b></sub></a><br /><a href="https://github.com/preons/preons/commits?author=pgrimaud" title="Documentation">📖</a></td>
     <td align="center"><a href="https://fabiorosado.dev/"><img src="https://avatars0.githubusercontent.com/u/3131401?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Fábio Rosado</b></sub></a><br /><a href="https://github.com/preons/preons/commits?author=FabioRosado" title="Code">💻</a></td>
   </tr>
 </table>
 
-<!-- markdownlint-enable -->
+<!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
