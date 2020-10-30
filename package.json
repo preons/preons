@@ -10,7 +10,7 @@
     "scripts": {
         "test": "jest",
         "release": "auto shipit",
-        "prepare": "src/console/preons stylesheet > dist/preons.css && src/console/preons stylesheet --scss > dist/preons.scss && src/console/preons config -m > dist/preons-config.min.json && src/console/preons config > dist/preons-config.json",
+        "prepare": "src/console/preons stylesheet > dist/preons.css && src/console/preons stylesheet --scss > dist/preons.scss && src/console/preons config -m > dist/preons-config.min.json && src/console/preons config > dist/preons-config.json && preons docs -d > dist/reference.html",
         "lint": "eslint src",
         "typecheck": "tsc"
     },
