@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+- '10'
+script:
+- npm test
+
+addons:
+  apt:
+    packages:
+    - xvfb
+install:
+- npm install
+deploy:
+  skip_cleanup: true
+  provider: npm
+  email: 
+  on:
+    tags: true
+    repo: preons/preons

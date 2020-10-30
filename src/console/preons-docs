@@ -51,7 +51,9 @@ const generateHtml = (set) => {
 
 ;(async () => {
     try {
-        let { stdout } = await pExec(`preons config ${program.args[0] || ""}`)
+        let { stdout } = await pExec(
+            `src/console/preons config ${program.args[0] || ""}`
+        )
 
         let set = JSON.parse(stdout)
         if (program.html) {
