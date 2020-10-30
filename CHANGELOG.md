@@ -1,3 +1,27 @@
+# v0.4.1 (Fri Oct 30 2020)
+
+#### 🐛 Bug Fix
+
+- fix: node package upgrades [#32](https://github.com/preons/preons/pull/32) ([@gemmadlou](https://github.com/gemmadlou))
+- fix: additional translate rules to clean up extra css [#32](https://github.com/preons/preons/pull/32) ([@gemmadlou](https://github.com/gemmadlou))
+- fix: docs test [#32](https://github.com/preons/preons/pull/32) ([@gemmadlou](https://github.com/gemmadlou))
+- fix: config tests [#32](https://github.com/preons/preons/pull/32) ([@gemmadlou](https://github.com/gemmadlou))
+- fix: non-singular css rules resolution [#32](https://github.com/preons/preons/pull/32) ([@gemmadlou](https://github.com/gemmadlou))
+- fix: stylesheet tests with examples [#32](https://github.com/preons/preons/pull/32) ([@gemmadlou](https://github.com/gemmadlou))
+- fix: absolute path resolution utility function [#32](https://github.com/preons/preons/pull/32) ([@gemmadlou](https://github.com/gemmadlou))
+- fix: types test [#32](https://github.com/preons/preons/pull/32) ([@gemmadlou](https://github.com/gemmadlou))
+- 0.4.0 [#32](https://github.com/preons/preons/pull/32) ([@gemmadlou](https://github.com/gemmadlou))
+
+#### ⚠️ Pushed to `master`
+
+- Update issue templates ([@gemmadlou](https://github.com/gemmadlou))
+
+#### Authors: 1
+
+- Gemma Black ([@gemmadlou](https://github.com/gemmadlou))
+
+---
+
 # v0.4.0 (Tue Jul 28 2020)
 
 #### 🚀 Enhancement
