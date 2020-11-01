@@ -1,5 +1,6 @@
 # Preons 🛰
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/4a72e3d4b17b48c7a7bd14c208dd3636)](https://app.codacy.com/gh/preons/preons?utm_source=github.com&utm_medium=referral&utm_content=preons/preons&utm_campaign=Badge_Grade)
 [![Build Status](https://travis-ci.com/preons/preons.svg?branch=master)](https://travis-ci.com/preons/preons)
 
 A functional CSS system for building user interfaces 🛰
