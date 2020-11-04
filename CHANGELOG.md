@@ -1,3 +1,23 @@
+# v0.4.2 (Wed Nov 04 2020)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Codacy Badger ([@codacy-badger](https://github.com/codacy-badger)), for all your work!
+
+#### 🐛 Bug Fix
+
+- fix: color modifications and extra rules [#38](https://github.com/preons/preons/pull/38) ([@gemmadlou](https://github.com/gemmadlou))
+- Merge branch 'master' of https://github.com/preons/preons [#38](https://github.com/preons/preons/pull/38) ([@gemmadlou](https://github.com/gemmadlou))
+- Add a Codacy badge to README.md [#36](https://github.com/preons/preons/pull/36) ([@codacy-badger](https://github.com/codacy-badger))
+- 0.4.1 [#38](https://github.com/preons/preons/pull/38) ([@gemmadlou](https://github.com/gemmadlou))
+
+#### Authors: 2
+
+- Codacy Badger ([@codacy-badger](https://github.com/codacy-badger))
+- Gemma Black ([@gemmadlou](https://github.com/gemmadlou))
+
+---
+
 # v0.4.1 (Fri Oct 30 2020)
 
 #### 🐛 Bug Fix
