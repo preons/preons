@@ -1,3 +1,19 @@
+# v0.4.4 (Wed Nov 04 2020)
+
+#### 🐛 Bug Fix
+
+- fix: black theme-colour from blue hue ([@gemmadlou](https://github.com/gemmadlou))
+
+#### ⚠️ Pushed to `master`
+
+- 0.4.3 ([@gemmadlou](https://github.com/gemmadlou))
+
+#### Authors: 1
+
+- Gemma Black ([@gemmadlou](https://github.com/gemmadlou))
+
+---
+
 # v0.4.3 (Wed Nov 04 2020)
 
 #### 🐛 Bug Fix
