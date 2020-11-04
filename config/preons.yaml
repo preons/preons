@@ -1,803 +1,825 @@
 preons:
-  baseline: 1.6rem
-
-  rules:
-    theme-colors:
-      black: "#100d2b"
-      white: "#ffffff"
-      hotpinkxl: "#f188bc"
-      hotpinkl: "#f36fb0"
-      hotpink: "#ea2889"
-      hotpinkd: "#cc0f6d"
-      hotpinkxd: "#900148"
-      transparent: transparent
-      greyxl: "#f0f2ff"
-      greyl: "#dedbe2"
-      grey: "#b2b6ca"
-      greyd: "#5a5573"
-      greyxd: "#4d4c51"
-      yellowxl: "#f8f8b7"
-      yellowl: "#f1f16f"
-      yellow: "#eaea28"
-      yellowd: "#d6d615"
-      yellowxd: "#b2b211"
-      redxl: "#f3a6a6"
-      redl: "#ec7272"
-      red: "#e53e3e"
-      redd: "#cd1c1c"
-      redxd: "#991515"
-      purplexl: "#c493f4"
-      purplel: "#a65eef"
-      purple: "#8928ea"
-      purpled: "#6c13c4"
-      purplexd: "#5810a0"
-      orangexl: "#f4c493"
-      orangel: "#efa65e"
-      orange: "#ea8928"
-      oranged: "#d67515"
-      orangexd: "#b26211"
-      limexl: "#c4f493"
-      limel: "#a6ef5e"
-      lime: "#89ea28"
-      limed: "#6cc413"
-      limexd: "#4e8e0e"
-      lilacd: "#a992de"
-      lilac: "#c4b4ea"
-      lilacl: "#e6dff7"
-      greenxl: "#00ce00"
-      greenl: "#00a700"
-      green: "#008000"
-      greend: "#006c00"
-      greenxd: "#005900"
-      blue: "#2889ea"
-
-    border-style:
-      solid: solid
-      dotted: dotted
-      dashed: dashed
-
-    list-style:
-      circle: circle
-      disc: disc
-      square: square
-      decimal: decimal
-      none: none
-      decimal-leading-zero: decimal-leading-zero
-
-    overflow:
-      scroll: scroll
-      hidden: hidden
-      auto: auto
-
-    position:
-      relative: relative
-      absolute: absolute
-      fixed: fixed
-
-    scaled:
-      0: 0
-      1: $baseline * 1
-      2: $baseline * 2
-      3: $baseline * 3
-      4: $baseline * 4
-      5: $baseline * 5
-      6: $baseline * 6
-      7: $baseline * 7
-      8: $baseline * 8
-      9: $baseline * 9
-      10: $baseline * 10
-      11: $baseline * 11
-      12: $baseline * 12
-
-    negative-scaled:
-      1x: -1rem
-      2x: -2rem
-      3x: -3rem
-      4x: -4rem
-      5x: -5rem
-      6x: -6rem
-      7x: -7rem
-      8x: -8rem
-      9x: -9rem
-      10x: -10rem
-
-    # For font line-heights
-    baselined:
-      1: $baseline * 0.5
-      2: $baseline * 1
-      3: $baseline * 1.5
-      4: $baseline * 2
-      5: $baseline * 2.5
-      6: $baseline * 3
-      7: $baseline * 3.5
-      8: $baseline * 4
-      9: $baseline * 4.5
-      10: $baseline * 5
-      11: $baseline * 5.5
-      12: $baseline * 6
-
-    decimal:
-      0: 0
-      -10: .1
-      -20: .2
-      -30: .3
-      -40: .4
-      -50: .5
-      -60: .6
-      -70: .7
-      -80: .8
-      -90: .9
-      -100: 1
-
-    percentaged:
-      -5: 5%
-      -10: 10%
-      -15: 15%
-      -20: 20%
-      -25: 25%
-      -30: 30%
-      -35: 35%
-      -40: 40%
-      -45: 45%
-      -50: 50%
-      -55: 55%
-      -60: 60%
-      -65: 65%
-      -70: 70%
-      -75: 75%
-      -80: 80%
-      -85: 85%
-      -90: 90%
-      -95: 95%
-      -100: 100%
-
-    discrete-percentage:
-      -1-12: 100% / 12
-      -2-12: 100% / 12 * 2
-      -3-12: 100% / 12 * 3
-      -4-12: 100% / 12 * 4
-      -5-12: 100% / 12 * 5
-      -6-12: 100% / 12 * 6
-      -7-12: 100% / 12 * 7
-      -8-12: 100% / 12 * 8
-      -9-12: 100% / 12 * 9
-      -10-12: 100% / 12 * 10
-      -11-12: 100% / 12 * 11
-      -12-12: 100% / 12 * 12
-
-    special-sizes:
-      n: none
-      -au: auto
-
-    tiny:
-      0: 0
-      1: 1px
-      2: 2px
-      3: 3px
-      4: 4px
-      5: 5px
-      6: 6px
-      7: 7px
-      8: 8px
-      9: 9px
-      10: 10px
-
-    discrete:
-      -wire: 1px
-      -xxthin: 2px
-      -xthin: 3px
-      -xxxsmall: 5px
-      -xxsmall: 7px
-      -xsmall: 1rem
-      -small: 1.6rem
-      -icon: 2.4rem
-      -medium: 7rem
-      -big: 16rem
-      -xbig: 22rem
-      -xxbig: 32rem
-      -xxxbig: 44rem
-      -super: 56rem
-      -xsuper: 68rem
-      -xxsuper: 80rem
-      -xxxsuper: 100rem
-
-    vh:
-      -10vh: 10vh
-      -20vh: 20vh
-      -30vh: 30vh
-      -40vh: 40vh
-      -50vh: 50vh
-      -60vh: 60vh
-      -70vh: 70vh
-      -80vh: 80vh
-      -90vh: 90vh
-      -100vh: 100vh
-
-    vw:
-      -10vw: 10vw
-      -20vw: 20vw
-      -30vw: 30vw
-      -40vw: 40vw
-      -50vw: 50vw
-      -60vw: 60vw
-      -70vw: 70vw
-      -80vw: 80vw
-      -90vw: 90vw
-      -100vw: 100vw
-
-    negative-discrete:
-      -bigx: -16rem
-      -xbigx: 22rem
-      -xxbigx: -32rem
-      -xxxbigx: -44rem
-      -superx: -56rem
-      -xsuperx: -68rem
-      -xxsuperx: -80rem
-      -xxxsuperx: -100rem
-
-    alignment:
-      center: center
-      right: right
-      left: left
-
-    transforms:
-      translate-x50x: translateX(-50%)
-      translate-y50x: translateY(-50%)
-      translate-50x: translate(-50%, -50%)
-      performance: translate3d(0,0,0)
-
-    override:
-      0: 0
-      1: 1
-      2: 2
-      3: 3
-      4: 4
-      5: 5
-      10: 10
-      20: 20
-      30: 30
-      999: 999
-      9999: 9999
-
-  properties:
-    background-attachment:
-      class: bga-
-      values:
-        sc: scroll
-        fi: fixed
-        lo: local
-        in: initial
-        inherit: inherit
-
-    background-color:
-      class: bg-
-      rule: theme-colors
-
-    background-position:
-      class: bgp-
-      rule: alignment
-
-    background-position-x:
-      class: bgpx-
-      rule: alignment
-
-    background-position-y:
-      class: bgpy-
-      rule: alignment
-
-    background-repeat:
-      class: bgr-
-      values:
-        rx: repeat-x
-        rp: repeat
-        sp: space
-        ro: round
-        nr: no-repeat
-
-    border-bottom-width:
-      class: bwb
-      rule: tiny
-
-    border-top-width:
-      class: bwt
-      rule: tiny
-
-    border-right-width:
-      class: bwr
-      rule: tiny
-
-    border-left-width:
-      class: bwl
-      rule: tiny
-
-    border-width:
-      class: bwa
-      rule: tiny
-
-    border-bottom-color:
-      class: bcb-
-      rule: theme-colors
-
-    border-top-color:
-      class: bct-
-      rule: theme-colors
-
-    border-left-color:
-      class: bcl-
-      rule: theme-colors
-
-    border-right-color:
-      class: bcr-
-      rule: theme-colors
-
-    border-color:
-      class: bca-
-      rule: theme-colors
-
-    border-style:
-      class: bsa-
-      rule: border-style
-
-    border-bottom-style:
-      class: bsb-
-      rule: border-style
-
-    border-top-style:
-      class: bst-
-      rule: border-style
-
-    border-right-style:
-      class: bsr-
-      rule: border-style
-
-    border-left-style:
-      class: bsl-
-      rule: border-style
-
-    border-radius:
-      class: bra
-      values:
-        1: .5rem
-        2: 1rem
-        3: 2rem
-        4: 3rem
-        5: 4rem
-        6: 5rem
-        -50: 50%
-
-    clear:
-      class: c
-      values:
-        b: both
-
-    color:
-      class:
-      rule: theme-colors
-
-    cursor:
-      class:
-      values:
-        pointer: pointer
-        help: help
-        wait: wait
-        crosshair: crosshair
-        not-allowed: not-allowed
-        zoom-in: zoom-in
-        grab: grab
-
-    display:
-      class: d-
-      values:
-        bl: block
-        in: inline
-        inbl: inline-block
-        ta: table
-        fl: flex
-        infl: inline-flex
-        no: none
-
-    float:
-      class: fl
-      values:
-        r: right
-        l: left
-        n: none
-
-    font-family:
-      class: ff-
-      values:
-        raleway: "#{Raleway, sans-serif}"
-        exo: "#{Exo, sans-serif}"
-        josefin: "#{'Josefin Sans', sans-serif}"
-        kanit: "#{'Kanit', sans-serif}"
-        martel: "#{'Martel', serif}"
-        prompt: "#{'Prompt', sans-serif}"
-        roboto-mono: "#{'Roboto Monp', monospace}"
-
-    font-size:
-      class: fs
-      values:
-        1: .90rem
-        2: 1.2rem
-        3: 1.60rem
-        4: 2.133rem
-        5: 2.843rem
-        6: 3.790rem
-        7: 5.522rem
-        8: 6.734rem
-        9: 8.976rem
-        10: 11.966rem
-
-    font-style:
-      class: fst-
-      values:
-        no: normal
-        it: italic
-
-    font-weight:
-      class: fw
-      values:
-        l: 300
-        n: 400
-        b: 700
-        1: 100
-        2: 200
-        3: 300
-        4: 400
-        5: 500
-        6: 600
-        7: 700
-        8: 800
-        9: 900
-
-    height:
-      class: h
-      rule:
-        - scaled
-        - percentaged
-        - discrete-percentage
-        - discrete
-        - special-sizes
-        - vh
-
-    max-height:
-      class: maxh
-      rule:
-        - percentaged
-        - discrete
-        - special-sizes
-
-    min-height:
-      class: minh
-      rule:
-        - percentaged
-        - discrete
-        - special-sizes
-
-    width:
-      class: w
-      rule:
-        - scaled
-        - percentaged
-        - discrete-percentage
-        - discrete
-        - special-sizes
-        - vw
-
-    max-width:
-      class: maxw
-      rule:
-        - percentaged
-        - discrete
-        - special-sizes
-
-    min-width:
-      class: minw
-      rule:
-        - scaled
-        - percentaged
-        - discrete
-        - special-sizes
-
-    bottom:
-      class: b
-      rule:
-        - scaled
-        - negative-scaled
-        - percentaged
-        - discrete
-
-    left:
-      class: l
-      rule:
-        - scaled
-        - negative-scaled
-        - percentaged
-        - discrete
-
-    top:
-      class: t
-      rule:
-        - scaled
-        - negative-scaled
-        - percentaged
-        - discrete
-
-    right:
-      class: r
-      rule:
-        - scaled
-        - negative-scaled
-        - percentaged
-        - discrete
-
-    letter-spacing:
-      class: ls
-      values:
-        1: 1px
-        2: 2px
-        3: 3px
-        4: 4px
-
-    line-height:
-      class: lh
-      rule: baselined
-
-    list-style-type:
-      class: lst-
-      rule: list-style
-
-    margin:
-      class: ma
-      rule:
-        - scaled
-        - special-sizes
-        - percentaged
-        - discrete
-
-    margin-bottom:
-      class: mb
-      rule:
-        - scaled
-        - special-sizes
-        - percentaged
-        - discrete
-
-    margin-left:
-      class: ml
-      rule:
-        - scaled
-        - special-sizes
-        - percentaged
-        - discrete
-
-    margin-right:
-      class: mr
-      rule:
-        - scaled
-        - special-sizes
-        - percentaged
-        - discrete
-
-    margin-top:
-      class: mt
-      rule:
-        - scaled
-        - special-sizes
-        - percentaged
-        - discrete
-
-    object-fit:
-      class: of-
-      values:
-        fill: fill
-        contain: contain
-        cover: cover
-        scale-down: scale-down
-        none: none
-
-    opacity:
-      class: o
-      rule: decimal
-
-    overflow:
-      class:
-      rule: overflow
-
-    overflow-x:
-      class: x-
-      rule: overflow
-
-    overflow-y:
-      class: y-
-      rule: overflow
-
-    padding:
-      class: pa
-      rule:
-        - scaled
-        - discrete
-
-    padding-bottom:
-      class: pb
-      rule:
-        - scaled
-        - discrete
-
-    padding-left:
-      class: pl
-      rule:
-        - scaled
-        - discrete
-
-    padding-right:
-      class: pr
-      rule:
-        - scaled
-        - discrete
-
-    padding-top:
-      class: pt
-      rule:
-        - scaled
-        - discrete
-
-    position:
-      class:
-      values:
-        relative: relative
-        absolute: absolute
-        fixed: fixed
-
-    stroke-dasharray: null
-
-    stroke-dashoffset: null
-
-    stroke-width: null
-
-    text-align:
-      class:
-      rule: alignment
-
-    text-decoration:
-      class: td-
-      values:
-        no: none
-        un: underline
-
-    text-indent: null
-
-    text-transform:
-      class: tt-
-      values:
-        no: none
-        up: uppercase
-        ca: capitalize
-        lo: lowercase
-
-    transform:
-      class: tr-
-      rule: transforms
-
-    vertical-align:
-      class: va-
-      values:
-        bo: bottom
-        mi: middle
-        to: top
-
-    visibility:
-      class: v-
-      values:
-        hidden: hidden
-        visible: visible
-
-    z-index:
-      class: z
-      rule: override
-
-    flex-basis:
-      class: basis
-      rule:
-        - percentaged
-        - discrete-percentage
-
-    flex-direction:
-      class:
-      values:
-        row: row
-        row-reverse: row-reverse
-        column: column
-        column-reverse: column-reverse
-
-    flex-grow:
-      class: grow-
-      rule:
-        - override
-
-    flex-shrink:
-      class: shrink-
-      rule:
-        - override
-
-    flex-wrap:
-      class:
-      values:
-        nowrap: nowrap
-        wrap: wrap
-        wrap-reverse: wrap-reverse
-
-    box-sizing:
-      class: box-
-      values:
-        bo: border-box
-        co: content-box
-
-    align-items:
-      class: ai-
-      values:
-        start: flex-start
-        end: flex-end
-        center: center
-        baseline: baseline
-        stretch: stretch
-
-    align-self:
-      class: as-
-      values:
-        start: flex-start
-        end: flex-end
-        center: center
-        baseline: baseline
-        stretch: stretch
-
-    align-content:
-      class: ac-
-      values:
-        start: flex-start
-        end: flex-end
-        center: center
-        between: space-between
-        around: space-around
-        stretch: stretch
-
-    justify-items:
-      class: ji-
-      values:
-        start: flex-start
-        end: flex-end
-        center: center
-        baseline: baseline
-        stretch: stretch
-
-    justify-self:
-      class: js-
-      values:
-        start: flex-start
-        end: flex-end
-        center: center
-        baseline: baseline
-        stretch: stretch
-
-    justify-content:
-      class: jc-
-      values:
-        start: flex-start
-        end: flex-end
-        center: center
-        between: space-between
-        around: space-around
-        stretch: stretch
-
-    box-shadow:
-      class: bxsh-
-      values:
-        active: "0px 3px 5px #bb9d07"
-        actived: "0px 1px 8px #77660e"
-        dark: "0px 3px 5px #0a0913"
-        darkl: "0px 3px 5px #6c67a0"
-
-  # Preon breakpoints
-  breakpoints:
-    m: 768px
-    l: 1024px
+    baseline: 1.6rem
+
+    rules:
+        theme-colors:
+            black: "#100d2b"
+            white: "#ffffff"
+            transparent: transparent
+            hotpinkxl: "#f188bc"
+            hotpinkl: "#f36fb0"
+            hotpink: "#ea2889"
+            hotpinkd: "#cc0f6d"
+            hotpinkxd: "#900148"
+            greyxl: "#f0f2ff"
+            greyl: "#dedbe2"
+            grey: "#b2b6ca"
+            greyd: "#5a5573"
+            greyxd: "#4d4c51"
+            yellowxl: "#f8f8b7"
+            yellowl: "#f1f16f"
+            yellow: "#eaea28"
+            yellowd: "#d6d615"
+            yellowxd: "#b2b211"
+            redxl: "#f3a6a6"
+            redl: "#ec7272"
+            red: "#e53e3e"
+            redd: "#cd1c1c"
+            redxd: "#991515"
+            purplexl: "#c493f4"
+            purplel: "#a65eef"
+            purple: "#8928ea"
+            purpled: "#6c13c4"
+            purplexd: "#5810a0"
+            orangexl: "#f4c493"
+            orangel: "#efa65e"
+            orange: "#ea8928"
+            oranged: "#d67515"
+            orangexd: "#b26211"
+            limexl: "#c4f493"
+            limel: "#a6ef5e"
+            lime: "#89ea28"
+            limed: "#6cc413"
+            limexd: "#4e8e0e"
+            lilacxl: "#f3effd"
+            lilacl: "#e6dff7"
+            lilac: "#c4b4ea"
+            lilacd: "#b3a0de"
+            lilacxd: "#988bb7"
+            greenxl: "#00ce00"
+            greenl: "#00a700"
+            green: "#008000"
+            greend: "#006c00"
+            greenxd: "#005900"
+            bluexl: "#99c8fb"
+            bluel: "#68a9f1"
+            blue: "#2889ea"
+            blued: "#126eca"
+            bluexd: "#0c59a7"
+            off-whitel: "#fbfbff"
+            off-white: "#f3f3f7"
+            off-whited: "#e4e7f7"
+
+        border-style:
+            solid: solid
+            dotted: dotted
+            dashed: dashed
+
+        list-style:
+            circle: circle
+            disc: disc
+            square: square
+            decimal: decimal
+            none: none
+            decimal-leading-zero: decimal-leading-zero
+
+        overflow:
+            scroll: scroll
+            hidden: hidden
+            auto: auto
+
+        scaled:
+            0: 0
+            1: $baseline * 1
+            2: $baseline * 2
+            3: $baseline * 3
+            4: $baseline * 4
+            5: $baseline * 5
+            6: $baseline * 6
+            7: $baseline * 7
+            8: $baseline * 8
+            9: $baseline * 9
+            10: $baseline * 10
+            11: $baseline * 11
+            12: $baseline * 12
+
+        negative-scaled:
+            1x: -1rem
+            2x: -2rem
+            3x: -3rem
+            4x: -4rem
+            5x: -5rem
+            6x: -6rem
+            7x: -7rem
+            8x: -8rem
+            9x: -9rem
+            10x: -10rem
+
+        # For font line-heights
+        baselined:
+            1: $baseline * 0.5
+            2: $baseline * 1
+            3: $baseline * 1.5
+            4: $baseline * 2
+            5: $baseline * 2.5
+            6: $baseline * 3
+            7: $baseline * 3.5
+            8: $baseline * 4
+            9: $baseline * 4.5
+            10: $baseline * 5
+            11: $baseline * 5.5
+            12: $baseline * 6
+
+        decimal:
+            0: 0
+            -10: .1
+            -20: .2
+            -30: .3
+            -40: .4
+            -50: .5
+            -60: .6
+            -70: .7
+            -80: .8
+            -90: .9
+            -100: 1
+
+        percentaged:
+            -5: 5%
+            -10: 10%
+            -15: 15%
+            -20: 20%
+            -25: 25%
+            -30: 30%
+            -35: 35%
+            -40: 40%
+            -45: 45%
+            -50: 50%
+            -55: 55%
+            -60: 60%
+            -65: 65%
+            -70: 70%
+            -75: 75%
+            -80: 80%
+            -85: 85%
+            -90: 90%
+            -95: 95%
+            -100: 100%
+
+        discrete-percentage:
+            -1-12: 100% / 12
+            -2-12: 100% / 12 * 2
+            -3-12: 100% / 12 * 3
+            -4-12: 100% / 12 * 4
+            -5-12: 100% / 12 * 5
+            -6-12: 100% / 12 * 6
+            -7-12: 100% / 12 * 7
+            -8-12: 100% / 12 * 8
+            -9-12: 100% / 12 * 9
+            -10-12: 100% / 12 * 10
+            -11-12: 100% / 12 * 11
+            -12-12: 100% / 12 * 12
+
+        special-sizes:
+            n: none
+            -au: auto
+
+        tiny:
+            0: 0
+            1: 1px
+            2: 2px
+            3: 3px
+            4: 4px
+            5: 5px
+            6: 6px
+            7: 7px
+            8: 8px
+            9: 9px
+            10: 10px
+
+        discrete:
+            -wire: 1px
+            -xthin: 2px
+            -thin: 3px
+            -xxxsmall: 5px
+            -xxsmall: 7px
+            -xsmall: 1rem
+            -small: 1.6rem
+            -icon: 2.4rem
+            -medium: 7rem
+            -big: 16rem
+            -xbig: 22rem
+            -xxbig: 32rem
+            -xxxbig: 44rem
+            -super: 56rem
+            -xsuper: 68rem
+            -xxsuper: 80rem
+            -xxxsuper: 100rem
+
+        vh:
+            -10vh: 10vh
+            -20vh: 20vh
+            -30vh: 30vh
+            -40vh: 40vh
+            -50vh: 50vh
+            -60vh: 60vh
+            -70vh: 70vh
+            -80vh: 80vh
+            -90vh: 90vh
+            -100vh: 100vh
+
+        vw:
+            -10vw: 10vw
+            -20vw: 20vw
+            -30vw: 30vw
+            -40vw: 40vw
+            -50vw: 50vw
+            -60vw: 60vw
+            -70vw: 70vw
+            -80vw: 80vw
+            -90vw: 90vw
+            -100vw: 100vw
+
+        negative-discrete:
+            -bigx: -16rem
+            -xbigx: 22rem
+            -xxbigx: -32rem
+            -xxxbigx: -44rem
+            -superx: -56rem
+            -xsuperx: -68rem
+            -xxsuperx: -80rem
+            -xxxsuperx: -100rem
+
+        alignment:
+            center: center
+            right: right
+            left: left
+
+        transforms:
+            translate-x50x: translateX(-50%)
+            translate-y50x: translateY(-50%)
+            translate-50x: translate(-50%, -50%)
+            performance: translate3d(0,0,0)
+
+        override:
+            0: 0
+            1: 1
+            2: 2
+            3: 3
+            4: 4
+            5: 5
+            10: 10
+            20: 20
+            30: 30
+            999: 999
+            9999: 9999
+
+    properties:
+        background-attachment:
+            class: bga-
+            values:
+                sc: scroll
+                fi: fixed
+                lo: local
+                in: initial
+                inherit: inherit
+
+        background-color:
+            class: bg-
+            rule: theme-colors
+
+        background-size:
+            class: bs-
+            values:
+                auto: auto
+                inherit: inherit
+                cover: cover
+                contain: contain
+                initial: initial
+
+        background-position:
+            class: bgp-
+            rule: alignment
+
+        background-position-x:
+            class: bgpx-
+            rule: alignment
+
+        background-position-y:
+            class: bgpy-
+            rule: alignment
+
+        background-repeat:
+            class: bgr-
+            values:
+                rx: repeat-x
+                rp: repeat
+                sp: space
+                ro: round
+                nr: no-repeat
+
+        border-bottom-width:
+            class: bwb
+            rule: tiny
+
+        border-top-width:
+            class: bwt
+            rule: tiny
+
+        border-right-width:
+            class: bwr
+            rule: tiny
+
+        border-left-width:
+            class: bwl
+            rule: tiny
+
+        border-width:
+            class: bwa
+            rule: tiny
+
+        border-bottom-color:
+            class: bcb-
+            rule: theme-colors
+
+        border-top-color:
+            class: bct-
+            rule: theme-colors
+
+        border-left-color:
+            class: bcl-
+            rule: theme-colors
+
+        border-right-color:
+            class: bcr-
+            rule: theme-colors
+
+        border-color:
+            class: bca-
+            rule: theme-colors
+
+        border-style:
+            class: bsa-
+            rule: border-style
+
+        border-bottom-style:
+            class: bsb-
+            rule: border-style
+
+        border-top-style:
+            class: bst-
+            rule: border-style
+
+        border-right-style:
+            class: bsr-
+            rule: border-style
+
+        border-left-style:
+            class: bsl-
+            rule: border-style
+
+        border-radius:
+            class: bra
+            values:
+                1: .5rem
+                2: 1rem
+                3: 2rem
+                4: 3rem
+                5: 4rem
+                6: 5rem
+                -50: 50%
+
+        clear:
+            class: c
+            values:
+                b: both
+
+        color:
+            class:
+            rule: theme-colors
+
+        cursor:
+            class:
+            values:
+                pointer: pointer
+                help: help
+                wait: wait
+                crosshair: crosshair
+                not-allowed: not-allowed
+                zoom-in: zoom-in
+                grab: grab
+
+        display:
+            class: d-
+            values:
+                bl: block
+                in: inline
+                inbl: inline-block
+                ta: table
+                fl: flex
+                infl: inline-flex
+                no: none
+
+        float:
+            class: fl
+            values:
+                r: right
+                l: left
+                n: none
+
+        font-family:
+            class: ff-
+            values:
+                raleway: "#{Raleway, sans-serif}"
+                exo: "#{Exo, sans-serif}"
+                josefin: "#{'Josefin Sans', sans-serif}"
+                kanit: "#{'Kanit', sans-serif}"
+                martel: "#{'Martel', serif}"
+                prompt: "#{'Prompt', sans-serif}"
+                roboto-mono: "#{'Roboto Monp', monospace}"
+
+        font-size:
+            class: fs
+            values:
+                1: .90rem
+                2: 1.2rem
+                3: 1.60rem
+                4: 2.133rem
+                5: 2.843rem
+                6: 3.790rem
+                7: 5.522rem
+                8: 6.734rem
+                9: 8.976rem
+                10: 11.966rem
+
+        font-style:
+            class: fst-
+            values:
+                no: normal
+                it: italic
+
+        font-weight:
+            class: fw
+            values:
+                l: 300
+                n: 400
+                b: 700
+                1: 100
+                2: 200
+                3: 300
+                4: 400
+                5: 500
+                6: 600
+                7: 700
+                8: 800
+                9: 900
+
+        height:
+            class: h
+            rule:
+                - scaled
+                - percentaged
+                - discrete-percentage
+                - discrete
+                - special-sizes
+                - vh
+
+        max-height:
+            class: maxh
+            rule:
+                - percentaged
+                - discrete
+                - special-sizes
+
+        min-height:
+            class: minh
+            rule:
+                - percentaged
+                - discrete
+                - special-sizes
+
+        width:
+            class: w
+            rule:
+                - scaled
+                - percentaged
+                - discrete-percentage
+                - discrete
+                - special-sizes
+                - vw
+
+        max-width:
+            class: maxw
+            rule:
+                - percentaged
+                - discrete
+                - special-sizes
+
+        min-width:
+            class: minw
+            rule:
+                - scaled
+                - percentaged
+                - discrete
+                - special-sizes
+
+        bottom:
+            class: b
+            rule:
+                - scaled
+                - negative-scaled
+                - percentaged
+                - discrete
+
+        left:
+            class: l
+            rule:
+                - scaled
+                - negative-scaled
+                - percentaged
+                - discrete
+
+        top:
+            class: t
+            rule:
+                - scaled
+                - negative-scaled
+                - percentaged
+                - discrete
+
+        right:
+            class: r
+            rule:
+                - scaled
+                - negative-scaled
+                - percentaged
+                - discrete
+
+        letter-spacing:
+            class: ls
+            values:
+                1: 1px
+                2: 2px
+                3: 3px
+                4: 4px
+
+        line-height:
+            class: lh
+            rule: baselined
+
+        list-style-type:
+            class: lst-
+            rule: list-style
+
+        margin:
+            class: ma
+            rule:
+                - scaled
+                - special-sizes
+                - percentaged
+                - discrete
+                - negative-scale
+
+        margin-bottom:
+            class: mb
+            rule:
+                - scaled
+                - special-sizes
+                - percentaged
+                - discrete
+                - negative-scale
+
+        margin-left:
+            class: ml
+            rule:
+                - scaled
+                - special-sizes
+                - percentaged
+                - discrete
+
+        margin-right:
+            class: mr
+            rule:
+                - scaled
+                - special-sizes
+                - percentaged
+                - discrete
+                - negative-scale
+
+        margin-top:
+            class: mt
+            rule:
+                - scaled
+                - special-sizes
+                - percentaged
+                - discrete
+                - negative-scale
+
+        object-fit:
+            class: of-
+            values:
+                fill: fill
+                contain: contain
+                cover: cover
+                scale-down: scale-down
+                none: none
+
+        opacity:
+            class: o
+            rule: decimal
+
+        overflow:
+            class:
+            rule: overflow
+
+        overflow-x:
+            class: x-
+            rule: overflow
+
+        overflow-y:
+            class: y-
+            rule: overflow
+
+        padding:
+            class: pa
+            rule:
+                - scaled
+                - discrete
+
+        padding-bottom:
+            class: pb
+            rule:
+                - scaled
+                - discrete
+
+        padding-left:
+            class: pl
+            rule:
+                - scaled
+                - discrete
+
+        padding-right:
+            class: pr
+            rule:
+                - scaled
+                - discrete
+
+        padding-top:
+            class: pt
+            rule:
+                - scaled
+                - discrete
+
+        position:
+            class:
+            values:
+                relative: relative
+                absolute: absolute
+                fixed: fixed
+                sticky: sticky
+
+        stroke-dasharray: null
+
+        stroke-dashoffset: null
+
+        stroke-width: null
+
+        text-align:
+            class:
+            rule: alignment
+
+        text-decoration:
+            class: td-
+            values:
+                no: none
+                un: underline
+
+        text-indent: null
+
+        text-transform:
+            class: tt-
+            values:
+                no: none
+                up: uppercase
+                ca: capitalize
+                lo: lowercase
+
+        transform:
+            class: tr-
+            rule: transforms
+
+        vertical-align:
+            class: va-
+            values:
+                bo: bottom
+                mi: middle
+                to: top
+
+        visibility:
+            class: v-
+            values:
+                hidden: hidden
+                visible: visible
+
+        z-index:
+            class: z
+            rule: override
+
+        flex-basis:
+            class: basis
+            rule:
+                - percentaged
+                - discrete-percentage
+
+        flex-direction:
+            class:
+            values:
+                row: row
+                row-reverse: row-reverse
+                column: column
+                column-reverse: column-reverse
+
+        flex-grow:
+            class: grow-
+            rule:
+                - override
+
+        flex-shrink:
+            class: shrink-
+            rule:
+                - override
+
+        flex-wrap:
+            class:
+            values:
+                nowrap: nowrap
+                wrap: wrap
+                wrap-reverse: wrap-reverse
+
+        box-sizing:
+            class: box-
+            values:
+                bo: border-box
+                co: content-box
+
+        align-items:
+            class: ai-
+            values:
+                start: flex-start
+                end: flex-end
+                center: center
+                baseline: baseline
+                stretch: stretch
+
+        align-self:
+            class: as-
+            values:
+                start: flex-start
+                end: flex-end
+                center: center
+                baseline: baseline
+                stretch: stretch
+
+        align-content:
+            class: ac-
+            values:
+                start: flex-start
+                end: flex-end
+                center: center
+                between: space-between
+                around: space-around
+                stretch: stretch
+
+        justify-items:
+            class: ji-
+            values:
+                start: flex-start
+                end: flex-end
+                center: center
+                baseline: baseline
+                stretch: stretch
+
+        justify-self:
+            class: js-
+            values:
+                start: flex-start
+                end: flex-end
+                center: center
+                baseline: baseline
+                stretch: stretch
+
+        justify-content:
+            class: jc-
+            values:
+                start: flex-start
+                end: flex-end
+                center: center
+                between: space-between
+                around: space-around
+                stretch: stretch
+
+        box-shadow:
+            class: bxsh-
+            values:
+                greyl: "-1px 5px 15px -5px #6c67a073"
+                grey: "0px 3px 5px #0a0913"
+                greyd: "0px 3px 5px #6c67a0"
+
+        clip:
+            class: clip
+            values:
+                hide: "rect(0 0 0 0)"
+
+    # Preon breakpoints
+    breakpoints:
+        m: 768px
+        l: 1024px
