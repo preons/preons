@@ -1,3 +1,19 @@
+# v0.4.3 (Wed Nov 04 2020)
+
+#### 🐛 Bug Fix
+
+- fix: preons stylesheet pre-distribution commit check (gblackuk@googlemail.com)
+
+#### ⚠️ Pushed to `master`
+
+- 0.4.2 (gblackuk@googlemail.com)
+
+#### Authors: 1
+
+- Gemma Black (gblackuk@googlemail.com)
+
+---
+
 # v0.4.2 (Wed Nov 04 2020)
 
 :tada: This release contains work from a new contributor! :tada:
