@@ -3,7 +3,7 @@ preons:
 
     rules:
         theme-colors:
-            black: "#100d2b"
+            black: "#000000"
             white: "#ffffff"
             transparent: transparent
             hotpinkxl: "#f188bc"
