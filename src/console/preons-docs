@@ -25,7 +25,7 @@ const generateTable = (set) => {
                 set.preons.properties[property].mappings
             ).reduce(
                 (acc, entry) => {
-                    acc.push([...entry])
+                    acc.push([`.${entry[0]}`, `${entry[1]}`])
                     return acc
                 },
                 [["class", "value"]]
@@ -52,7 +52,9 @@ const generateHtml = (set) => {
 ;(async () => {
     try {
         let { stdout } = await pExec(
-            `src/console/preons config ${program.args[0] || ""}`
+            `${path.resolve(__dirname, "preons")} config ${
+                program.args[0] || ""
+            }`
         )
 
         let set = JSON.parse(stdout)
