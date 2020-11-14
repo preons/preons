@@ -10,7 +10,7 @@
     "scripts": {
         "test": "jest",
         "release": "auto shipit",
-        "prepare": "src/console/preons stylesheet > dist/preons.css && src/console/preons stylesheet --scss > dist/preons.scss && src/console/preons config -m > dist/preons-config.min.json && src/console/preons config > dist/preons-config.json && src/console/preons docs -d > dist/reference.html",
+        "prepare": "./helper.sh",
         "lint": "eslint src",
         "typecheck": "tsc"
     },
@@ -63,7 +63,7 @@
     ],
     "husky": {
         "hooks": {
-            "pre-commit": "preons stylesheet -c && lint-staged && yarn typecheck && yarn test",
+            "pre-commit": "preons stylesheet -c && lint-staged && yarn typecheck && yarn test && ./helper.sh",
             "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
         }
     },

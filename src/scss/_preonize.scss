@@ -1,6 +1,6 @@
 @mixin preonize($name, $prop, $map, $breakpoints) {
   @each $label, $value in $map {
-    .#{$name}#{$label} {
+    .#{$name}#{"" + $label} {
       #{$prop}: $value;
     }
   }
@@ -8,7 +8,7 @@
   @each $breakpoint, $breakpoint-value in $breakpoints {
     @media only screen and (min-width: #{$breakpoint-value}) {
       @each $label, $value in $map {
-        .#{$name}#{$label}-#{$breakpoint} {
+        .#{$name}#{"" + $label}-#{$breakpoint} {
           #{$prop}: $value;
         }
       }
@@ -18,7 +18,7 @@
 
 @mixin preonize-hover($name, $prop, $map, $breakpoints) {
   @each $label, $value in $map {
-    .#{$name}#{$label}:hover {
+    .#{$name}#{"" + $label}:hover {
       #{$prop}: $value;
     }
   }
@@ -26,7 +26,7 @@
   @each $breakpoint, $breakpoint-value in $breakpoints {
     @media only screen and (min-width: #{$breakpoint-value}) {
       @each $label, $value in $map {
-        .#{$name}#{$label}-#{$breakpoint}:hover {
+        .#{$name}#{"" + $label}-#{$breakpoint}:hover {
           #{$prop}: $value;
         }
       }
@@ -36,7 +36,7 @@
 
 @mixin preonize-after($name, $prop, $map, $breakpoints) {
   @each $label, $value in $map {
-    .#{$name}#{$label}:after {
+    .#{$name}#{"" + $label}:after {
       content: "";
       #{$prop}: $value;
     }
@@ -45,7 +45,7 @@
   @each $breakpoint, $breakpoint-value in $breakpoints {
     @media only screen and (min-width: #{$breakpoint-value}) {
       @each $label, $value in $map {
-        .#{$name}#{$label}-#{$breakpoint}:after {
+        .#{$name}#{"" + $label}-#{$breakpoint}:after {
           content: "";
           #{$prop}: $value;
         }
@@ -56,7 +56,7 @@
 
 @mixin preonize-before($name, $prop, $map, $breakpoints) {
   @each $label, $value in $map {
-    .#{$name}#{$label}:before {
+    .#{$name}#{"" + $label}:before {
       content: "";
       #{$prop}: $value;
     }
@@ -65,7 +65,7 @@
   @each $breakpoint, $breakpoint-value in $breakpoints {
     @media only screen and (min-width: #{$breakpoint-value}) {
       @each $label, $value in $map {
-        .#{$name}#{$label}-#{$breakpoint}:before {
+        .#{$name}#{"" + $label}-#{$breakpoint}:before {
           content: "";
           #{$prop}: $value;
         }
