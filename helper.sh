@@ -1,3 +1,4 @@
+#!/bin/bash
 # Generate core file
 src/console/preons stylesheet > dist/preons-core.css
 
