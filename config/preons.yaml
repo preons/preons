@@ -76,7 +76,9 @@ preons:
         overflow:
             scroll: scroll
             hidden: hidden
+            visible: visible
             auto: auto
+            none: none
 
         scaled:
             0: 0
@@ -191,7 +193,7 @@ preons:
             -xthin: 2px
             -thin: 3px
             -xxxsmall: 5px
-            -xxsmall: 7px
+            -xxsmall: 0.8rem
             -xsmall: 1rem
             -small: 1.6rem
             -icon: 2.4rem
@@ -200,10 +202,10 @@ preons:
             -xbig: 22rem
             -xxbig: 32rem
             -xxxbig: 44rem
-            -super: 56rem
-            -xsuper: 68rem
-            -xxsuper: 80rem
-            -xxxsuper: 100rem
+            -super: 58rem
+            -xsuper: 72rem
+            -xxsuper: 90rem
+            -xxxsuper: 116rem
 
         vh:
             -10vh: 10vh
@@ -243,12 +245,6 @@ preons:
             center: center
             right: right
             left: left
-
-        transforms:
-            translate-x50x: translateX(-50%)
-            translate-y50x: translateY(-50%)
-            translate-50x: translate(-50%, -50%)
-            performance: translate3d(0,0,0)
 
         override:
             0: 0
@@ -696,7 +692,58 @@ preons:
 
         transform:
             class: tr-
-            rule: transforms
+            values:
+                0: 0
+                performance: translate3d(0,0,0)
+                # X
+                translate-a50x: translate(-50%, -50%)
+                translate-x10x: translateX(-10%)
+                translate-x20x: translateX(-20%)
+                translate-x30x: translateX(-30%)
+                translate-x40x: translateX(-40%)
+                translate-x50x: translateX(-50%)
+                translate-x60x: translateX(-60%)
+                translate-x70x: translateX(-70%)
+                translate-x80x: translateX(-80%)
+                translate-x90x: translateX(-90%)
+                translate-x100x: translateX(-100%)
+                translate-x10: translateX(10%)
+                translate-x20: translateX(20%)
+                translate-x30: translateX(30%)
+                translate-x40: translateX(40%)
+                translate-x50: translateX(50%)
+                translate-x60: translateX(60%)
+                translate-x70: translateX(70%)
+                translate-x80: translateX(80%)
+                translate-x90: translateX(90%)
+                translate-x100: translateX(100%)
+                # Y
+                translate-y10x: translateY(-10%)
+                translate-y20x: translateY(-20%)
+                translate-y30x: translateY(-30%)
+                translate-y40x: translateY(-40%)
+                translate-y50x: translateY(-50%)
+                translate-y60x: translateY(-60%)
+                translate-y70x: translateY(-70%)
+                translate-y80x: translateY(-80%)
+                translate-y90x: translateY(-90%)
+                translate-y100x: translateY(-100%)
+                translate-y10: translateY(10%)
+                translate-y20: translateY(20%)
+                translate-y30: translateY(30%)
+                translate-y40: translateY(40%)
+                translate-y50: translateY(50%)
+                translate-y60: translateY(60%)
+                translate-y70: translateY(70%)
+                translate-y80: translateY(80%)
+                translate-y90: translateY(90%)
+                translate-y100: translateY(100%)
+
+        transition:
+            class: ts-
+            values:
+                transform: transform 0.4s
+                no: none
 
         vertical-align:
             class: va-
@@ -812,8 +859,9 @@ preons:
             class: bxsh-
             values:
                 greyl: "-1px 5px 15px -5px #6c67a073"
-                grey: "0px 3px 5px #0a0913"
-                greyd: "0px 3px 5px #6c67a0"
+                grey: "0px 3px 5px #6c67a0"
+                greyd: "0px 3px 5px #0a0913"
+                no: "none"
 
         clip:
             class: clip
