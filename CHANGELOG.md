@@ -1,3 +1,18 @@
+# v0.4.5 (Sat Nov 14 2020)
+
+#### 🐛 Bug Fix
+
+- fix: codacy recommendation of shell directive [#48](https://github.com/preons/preons/pull/48) ([@gemmadlou](https://github.com/gemmadlou))
+- fix: core vs theme preons and sass colors quotes [#48](https://github.com/preons/preons/pull/48) ([@gemmadlou](https://github.com/gemmadlou))
+- fix: transforms, transitions and docs classes [#48](https://github.com/preons/preons/pull/48) ([@gemmadlou](https://github.com/gemmadlou))
+- 0.4.4 [#48](https://github.com/preons/preons/pull/48) ([@gemmadlou](https://github.com/gemmadlou))
+
+#### Authors: 1
+
+- Gemma Black ([@gemmadlou](https://github.com/gemmadlou))
+
+---
+
 # v0.4.4 (Wed Nov 04 2020)
 
 #### 🐛 Bug Fix
