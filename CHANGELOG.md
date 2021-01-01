@@ -1,3 +1,25 @@
+# v0.4.6 (Fri Jan 01 2021)
+
+#### 🐛 Bug Fix
+
+- fix: stylesheet callable programmatically [#51](https://github.com/preons/preons/pull/51) ([@gemmadlou](https://github.com/gemmadlou))
+
+#### ⚠️ Pushed to `master`
+
+- 0.4.5 ([@gemmadlou](https://github.com/gemmadlou))
+
+#### 🔩 Dependency Updates
+
+- build(deps): bump ini from 1.3.5 to 1.3.8 [#49](https://github.com/preons/preons/pull/49) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- build(deps): bump node-notifier from 8.0.0 to 8.0.1 [#50](https://github.com/preons/preons/pull/50) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 2
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- Gemma Black ([@gemmadlou](https://github.com/gemmadlou))
+
+---
+
 # v0.4.5 (Sat Nov 14 2020)
 
 #### 🐛 Bug Fix
