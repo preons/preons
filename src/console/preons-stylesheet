@@ -7,6 +7,7 @@ const yaml = require("yaml")
 const prettier = require("prettier")
 const sass = require("sass")
 const pather = require("../lib/pather/index")
+const stylesheet = require("../lib/stylesheet")
 
 const log = console.info
 const error = console.error
@@ -16,69 +17,6 @@ program
     .option("-s, --scss", "Scss stylesheet")
     .option("-c, --css", "CSS stylesheet")
     .parse(process.argv)
-
-const sassMaps = (set) => {
-    return Object.entries(set.preons.rules)
-        .map(([key, values]) => {
-            return `$${key}: (
-      ${Object.entries(values)
-          .map(([key, value]) => `"${key}": ${value}`)
-          .join(",\n")}
-      );`
-        })
-        .join("\n")
-}
-
-const baseline = (set) => {
-    return `$baseline: ${set.preons.baseline};`
-}
-
-const breakpoints = (set) => {
-    return `$breakpoints: (
-    ${Object.entries(set.preons.breakpoints)
-        .map(([key, value]) => `"${key}": ${value}`)
-        .join(",\n")}
-  );`
-}
-
-const preonize = (set) => {
-    return fs.readFileSync(path.join(__dirname, "..", "scss", "_preonize.scss"))
-}
-
-const preons = (set) => {
-    let properties = Object.entries(set.preons.properties)
-
-    let mapping = properties.map(([property, rules]) => {
-        if (!rules) {
-            return ""
-        }
-
-        let mappedRules = Array.isArray(rules["rule"])
-            ? rules["rule"].map((x) => "$" + x).join(",")
-            : "$" + rules["rule"]
-
-        let mappedSass = rules["values"]
-            ? `$${property}: ( ${Object.entries(rules["values"])
-                  .map(([key, value]) => `${key}:${value}`)
-                  .join(",")} );`
-            : null
-
-        if (mappedSass) {
-            return `
-        ${mappedSass}
-        @include preonize("${
-            rules["class"] || ""
-        }", ${property}, map-collect($${property}), $breakpoints);
-      `
-        }
-
-        return `@include preonize("${
-            rules["class"] || ""
-        }", ${property}, map-collect(${mappedRules}), $breakpoints);`
-    })
-
-    return mapping.join("\n")
-}
 
 ;(async () => {
     try {
@@ -95,29 +33,7 @@ const preons = (set) => {
         let contents = fs.readFileSync(file, "utf8")
         let set = yaml.parse(contents)
 
-        let formatted = prettier.format(
-            `
-        ${baseline(set)}
-
-        ${sassMaps(set)}
-        ${breakpoints(set)}
-        ${preonize(set)}
-        ${preons(set)}
-      `,
-            {
-                semi: false,
-                parser: "scss",
-                printWidth: 120,
-            }
-        )
-
-        if (program.scss) return log(formatted)
-
-        let compiled = sass.renderSync({
-            data: formatted,
-        })
-
-        log(compiled.css.toString())
+        log(stylesheet({ set, outType: program["scss"] ? 'scss' : 'css' }))
     } catch (e) {
         error(e.message)
     }

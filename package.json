@@ -45,6 +45,7 @@
         "@commitlint/cli": "^8.3.5",
         "@commitlint/config-angular": "^8.3.4",
         "@types/cssom": "^0.4.1",
+        "@types/sass": "^1.16.0",
         "command-line-args": "^5.1.1",
         "commander": "^5.1.0",
         "cssom": "^0.4.4",

@@ -2,6 +2,7 @@
  * Gets the absolute path from provided path relative to command exection directory.
  *
  * @param {string} path - Path of file or directory.
+ * @returns {string}
  */
 module.exports.getAbsolute = (path) => {
     if (path.indexOf("/") === 0) {

@@ -29,3 +29,6 @@ rules:
   jsdoc/valid-types: 1
 plugins:
   - jsdoc
+settings:
+  jsdoc:
+    mode: typescript

@@ -23,3 +23,12 @@ module.exports.Property = class {
         this.property = name
     }
 }
+
+/**
+ * @typedef {object} PreonsSet
+ * @property {object} preons
+ * @property {string} preons.baseline
+ * @property {object} preons.rules
+ * @property {object} preons.properties
+ * @property {object} preons.breakpoints
+ */
