@@ -12,6 +12,8 @@ const error = console.error
 program
     .usage("preons config [path/to/file] [options]")
     .option("-m, --minify", "Minifies json config generation")
+    .option("-a, --all", "All config options")
+    .option("-j, --json", "Json config options")
     .parse(process.argv)
 ;(async () => {
     try {
@@ -27,6 +29,7 @@ program
 
         let contents = fs.readFileSync(file, "utf8")
         let set = yaml.parse(contents)
+        let original = { ...set }
 
         Object.entries(set.preons.properties).forEach(([property, options]) => {
             if (options && options["rule"] && Array.isArray(options["rule"])) {
@@ -82,11 +85,23 @@ program
             }
         })
 
-        if (program["minify"]) {
+        if (program["minify"] && program["json"]) {
             return log(JSON.stringify(set))
         }
 
-        log(JSON.stringify(set, null, 4))
+        if (program["all"] && program["json"]) {
+            return log(JSON.stringify(set, null, 4))
+        }
+
+        if (program["json"]) {
+            return log(JSON.stringify(original, null, 4))
+        }
+
+        if (program["all"]) {
+            return log(yaml.stringify(set))
+        }
+
+        log(yaml.stringify(original))
     } catch (e) {
         error(e.message)
     }

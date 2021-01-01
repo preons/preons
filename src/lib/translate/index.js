@@ -1,7 +1,5 @@
 const Preons = require("../../types/preons")
 const cssom = require("cssom")
-const { exec } = require("child_process")
-const { promisify } = require("util")
 
 /**
  * Takes A CSSOM rule and checks if it only have one css

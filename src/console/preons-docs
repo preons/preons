@@ -52,12 +52,13 @@ const generateHtml = (set) => {
 ;(async () => {
     try {
         let { stdout } = await pExec(
-            `${path.resolve(__dirname, "preons")} config ${
+            `${path.resolve(__dirname, "preons")} config --json ${
                 program.args[0] || ""
             }`
         )
 
         let set = JSON.parse(stdout)
+
         if (program.html) {
             return log(generateHtml(set))
         }

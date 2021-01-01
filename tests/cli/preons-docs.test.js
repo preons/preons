@@ -23,6 +23,7 @@ it.each([
         let actual = prettier
             .format(result, { parser: "markdown" })
             .replace(blankLineRegex, "")
+
         let expected = prettier
             .format(stdout, { parser: "markdown" })
             .replace(blankLineRegex, "")
