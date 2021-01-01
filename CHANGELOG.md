@@ -1,3 +1,19 @@
+# v0.4.7 (Fri Jan 01 2021)
+
+#### 🐛 Bug Fix
+
+- fix: replace ignore rules in package.json with npmignore [#52](https://github.com/preons/preons/pull/52) ([@gemmadlou](https://github.com/gemmadlou))
+
+#### ⚠️ Pushed to `master`
+
+- 0.4.6 ([@gemmadlou](https://github.com/gemmadlou))
+
+#### Authors: 1
+
+- Gemma Black ([@gemmadlou](https://github.com/gemmadlou))
+
+---
+
 # v0.4.6 (Fri Jan 01 2021)
 
 #### 🐛 Bug Fix
