@@ -56,12 +56,6 @@
         "strip-indent": "^3.0.0",
         "yaml": "^1.9.2"
     },
-    "files": [
-        "config",
-        "dist",
-        "src/console",
-        "src/scss"
-    ],
     "husky": {
         "hooks": {
             "pre-commit": "preons stylesheet -c && lint-staged && yarn typecheck && yarn test && ./helper.sh",

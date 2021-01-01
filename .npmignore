@@ -1,0 +1,14 @@
+# Ignore everything
+**
+
+# Allow files and directories
+!/config/**
+!/dist/**
+
+!/src/console/**
+!/src/lib/**
+!/src/scss/**
+
+/src/lib/**/*.test.js
+/src/lib/*/examples/*
+/src/lib/*/docs/*
