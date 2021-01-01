@@ -1,11 +1,15 @@
+/// <reference path="../../types/preons.js" />
+
 const fs = require("fs")
 const path = require("path")
 const prettier = require("prettier")
 const sass = require("sass")
 
 /**
+ * Converts Preons rules into a sass map .
+ *
  * @param {import("../../types/preons").PreonsSet} set - Preons data set.
- * @returns {string}
+ * @returns {string}  Rule sass map.
  */
 const sassMaps = (set) => {
     return Object.entries(set.preons.rules)
@@ -20,10 +24,10 @@ const sassMaps = (set) => {
 }
 
 /**
- * Creates baseline sass.
+ * Creates baseline sass variable.
  *
- * @param {import("../../types/preons").PreonsSet} set
- * @returns {string}
+ * @param {import("../../types/preons").PreonsSet} set - Preons config.
+ * @returns {string} Baseline sass variable.
  */
 const baseline = (set) => {
     return `$baseline: ${set.preons.baseline};`
@@ -32,8 +36,8 @@ const baseline = (set) => {
 /**
  * Creates breakpoints sass.
  *
- * @param {import("../../types/preons").PreonsSet} set
- * @returns {string}
+ * @param {import("../../types/preons").PreonsSet} set - Preons config.
+ * @returns {string} Breakpoints sass map.
  */
 const breakpoints = (set) => {
     return `$breakpoints: (
@@ -46,7 +50,7 @@ const breakpoints = (set) => {
 /**
  * Creates preonize functions sass string.
  *
- * @returns {string}
+ * @returns {string} - Preonize function sass.
  */
 const preonize = () => {
     return fs.readFileSync(
@@ -58,8 +62,8 @@ const preonize = () => {
 /**
  * Creates preons rules in sass form.
  *
- * @param {import("../../types/preons").PreonsSet} set
- * @returns {string}
+ * @param {import("../../types/preons").PreonsSet} set - Preons config.
+ * @returns {string} Sass string.
  */
 const preons = (set) => {
     let properties = Object.entries(set.preons.properties)
@@ -99,10 +103,10 @@ const preons = (set) => {
 /**
  * Creates preons rules in sass or css form.
  *
- * @param {object} input
- * @param {import("../../types/preons").PreonsSet} input.set
- * @param {('css'|'scss')} [input.outType]
- * @returns {string}
+ * @param {object} input - Input object.
+ * @param {import("../../types/preons").PreonsSet} input.set - The Preons config format.
+ * @param {('css'|'scss')} [input.outType] - Type of stylesheet output string.
+ * @returns {string} Preons sass or css stylesheet.
  */
 module.exports = ({ set, outType = "css" }) => {
     let formatted = prettier.format(

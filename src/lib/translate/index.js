@@ -37,8 +37,8 @@ const intoSimpleMap = (property) => {
  *
  * @description Given .wp-block,.dlb { display: block: }, it will create two rules.
  *
- * @param {Array<Preons.Property>} accummulative
- * @param {Preons.Property} current
+ * @param {Array<Preons.Property>} accummulative - Accumulative array of rules.
+ * @param {Preons.Property} current - Current rule.
  * @returns {Array<Preons.Property>}
  *
  */
@@ -64,7 +64,7 @@ const splitByNonSingularCssRules = (accummulative, current) => {
  *
  * @description Given .wp-block ul { display: block: }, it will remove that rule.
  *
- * @param {Preons.Property} property
+ * @param {Preons.Property} property - Preons config property.
  * @returns {boolean}
  *
  */
@@ -82,8 +82,8 @@ const ignoreCssSpaceRules = (property) => {
  *
  * @description Given div { display: block: }, it will remove that rule.
  *
- * @param {Preons.Property} property
- * @returns {boolean}
+ * @param {Preons.Property} property - Preons config property.
+ * @returns {boolean} - If it is an element, not a class.
  *
  */
 const ignoreElementsCssRule = (property) => {
@@ -95,8 +95,8 @@ const ignoreElementsCssRule = (property) => {
  *
  * @description Given .box:hover { display: block: }, it will remove that rule.
  *
- * @param {Preons.Property} property
- * @returns {boolean}
+ * @param {Preons.Property} property - Preons config property.
+ * @returns {boolean} - If it's a pseudo class.
  *
  */
 const ignorePseudoClassesRule = (property) => {
@@ -106,11 +106,12 @@ const ignorePseudoClassesRule = (property) => {
 /**
  * Groups a property object by properties.
  *
- * @param {any} acc
- * @param {object} cur
- * @param {string} cur.property
- * @param {string} cur.class
- * @param {Array<string>} cur.values
+ * @param {any} acc - Object of css properties.
+ * @param {object} cur - Current css object.
+ * @param {string} cur.property - CSS property.
+ * @param {string} cur.class - CSS class.
+ * @param {Array<string>} cur.values - CSS values.
+ * @returns {object} - CSS styles grouped by CSS property.
  */
 const groupByProperty = (acc, cur) => {
     if (!acc[cur.property]) {
