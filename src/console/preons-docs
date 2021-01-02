@@ -52,7 +52,7 @@ const generateHtml = (set) => {
 ;(async () => {
     try {
         let { stdout } = await pExec(
-            `${path.resolve(__dirname, "preons")} config --json ${
+            `${path.resolve(__dirname, "preons")} config --all --json ${
                 program.args[0] || ""
             }`
         )

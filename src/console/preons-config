@@ -29,7 +29,7 @@ program
 
         let contents = fs.readFileSync(file, "utf8")
         let set = yaml.parse(contents)
-        let original = { ...set }
+        let original = yaml.parse(contents)
 
         Object.entries(set.preons.properties).forEach(([property, options]) => {
             if (options && options["rule"] && Array.isArray(options["rule"])) {
@@ -102,6 +102,7 @@ program
         }
 
         log(yaml.stringify(original))
+
     } catch (e) {
         error(e.message)
     }
