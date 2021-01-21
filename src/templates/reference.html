@@ -45,6 +45,18 @@
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/vue"></script>
         <script>
+            const getJson = async function () {
+                if (json) {
+                    return JSON.parse(atob(json));
+                }
+
+                // Or reference a json object directly on the page
+                let response = await axios.get(
+                    "https://unpkg.com/preons/dist/preons-config.json"
+                )
+
+                return response.data
+            }
             var app = new Vue({
                 el: "#app",
                 data: {
@@ -53,15 +65,13 @@
                 },
                 async created() {
                     // Or reference a json object directly on the page
-                    let response = await axios.get(
-                        "https://unpkg.com/preons/dist/preons-config.json"
-                    )
+                    let data = await getJson()
 
                     let mapped = Object.keys(
-                        response.data.preons.properties
+                        data.preons.properties
                     ).map((property) => {
                         return {
-                            ...response.data.preons.properties[property],
+                            ...data.preons.properties[property],
                             property,
                         }
                     })

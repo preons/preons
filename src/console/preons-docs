@@ -46,7 +46,7 @@ const generateHtml = (set) => {
             encoding: "utf8",
         }
     )
-    return contents.replace("#jsonRule", JSON.stringify(set))
+    return contents.replace("#jsonRule", Buffer.from(JSON.stringify(set)).toString('base64'))
 }
 
 ;(async () => {
